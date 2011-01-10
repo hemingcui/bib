@@ -29,6 +29,7 @@
 @string{ASPLOS12 = "Twelfth " # ASPLOS # " (ASPLOS '06)"}
 @string{ASPLOS14 = "Fourteenth " # ASPLOS # " (ASPLOS '09)"}
 @string{ASPLOS15 = "Fifteenth " # ASPLOS # " (ASPLOS '10)"}
+@string{ASPLOS16 = "Sixteenth " # ASPLOS # " (ASPLOS '11)"}
 
 @string{OSDI = "Symposium on Operating Systems Design and Implementation"}
 @string{OSDI1 = "Proceedings of the First " # OSDI # " (OSDI '94)"}
@@ -12672,6 +12673,13 @@ pages = "361--376"
     Year = {2010},
 }
 
+@inproceedings{determinator:osdi10,
+    Author = {Amittai Aviram and Shu-Chun Weng and Sen Hu and Bryan Ford},
+    Title = {Efficient System-Enforced Deterministic Parallelism},
+    booktitle = OSDI9,
+    Year = {2010},
+}
+
 @inproceedings{respec:asplos10,
  author = {Lee, Dongyoon and Wester, Benjamin and Veeraraghavan, Kaushik and Narayanasamy, Satish and Chen, Peter M. and Flinn, Jason},
  title = {Respec: efficient online multiprocessor replayvia speculation and external determinism},
@@ -12682,6 +12690,19 @@ pages = "361--376"
  address = {New York, NY, USA},
  isbn = {978-1-60558-839-1},
  location = {Pittsburgh, Pennsylvania, USA},
+
+
+@inproceedings{2ndstrike:asplos11,
+ author = {Qi Gao and Wenbin Zhang and Zhezhe Chen and Mai Zheng and Feng Qin},
+ title = {{2ndStrike}: Towards Manifesting Hidden Concurrency Typestate Bugs},
+ booktitle = ASPLOS16,
+ year = {2011},
+ }
+ address = {New York, NY, USA},
+ isbn = {978-1-60558-839-1},
+ location = {Pittsburgh, Pennsylvania, USA},
+
+
 
 
 @inproceedings{tahoma:oakland06,
@@ -13113,12 +13134,25 @@ pages = "361--376"
   howpublished="\url{http://www.google.com/chromeos/index.html}",
 }
 
+@misc{upstart,
+  title = {{Upstart, an event-based replacement for System V init daemon}},
+  howpublished="\url{http://upstart.ubuntu.com/}",
+}
+, a replacement of System V init daemon.
+
+@misc{launchpad,
+  title = {{Launchpad, a software collaboration platform}},
+  howpublished="\url{https://launchpad.net/}",
+}
+
+
 @misc{race-fuzzer-bug,
     author = "Koushik Sen",
     year =     "2009",
     month =    jun,
     howpublished = "Private communication",
 }
+
 
 @article{coverity:cacm,
  author = {Bessey, Al and Block, Ken and Chelf, Ben and Chou, Andy and Fulton, Bryan and Hallem, Seth and Henri-Gros, Charles and Kamsky, Asya and McPeak, Scott and Engler, Dawson},
@@ -13138,3 +13172,9 @@ pages = "361--376"
  optpublisher = {ACM},
  optaddress = {New York, NY, USA},
 }
+
+@inproceedings{in-vivo-testing,
+author = "Matt Chu and Christian Murphy and Gail Kaiser",
+title = "{Distributed In Vivo Testing of Software Applications}",
+booktitle = "{1st IEEE International Conference on Software Testing, Verification, and Validation}",
+month = "April", year = "2008"}
