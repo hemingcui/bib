@@ -27,7 +27,7 @@
 @string{ASPLOS5 = "Fifth " # ASPLOS}
 @string{ASPLOS6 = "Sixth " # ASPLOS}
 @string{ASPLOS12 = "Twelfth " # ASPLOS # " (ASPLOS '06)"}
-@string{ASPLOS13 = "Fourteenth " # ASPLOS # " (ASPLOS '08)"}
+@string{ASPLOS13 = "Thirteenth " # ASPLOS # " (ASPLOS '08)"}
 @string{ASPLOS14 = "Fourteenth " # ASPLOS # " (ASPLOS '09)"}
 @string{ASPLOS15 = "Fifteenth " # ASPLOS # " (ASPLOS '10)"}
 @string{ASPLOS16 = "Sixteenth " # ASPLOS # " (ASPLOS '11)"}
@@ -10908,10 +10908,11 @@ OPTNote="Kaiserslautern Germany, October 8-11"
 @inproceedings{yu:racetrack:sosp,
  author = {Yuan Yu and Tom Rodeheffer and Wei Chen},
  title = {{RaceTrack: efficient detection of data race conditions via adaptive tracking}},
- booktitle = {SOSP '05: Proceedings of the twentieth ACM symposium on Operating systems principles},
+ booktitle = SOSP20,
+ month = oct,
  year = {2005},
- pages = {221--234},
  }
+ pages = {221--234},
  address = {New York, NY, USA},
  isbn = {1-59593-079-5},
  location = {Brighton, United Kingdom},
@@ -10965,10 +10966,11 @@ OPTNote="Kaiserslautern Germany, October 8-11"
 @inproceedings{lu:concurrency-bugs,
  author = {Shan Lu and Soyeon Park and Eunsoo Seo and Yuanyuan Zhou},
  title = {Learning from mistakes: a comprehensive study on real world concurrency bug characteristics},
- booktitle = {ASPLOS XIII: Proceedings of the 13th international conference on Architectural support for programming languages and operating systems},
+ booktitle = ASPLOS13,
+ month = mar,
  year = {2008},
- pages = {329--339},
  }
+ pages = {329--339},
  address = {New York, NY, USA},
  isbn = {978-1-59593-958-6},
  location = {Seattle, WA, USA},
@@ -11630,10 +11632,10 @@ pages = {261-260}}
   author = {Koushik Sen},
   title = {Race directed random testing of concurrent programs},
   booktitle = SIGPLAN08,
-  pages = {11--21},
   month = jun,
   year = {2008},
 }
+  pages = {11--21},
 
 @inproceedings{atomfuzzer:fse08,
   title = {Randomized active atomicity violation detection in concurrent programs},
@@ -12283,7 +12285,8 @@ pages = "361--376"
 @inproceedings{scribe:sigmetrics10,
  author = {Oren Laadan and Nicolas Viennot and Jason Nieh},
  title = {Transparent, Lightweight Application Execution Replay on Commodity Multiprocessor Operating Systems},
- booktitle = "Proceedings of the 2010 ACM SIGMETRICS Conference on Measurement and Modeling of Computer Systems",
+ booktitle = "Proceedings of the ACM SIGMETRICS Conference on Measurement and Modeling of Computer Systems (SIGMETRICS '10)",
+ month = jun,
  year = {2010},
  }
 
@@ -12651,13 +12654,15 @@ pages = "361--376"
     Author = {Jingyue Wu and Heming Cui and Junfeng Yang},
     Title = {Bypassing Races in Live Applications with Execution Filters},
     booktitle = OSDI9,
+    month = oct,
     Year = {2010},
 }
 
 @inproceedings{cui:tern:osdi10,
-    Author = {Heming Cui and Jingyue Wu and Chia-che Tsai and Junfeng Yang},
+    Author = {Heming Cui and Jingyue Wu and Chia-Che Tsai and Junfeng Yang},
     Title = {Stable Deterministic Multithreading through Schedule Memoization},
     booktitle = OSDI9,
+    month = oct,
     Year = {2010},
 }
 
@@ -12665,6 +12670,7 @@ pages = "361--376"
     Author = {John Erickson and Madanlal Musuvathi and Sebastian Burckhardt and Kirk Olynyk},
     Title = {Effective Data-Race Detection for the Kernel},
     booktitle = OSDI9,
+    month = oct,
     Year = {2010},
 }
 
@@ -12672,6 +12678,7 @@ pages = "361--376"
     Author = {Weiwei Xiong and Soyeon Park and Jiaqi Zhang and Yuanyuan Zhou and Zhiqiang Ma},
     Title = {Ad Hoc Synchronization Considered Harmful},
     booktitle = OSDI9,
+    month = oct,
     Year = {2010},
 }
 
@@ -12679,6 +12686,7 @@ pages = "361--376"
     Author = {Amittai Aviram and Shu-Chun Weng and Sen Hu and Bryan Ford},
     Title = {Efficient System-Enforced Deterministic Parallelism},
     booktitle = OSDI9,
+    month = oct,
     Year = {2010},
 }
 
@@ -13177,7 +13185,7 @@ pages = "361--376"
 
 @inproceedings{in-vivo-testing,
 author = "Matt Chu and Christian Murphy and Gail Kaiser",
-title = "{Distributed In Vivo Testing of Software Applications}",
+title = {Distributed In Vivo Testing of Software Applications},
 booktitle = "{1st IEEE International Conference on Software Testing, Verification, and Validation}",
 month = "April", year = "2008"}
 
