@@ -81,6 +81,7 @@
 
 @string{USEC = "USENIX Security Symposium"}
 
+@string{USEC7  = "Proceedings of the Seventh " # USEC}
 @string{USEC10 = "Proceedings of the 10th " # USEC}
 @string{USEC11 = "Proceedings of the 11th " # USEC}
 @string{USEC12 = "Proceedings of the 12th " # USEC}
@@ -13400,8 +13401,7 @@ howpublished = "\url{http://boinc.berkeley.edu/}"}
 @inproceedings{relay:fse07,
  author = {Voung, Jan Wen and Jhala, Ranjit and Lerner, Sorin},
  title = {RELAY: static race detection on millions of lines of code},
- booktitle = {Proceedings of the the 6th joint meeting of the European software engineering conference and the ACM SIGSOFT symposium on The foundations of software engineering},
- series = ESECFSE6,
+ booktitle = ESECFSE6,
  year = {2007},
  optisbn = {978-1-59593-811-4},
  optlocation = {Dubrovnik, Croatia},
@@ -13455,6 +13455,11 @@ howpublished = "\url{http://boinc.berkeley.edu/}"}
 @MISC{linux-mmap-race,
       TITLE = "CVE-2006-4814",
       HOWPUBLISHED = "\url{http://www.cvedetails.com/cve/CVE-2006-4814}"
+}
+
+@MISC{glibc-setxid,
+      TITLE = "Race condition with seteuid() in Glibc",
+      HOWPUBLISHED = "\url{https://bugzilla.redhat.com/show_bug.cgi?id=533213}"
 }
 
 @MISC{theotheriphone,
@@ -13520,4 +13525,46 @@ howpublished = "\url{http://boinc.berkeley.edu/}"}
       HOWPUBLISHED = "\url{http://www.cs.columbia.edu/~vpk/research/libdft/}"
 }
 
+@inproceedings{concurrency:woot07,
+ author = {Watson, Robert N. M.},
+ title = {Exploiting concurrency vulnerabilities in system call wrappers},
+ booktitle = {Proceedings of the first USENIX workshop on Offensive Technologies},
+ year = {2007},
+ pages = {2:1--2:8},
+} 
 
+@misc{concurrency:blackhat08,
+title = "Concurrency Attacks in Web Applications",
+author = "Scott Sender and Alex Vidergar",
+howpublished = "Blackhat '08",
+year = {2008}
+}
+
+
+@inproceedings{stackguard:usec98,
+ author = {Cowan, Crispin and Pu, Calton and Maier, Dave and Hintony, Heather and Walpole, Jonathan and Bakke, Peat and Beattie, Steve and Grier, Aaron and Wagle, Perry and Zhang, Qian},
+ title = {StackGuard: automatic adaptive detection and prevention of buffer-overflow attacks},
+ booktitle = {Proceedings of the 7th conference on USENIX Security Symposium - Volume 7},
+ year = {1998},
+ location = {San Antonio, Texas},
+ pages = {5--5},
+ numpages = {1},
+ url = {http://portal.acm.org/citation.cfm?id=1267549.1267554},
+ acmid = {1267554},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+} 
+
+@misc{mpi,
+  title = "MPI: A message-passing interface standard version 2.2", 
+  author = "Message Passing Interface Forum",
+  month = sep,
+  year = {2009}
+}
+
+@misc{openmp,
+  title = "OpenMP application program interface version 3.0",
+  author = "OpenMP Architecture Review Board",
+  month = may,
+  year = {2008}
+}
