@@ -105,11 +105,12 @@
 @string{ICSC = "International Conference on Supercomputing"}
 
 @string{OOPSLA = "Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA"}
-@string{OOPSLA93 = OOPSLA # " '93)"}
-@string{OOPSLA92 = OOPSLA # " '92)"}
-@string{OOPSLA91 = OOPSLA # " '91)"}
 @string{OOPSLA90 = OOPSLA # " '90)"}
+@string{OOPSLA91 = OOPSLA # " '91)"}
+@string{OOPSLA92 = OOPSLA # " '92)"}
+@string{OOPSLA93 = OOPSLA # " '93)"}
 @string{OOPSLA94 = OOPSLA # " '94)"}
+@string{OOPSLA99 = OOPSLA # " '99)"}
 @string{OOPSLA09 = OOPSLA # " '09)"}
 @string{OOPSLA10 = OOPSLA # " '10)"}
 
@@ -143,6 +144,8 @@
 @string{POPL97 = POT # " 24th " # POPL # " (POPL '97)"}
 @string{POPL02 = POT # " 29th " # POPL # " (POPL '02)"}
 @string{POPL05 = POT # " 32nd " # POPL # " (POPL '05)"}
+@string{POPL09 = POT # " 36nd " # POPL # " (POPL '09)"}
+@string{POPL11 = POT # " 38nd " # POPL # " (POPL '11)"}
 
 @string{SIGPLAN79 = POTAS # " '79 " # CC}
 @string{SIGPLAN82 = POTAS # " '82 " # CC}
@@ -172,9 +175,11 @@
 @string{SIGPLAN09 = POTAS # " 2009 " # PLDI # " (PLDI '09)"}
 
 @string{CC02 = POT # " 11th " # CC # " (CC '02)"}
+@string{CC03 = POT # " 12th " # CC # " (CC '03)"}
 
 @string{SIGPLAN = "SIGPLAN Notices"}
 
+@string{SAS02 = "9th Annual " # SAS}
 @string{SAS03 = "10th Annual " # SAS}
 
 @string{NSDI =  "Symposium on Networked Systems Design and Implementation"}
@@ -12095,6 +12100,11 @@ pages = "361--376"
   howpublished="\url{http://llvm.org}"
 }
 
+@misc{llvm-gep,
+    title={{The Often Misunderstood GEP Instruction}},
+    howpublished="\url{http://llvm.org/docs/GetElementPtr.html}"
+}
+
 @inproceedings{vigilante:sosp05,
  author = {Costa, Manuel and Crowcroft, Jon and Castro, Miguel and Rowstron, Antony and Zhou, Lidong and Zhang, Lintao and Barham, Paul},
  title = {Vigilante: end-to-end containment of internet worms},
@@ -13970,3 +13980,84 @@ year = {2008}
  pages = {369--384},
  keywords = {data race detection, data race survival, uniparallelism},
 } 
+
+@inproceedings{heintze:pldi01,
+ author = {Heintze, Nevin and Tardieu, Olivier},
+ title = {Ultra-fast aliasing analysis using CLA: a million lines of C code in a second},
+ booktitle = SIGPLAN01,
+ year = {2001},
+ pages = {254--263},
+} 
+
+@inproceedings{landi:pldi93,
+ author = {Landi, William and Ryder, Barbara G. and Zhang, Sean},
+ title = {Interprocedural modification side effect analysis with pointer aliasing},
+ booktitle = SIGPLAN93,
+ year = {1993},
+ pages = {56--67},
+} 
+
+@inproceedings{whaley:sas02,
+ author = {Whaley, John and Lam, Monica S.},
+ title = {An Efficient Inclusion-Based Points-To Analysis for Strictly-Typed Languages},
+ booktitle = SAS02,
+ year = {2002},
+ pages = {180--195},
+} 
+
+@inproceedings{emami:pldi94,
+ author = {Emami, Maryam and Ghiya, Rakesh and Hendren, Laurie J.},
+ title = {Context-sensitive interprocedural points-to analysis in the presence of function pointers},
+ booktitle = SIGPLAN94,
+ year = {1994},
+ pages = {242--256},
+} 
+
+@inproceedings{lhotak:cc03,
+ author = {Lhot\'{a}k, Ond\v{r}ej and Hendren, Laurie},
+ title = {Scaling Java points-to analysis using SPARK},
+ booktitle = CC03,
+ year = {2003},
+ pages = {153--169},
+}
+
+@inproceedings{whaley:oopsla99,
+ author = {Whaley, John and Rinard, Martin},
+ title = {Compositional pointer and escape analysis for Java programs},
+ booktitle = OOPSLA99,
+ year = {1999},
+ pages = {187--206},
+} 
+
+@inproceedings{wilson:pldi95,
+ author = {Wilson, Robert P. and Lam, Monica S.},
+ title = {Efficient context-sensitive pointer analysis for C programs},
+ booktitle = SIGPLAN95,
+ year = {1995},
+ pages = {1--12},
+} 
+
+@inproceedings{lhotak:popl11,
+ author = {Lhot\'{a}k, Ondrej and Chung, Kwok-Chiang Andrew},
+ title = {Points-to analysis with efficient strong updates},
+ booktitle = POPL11,
+ year = {2011},
+ pages = {3--16},
+} 
+
+@inproceedings{smaragdakis:popl11,
+ author = {Smaragdakis, Yannis and Bravenboer, Martin and Lhot\'{a}k, Ondrej},
+ title = {Pick your contexts well: understanding object-sensitivity},
+ booktitle = POPL11,
+ year = {2011},
+ pages = {17--30},
+} 
+
+@inproceedings{hardekopf:popl09,
+ author = {Hardekopf, Ben and Lin, Calvin},
+ title = {Semi-sparse flow-sensitive pointer analysis},
+ booktitle = POPL09,
+ year = {2009},
+ pages = {226--238},
+} 
+
