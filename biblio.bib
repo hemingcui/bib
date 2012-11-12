@@ -240,6 +240,7 @@
 @string{ICSE23 = POT # " 23rd " # ICSE # " (ICSE '01)"}
 @string{ICSE24 = POT # " 24th " # ICSE # " (ICSE '02)"}
 @string{ICSE27 = POT # " 27th " # ICSE # " (ICSE '05)"}
+@string{ICSE28 = POT # " 28th " # ICSE # " (ICSE '06)"}
 @string{ICSE32 = POT # " 32nd " # ICSE # " (ICSE '10)"}
 
 @string{EUROSYS = "ACM European Conference on Computer Systems"}
@@ -14359,7 +14360,10 @@ year = {2008}
 } 
 
 @inproceedings{meerkats:spcc12,
-  author = {Simha Sethumadhavan and Salvatore Stolfo and Angelos Keromytis and Junfeng Yang and David August},
+  author = { Angelos Keromytis and Roxana Geambasu and Simha Sethumadhavan
+                  and Sal Stolfo and Junfeng Yang and Azzedine Benameur
+                  and Marc Dacier and Matthew Elder and Darrell Kienzle
+                  and Angelos Stavrou},
   title = {The {MEERKATS} Cloud Security Architecture},
   booktitle = {Proceedings of the third International Workshop on Security and Privacy in Cloud Computing (ICDCS-SPCC '12)},
   month = jun,
@@ -14515,3 +14519,43 @@ year = {2008}
  year = {2013},
 }
 
+@inproceedings{lbc:cgo12,
+ author = {Hasabnis, Niranjan and Misra, Ashish and Sekar, R.},
+ title = {Light-weight bounds checking},
+ booktitle = {Proceedings of the Tenth International Symposium on Code Generation and Optimization},
+ year = {2012},
+} 
+
+@inproceedings{pool-bc:icse06,
+ author = {Dhurjati, Dinakar and Adve, Vikram},
+ title = {Backwards-compatible array bounds checking for C with very low overhead},
+ booktitle = ICSE28,
+ year = {2006},
+}
+
+@inproceedings{path-sen:pldi08,
+ author = {Dillig, Isil and Dillig, Thomas and Aiken, Alex},
+ title = {Sound, complete and scalable path-sensitive analysis},
+ booktitle = SIGPLAN08,
+ year = {2008},
+}
+
+@inproceedings{graph-opt:popl11,
+ author = {Prountzos, Dimitrios and Manevich, Roman and Pingali, Keshav and McKinley, Kathryn S.},
+ title = {A shape analysis for optimizing parallel graph programs},
+ booktitle = POPL11,
+ year = {2011},
+} 
+
+@InProceedings{dsa:pldi07,
+    author    = {Chris Lattner and Andrew Lenharth and Vikram Adve},
+    title     = "{Making Context-Sensitive Points-to Analysis with Heap Cloning Practical For The Real World}",
+    booktitle = SIGPLAN07,
+    year      = {2007}
+  }
+
+@misc{alias-papers-stat,
+  author = {Lei Shang},
+  title = {Pointer Analysis in PLDI/POPL from 1998},
+  note = "\url{http://www.cse.unsw.edu.au/~shangl/topconf.htm}",
+}
