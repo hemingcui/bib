@@ -292,6 +292,7 @@
 @string{IPDPS = "International Symposium on Parallel and Distributed Processing"}
 @string{IPDPS14 = POT # " 14th " # IPDPS # " (IPDPS '00)"}
 
+@String{pub-ANSI                = "American National Standards Institute"}
 
 
 
@@ -14708,4 +14709,99 @@ year = {2008}
  series = {PACT '10},
  year = {2010},
  pages = {389--400},
+}
+
+@inproceedings{jones-kelly-bounds,
+    author = {Jones, Richard W. M. and Kelly, Paul H. J.},
+    title = {Backwards-compatible bounds checking for arrays and pointers in C programs},
+    booktitle = {Proceedings of The Third International Workshop on Automatic Debugging},
+    series = {AADEBUG '97},
+    year = {1997},
+    pages = {13--26},
+}
+
+@Book{ansic,
+  author =       "{American National Standards Institute} and {Computer
+                 and Business Equipment Manufacturers Association and
+                 Secretariat}",
+  title =        "{American National Standard} for information systems:
+                 programming language: {C}: {ANSI X3.159-1989}",
+  publisher =    pub-ANSI,
+  month =        dec,
+  year =         "1989",
+}
+
+
+@book{clrs,
+ author = {Cormen, Thomas H. and Stein, Clifford and Rivest, Ronald L. and Leiserson, Charles E.},
+ title = {Introduction to Algorithms},
+ year = {2001},
+ edition = {2nd},
+ publisher = {McGraw-Hill Higher Education},
+}
+ isbn = {0070131511},
+
+@misc{dsaa-svn,
+ title = "\v{ds-aa}'s SVN repository, revision 160292",
+ howpublished = "\url{http://llvm.org/svn/llvm-project/poolalloc/trunk}"
+}
+Revision = 160292
+RepositoryRoot = http://llvm.org/svn/llvm-project
+
+@misc{dsaa:bugrep,
+    year = "2012",
+    month = may,
+    title = {{Bug 12744 - Missing Call Edges, LLVM Bugzilla}},
+    howpublished = "\url{http://llvm.org/bugs/show_bug.cgi?id=12744}",
+}
+
+@article{eval-alias:scp99,
+ author = {Hind, Michael and Pioli, Anthony},
+ title = {Evaluating the effectiveness of pointer alias analyses},
+ journal = {Sci. Comput. Program.},
+ issue_date = {Jan. 2001},
+ volume = {39},
+ number = {1},
+ month = jan,
+ year = {2001},
+ pages = {31--55},
+}
+ numpages = {25},
+ publisher = {Elsevier North-Holland, Inc.},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+
+@inproceedings{baggy,
+ author = {Akritidis, Periklis and Costa, Manuel and Castro, Miguel and Hand, Steven},
+ title = {Baggy bounds checking: an efficient and backwards-compatible defense against out-of-bounds errors},
+ booktitle = {Proceedings of the 18th conference on USENIX security symposium},
+ series = {SSYM'09},
+ year = {2009},
+ pages = {51--66},
+}
+
+@inproceedings{cyclone:atc02,
+ author = {Jim, Trevor and Morrisett, J. Greg and Grossman, Dan and Hicks, Michael W. and Cheney, James and Wang, Yanling},
+ title = {Cyclone: A Safe Dialect of C},
+ booktitle = {Proceedings of the General Track of the annual conference on USENIX Annual Technical Conference},
+ series = {ATEC '02},
+ year = {2002},
+ pages = {275--288},
+}
+
+@inproceedings{todd:pldi94,
+ author = {Austin, Todd M. and Breach, Scott E. and Sohi, Gurindar S.},
+ title = {Efficient detection of all pointer and array access errors},
+ booktitle = {Proceedings of the ACM SIGPLAN 1994 conference on Programming language design and implementation},
+ series = {PLDI '94},
+ year = {1994},
+ pages = {290--301},
+}
+
+@inproceedings{softbound:pldi09,
+ author = {Nagarakatte, Santosh and Zhao, Jianzhou and Martin, Milo M.K. and Zdancewic, Steve},
+ title = {SoftBound: highly compatible and complete spatial memory safety for c},
+ booktitle = {Proceedings of the 2009 ACM SIGPLAN conference on Programming language design and implementation},
+ series = {PLDI '09},
+ year = {2009},
+ pages = {245--258},
 }
