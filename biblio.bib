@@ -46,8 +46,10 @@
 @string{OSDI9 = "Proceedings of the Ninth " # OSDI # " (OSDI '10)"}
 
 @string{CAV = "International Conference On Computer Aided Verification"}
-@string{CAV07 = "Proceedings of the 15th " # CAV # " (CAV' 03)"}
-@string{CAV07 = "Proceedings of the 19th " # CAV # " (CAV' 07)"}
+@string{CAV03 = "Proceedings of the 15th " # CAV # " (CAV '03)"}
+@string{CAV07 = "Proceedings of the 19th " # CAV # " (CAV '07)"}
+@string{CAV11 = "Proceedings of the 23rd " # CAV # " (CAV '11)"}
+@string{CAV12 = "Proceedings of the 24th " # CAV # " (CAV '12)"}
 
 @string{SIGCOMM = "ACM Communication Architectures, Protocols, and Applications (SIGCOMM)"}
 @string{SIGCOMM96 = SIGCOMM # " 1996"}
@@ -100,7 +102,10 @@
 @string{LOPLAS = "Letters on Programming Languages and Systems"}
 @string{CompLang = "Computer Languages"}
 @string{IBMJRD = "IBM Journal of Research and Development"}
-@String{ISSTA = "International Symposium on Software Testing and Analysis"}
+
+@string{ISSTA = "International Symposium on Software Testing and Analysis"}
+@string{ISSTA11 = POT # " 2011 " # ISSTA # " (ISSTA '11)"}
+
 @string{IEEEC = "IEEE Computer"}
 @string{IEEES = "IEEE Software"}
 @string{IEEESE = "IEEE Transactions on Software Engineering"}
@@ -146,7 +151,7 @@
 @string{POPL93 = POT # " 20th " # POPL # " (POPL '93)"}
 @string{POPL94 = POT # " 21th " # POPL # " (POPL '94)"}
 @string{POPL95 = POT # " 22th " # POPL # " (POPL '95)"}
-@string{POPL96 = POT # " 23th " # POPL # " (POPL '96)"}
+@string{POPL96 = POT # " 23rd " # POPL # " (POPL '96)"}
 @string{POPL97 = POT # " 24th " # POPL # " (POPL '97)"}
 @string{POPL02 = POT # " 29th " # POPL # " (POPL '02)"}
 @string{POPL05 = POT # " 32nd " # POPL # " (POPL '05)"}
@@ -188,8 +193,9 @@
 
 @string{SIGPLAN = "SIGPLAN Notices"}
 
-@string{SAS02 = "9th Annual " # SAS}
-@string{SAS03 = "10th Annual " # SAS}
+@string{SAS02 = "9th " # SAS # " (SAS '02)"}
+@string{SAS03 = "10th " # SAS # " (SAS '03)"}
+@string{SAS11 = "18th " # SAS # " (SAS '11)"}
 
 @string{NSDI =  "Symposium on Networked Systems Design and Implementation"}
 @string{NSDI1 = "Proceedings of the First " # NSDI # " (NSDI '04)"}
@@ -232,17 +238,21 @@
 @string{VEE06 = POT # " 2nd " # VEE # " (VEE '06)"}
 @string{VEE08 = POT # " 4th " # VEE # " (VEE '08)"}
 
-@string{ASE = "IEEE international conference on Automated software engineering"}
-@string{ASE15 = POT # " 15th " # ASE # " (ASE '00)"}
-
+@string{ASE = "IEEE/ACM International Conference on Automated software engineering"}
+@string{ASE00 = POT # " 15th " # ASE # " (ASE '00)"}
+@string{ASE01 = POT # " 16th " # ASE # " (ASE '01)"}
+@string{ASE08 = POT # " 23rd " # ASE # " (ASE '08)"}
+@string{ASE10 = POT # " 25th " # ASE # " (ASE '10)"}
 
 @string{ICSE = "International Conference on Software Engineering"}
+@string{ICSE5 = POT # " 5th " # ICSE # " (ICSE '81)"}
 @string{ICSE22 = POT # " 22nd " # ICSE # " (ICSE '00)"}
 @string{ICSE23 = POT # " 23rd " # ICSE # " (ICSE '01)"}
 @string{ICSE24 = POT # " 24th " # ICSE # " (ICSE '02)"}
 @string{ICSE27 = POT # " 27th " # ICSE # " (ICSE '05)"}
 @string{ICSE28 = POT # " 28th " # ICSE # " (ICSE '06)"}
 @string{ICSE32 = POT # " 32nd " # ICSE # " (ICSE '10)"}
+@string{ICSE33 = POT # " 33rd " # ICSE # " (ICSE '11)"}
 
 @string{EUROSYS = "ACM European Conference on Computer Systems"}
 @string{EUROSYS4 = POT # " 4th " # EUROSYS # " (EUROSYS '09)"}
@@ -5378,7 +5388,8 @@ XX
 @inproceedings{weiser:slice,
     author = "Mark Weiser",
     title = "Program Slicing",
-    booktitle = "Fifth International Conference on Software Engineering",
+    booktitle = ICSE5,
+    month = mar,
     year = 1981,
     pages = {439--449}
     }
@@ -8965,6 +8976,7 @@ title = "Personal Communication",
   author =      "Dawson Engler and David {Yu Chen} and Seth Hallem and Andy Chou and Benjamin Chelf",
   title =       "Bugs as Deviant Behavior: A General Approach to Inferring Errors in Systems Code",
   booktitle =     SOSP18,
+  month = oct,
   year  = 2001,
   annotation =  "sosp belief derivation paper, SOSP 2001."
 }
@@ -9394,24 +9406,12 @@ location = {Washington, DC, USA},
 
 @inproceedings{godefroid:verisoft,
 author = "P. Godefroid",
-title = "{Model Checking for Programming Languages using VeriSoft}",
+title = "Model Checking for Programming Languages using VeriSoft",
 booktitle = POPL97,
 pages = {174--186},
 month = jan,
 year = "1997"
 }
-
-%@inproceedings{263717,
- author = {Godefroid,, Patrice},
- title = {Model checking for programming languages using VeriSoft},
- booktitle = {POPL '97: Proceedings of the 24th ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
- year = {1997},
- pages = {174--186},
- address = {New York, NY, USA},
- }
- isbn = {0-89791-853-3},
- location = {Paris, France},
-
 
 @article{java-path-finder,
  author = {Willem Visser and Klaus Havelund and Guillaume Brat and
@@ -9553,6 +9553,7 @@ year = "1997"
     author = "Seth Hallem and Benjamin Chelf and Yichen Xie and Dawson Engler",
     title = "A System and Language for Building System-Specific, Static Analyses",
     booktitle = SIGPLAN02,
+    month = jun,
     year = "2002",
 }
 
@@ -9878,7 +9879,7 @@ Report CSTR-2005-04, Computer Systems Laboratory, Stanford University}
     booktitle = {Proceedings of the 14th International Conference
               on Computer-Aided Verification},
     organization = {Lecture Notes in Computer Science 2404, Springer-Verlag},
-    pages = {pp. 526-538},
+    pages = {526-538},
     year = {2002},
 }
 
@@ -9886,9 +9887,9 @@ Report CSTR-2005-04, Computer Systems Laboratory, Stanford University}
     author = {Thomas A. Henzinger and Ranjit Jhala and Rupak Majumdar and
               and Gregoire Sutre},
     title = {Lazy Abstraction},
-    booktitle = {Proceedings of the 29th Annual Symposium on
-              Principles of Programming Languages},
-    pages = {pp. 58-70},
+    booktitle = POPL02,
+    pages = {58-70},
+    month = jan,
     year = {2002}
 }
 
@@ -10124,13 +10125,12 @@ month= {August},
 }
 
 @inproceedings{cbmc:hardware,
-  AUTHOR    = { Clarke, Edmund
-                and Kroening, Daniel },
+  AUTHOR    = { Clarke, Edmund and Kroening, Daniel },
   TITLE     = { Hardware Verification using {ANSI-C} Programs as a Reference },
-  BOOKTITLE = { Proceedings of ASP-DAC 2003 },
+  BOOKTITLE = { Proceedings of the 2003 Asian and South Pacific Design Automation Conference (ASP-DAC 2003) },
   YEAR      = { 2003 },
   PAGES     = { 308--311 },
-  MONTH     = { January },
+  MONTH     = jan
 }
   ISBN      = { 0-7803-7659-5 },
 
@@ -10480,7 +10480,7 @@ month= {August},
  author = {Charles Killian and James W. Anderson and Ranjit Jhala and Amin Vahdat},
  title = {Life, Death, and the Critical Transition: Finding Liveness Bugs in Systems Code},
  booktitle = NSDI4,
- month = "April",
+ month = apr,
  year = {2007},
  pages = {243--256},
 }
@@ -11037,7 +11037,7 @@ OPTNote="Kaiserslautern Germany, October 8-11"
 @inproceedings{heap-symmetry-reduction,
  author = {Radu Iosif},
  title = {Exploiting Heap Symmetries in Explicit-State Model Checking of Software},
- booktitle = {ASE '01: Proceedings of the 16th IEEE international conference on Automated software engineering},
+ booktitle = ASE01,
  year = {2001},
  pages = {254},
  }
@@ -11460,10 +11460,11 @@ year = {2008},
     issn = {0020-0190},
     address = {Amsterdam, The Netherlands, The Netherlands},
 
-@inproceedings{agrawal_dynamicslicing90,
+@inproceedings{agrawal:pldi90,
     author = {Hiralal Agrawal and Joseph R. Horgan},
     title = {Dynamic program slicing},
     booktitle = SIGPLAN90,
+    month = jun,
     year = {1990},
     pages = {246--256},
 }
@@ -11536,7 +11537,8 @@ year = {2008},
 @inproceedings{bdd,
     author = {Jose S. Metos and John V. Oldfield},
     title = {Binary Decision Diagrams: From abstract representations to physical implementations},
-    booktitle = {DAC '83: Proceedings of the 20th conference on Design automation},
+    booktitle = {Proceedings of the 20th conference on Design automation (DAC '83)},
+    month = jun,
     year = {1983},
     pages = {567--570},
 }
@@ -11621,6 +11623,7 @@ year = {2008},
   booktitle = NSDI6,
   month = apr,
   year = {2009},
+  pages = {229--244},
 }
 
 @inproceedings{ranking:fse,
@@ -12035,6 +12038,7 @@ pages = "361--376"
   title={{Understanding Data Lifetime via Whole System Simulation}},
   author={Jim Chow and Ben Pfaff and Tal Garfinkel and Kevin Christopher and Mendel Rosenblum},
   booktitle=USEC13,
+  month = aug,
   year={2004},
 }
   volume={13},
@@ -12045,6 +12049,7 @@ pages = "361--376"
   title={{Shredding Your Garbage: Reducing Data Lifetime Through Secure Deallocation}},
   author={Jim Chow and Ben Pfaff and Tal Garfinkel and Mendel Rosenblum},
   booktitle=USEC14,
+  month = jul,
   year={2005},
 }
   volume={14},
@@ -12117,6 +12122,7 @@ pages = "361--376"
   author={Ranjit Jhala and Rupak Majumdar},
   booktitle=SIGPLAN05,
   pages={38--47},
+  month=jun,
   year={2005},
 }
   organization={ACM}
@@ -12490,7 +12496,7 @@ pages = "361--376"
 @inproceedings{multicore:dac07,
  author = {Agarwal, Anant and Levy, Markus},
  title = {The kill rule for multicore},
- booktitle = {DAC '07: Proceedings of the 44th annual Design Automation Conference},
+ booktitle = {Proceedings of the 44th annual Design Automation Conference (DAC '07)},
  year = {2007},
  pages = {750--753},
 }
@@ -13739,7 +13745,8 @@ year = {2008}
 @inproceedings{symbolic-execution,
  author = {King, James C.},
  title = {A new approach to program testing},
- booktitle = {Proceedings of the international conference on Reliable software},
+ booktitle = {Proceedings of the 1975 International Conference on Reliable Software},
+ month = jun,
  year = {1975},
  pages = {228--233},
 }
@@ -13836,14 +13843,6 @@ year = {2008}
  title = {Program slices: formal, psychological, and practical investigations of an automatic program abstraction method},
  year = {1979},
  publisher = {University of Michigan},
-} 
-
-@inproceedings{agrawal:pldi90,
- author = {Agrawal, Hiralal and Horgan, Joseph R.},
- title = {Dynamic program slicing},
- booktitle = SIGPLAN90,
- year = {1990},
- pages = {246--256},
 } 
 
 @inproceedings{zhang:pldi04,
@@ -14130,10 +14129,10 @@ year = {2008}
 
 @inproceedings{eat-my-data,
   author = {Stewart Smith},
-  title = {Eat My Data: How Everybody Gets File IO Wrong},
-  booktitle = {OSCON 2008},
-  year = {2008},
+  title = {Eat My Data: How Everybody Gets File {IO} Wrong},
+  booktitle = {The 2008 O'Reilly Open Source Convention (OSCON '2008)},
   month = jul,
+  year = {2008},
 }
 
 @inproceedings{s2e:asplos11,
@@ -14148,8 +14147,7 @@ year = {2008}
 @inproceedings{ucklee:cav11,
  author = {Ramos, David A and Engler, Dawson R.},
  title = {Practical, low-effort equivalence verification of real code},
- booktitle = {Proceedings of the 23rd international conference on Computer aided verification},
- series = {CAV'11},
+ booktitle = CAV11,
  year = {2011},
  pages = {669--685},
  numpages = {17},
@@ -14219,7 +14217,7 @@ year = {2008}
 @article{small-scope-hypothesis,
  author = {Jackson, Daniel and Damon, Craig A.},
  title = {Elements of Style: Analyzing a Software Design Feature with a Counterexample Detector},
- journal = {IEEE Trans. Softw. Eng.},
+ journal = {IEEE Transactions on Software Engineering},
  issue_date = {July 1996},
  volume = {22},
  number = {7},
@@ -14241,8 +14239,8 @@ year = {2008}
 @inproceedings{spf,
  author = {P\u{a}s\u{a}reanu, Corina S. and Rungta, Neha},
  title = {Symbolic PathFinder: symbolic execution of Java bytecode},
- booktitle = {Proceedings of the IEEE/ACM international conference on Automated software engineering},
- series = {ASE '10},
+ booktitle = ASE10,
+ month = nov,
  year = {2010},
  pages = {179--180},
  numpages = {2},
@@ -14259,8 +14257,8 @@ year = {2008}
 @inproceedings{dise:pldi11,
  author = {Person, Suzette and Yang, Guowei and Rungta, Neha and Khurshid, Sarfraz},
  title = {Directed incremental symbolic execution},
- booktitle = {Proceedings of the 32nd ACM SIGPLAN conference on Programming language design and implementation},
- series = {PLDI '11},
+ booktitle = SIGPLAN11,
+ month = jun,
  year = {2011},
  pages = {504--515},
  numpages = {12},
@@ -14277,8 +14275,7 @@ year = {2008}
 @inproceedings{dse:sas11,
  author = {Kin-Keung Ma and Yit Phang Khoo and Jeffrey S. Foster and Michael Hicks},
  title = {Directed symbolic execution},
- booktitle = {The 18th International Static Analysis Symposium},
- series = {SAS '11},
+ booktitle = SAS11,
  year = {2011},
  month = sep
 }
@@ -14295,6 +14292,7 @@ year = {2008}
  author = {Majumdar, Rupak and Xu, Ru-Gang},
  title = {Directed test generation using symbolic grammars},
  booktitle = ESEC7FSE7,
+ month = sep,
  year = {2007},
  pages = {553--556},
  numpages = {4},
@@ -14311,8 +14309,8 @@ year = {2008}
 @inproceedings{scmix:issta11,
  author = {P\u{a}s\u{a}reanu, Corina S. and Rungta, Neha and Visser, Willem},
  title = {Symbolic execution with mixed concrete-symbolic solving},
- booktitle = {Proceedings of the 2011 International Symposium on Software Testing and Analysis},
- series = {ISSTA '11},
+ booktitle=ISSTA11,
+ month = jul,
  year = {2011},
  pages = {34--44},
  numpages = {11},
@@ -14330,6 +14328,7 @@ year = {2008}
  author = {Coen-Porisini, Alberto and Denaro, Giovanni and Ghezzi, Carlo and Pezz{\'e}, Mauro},
  title = {Using symbolic execution for verifying safety-critical systems},
  booktitle = ESEC8FSE9,
+ month = sep,
  year = {2001},
  pages = {142--151},
  numpages = {10},
@@ -14355,8 +14354,7 @@ year = {2008}
 @inproceedings{tracer:cav12,
  author = {Joxan Jaffar and Vijayaraghavan Murali and Jorge A. Navas and Andrew E. Santosa},
  title = {TRACER: A Symbolic Execution Tool for Verification},
- booktitle = {Proceedings of the 24th international conference on Computer aided verification},
- series = {CAV'12},
+ booktitle = CAV12,
  year = {2012},
  month = jul
 } 
@@ -14380,8 +14378,8 @@ year = {2008}
 @inproceedings{dyta-demo:icse11,
  author = {Ge, Xi and Taneja, Kunal and Xie, Tao and Tillmann, Nikolai},
  title = {DyTa: dynamic symbolic execution guided with static verification results},
- booktitle = {Proceedings of the 33rd International Conference on Software Engineering},
- series = {ICSE '11},
+ booktitle = ICSE33,
+ month = may,
  year = {2011},
  pages = {992--994},
  numpages = {3},
@@ -14391,6 +14389,7 @@ year = {2008}
  author = {Kuznetsov, Volodymyr and Kinder, Johannes and Bucur, Stefan and Candea, George},
  title = {Efficient state merging in symbolic execution},
  booktitle = SIGPLAN12,
+ month = jun,
  year = {2012},
  pages = {193--204},
  numpages = {12},
@@ -14400,6 +14399,7 @@ year = {2008}
  author = {Bucur, Stefan and Ureche, Vlad and Zamfir, Cristian and Candea, George},
  title = {Parallel symbolic execution for automated real-world software testing},
  booktitle = EUROSYS6,
+ month = apr,
  year = {2011},
  pages = {183--198},
  numpages = {16},
@@ -14607,8 +14607,7 @@ year = {2008}
 @inproceedings{zvonimir:ase08,
  author = {Rakamaric, Z. and Hu, A. J.},
  title = {Automatic Inference of Frame Axioms Using Static Analysis},
- booktitle = {Proceedings of the 2008 23rd IEEE/ACM International Conference on Automated Software Engineering},
- series = {ASE '08},
+ booktitle = ASE08,
  year = {2008},
  pages = {89--98},
 }
@@ -14977,7 +14976,7 @@ year={2008},
 month={oct.-dec. }, 
 volume={5}, 
 number={4}, 
-pages={224 -241}, 
+pages={224--241}, 
 keywords={Turing-complete language;automated generation;multiple vulnerable program paths;multiple-path vulnerability;program vulnerability;vulnerability-based signatures;Turing machines;computational complexity;digital signatures;}, 
 }
 
@@ -15001,6 +15000,7 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
     author = {Cormac Flanagan and Rajeev Joshi and Xinming Ou and James B. Saxe},
     title = {Theorem proving using lazy proof explication},
     booktitle = CAV03,
+    month = jul,
     year = {2003},
     pages = {355--367},
 }
@@ -15008,7 +15008,8 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
 @inproceedings{refine:softmc03,
     author = {Sagar Chaki and Joël Ouaknine and Karen Yorav and Edmund Clarke},
     title = {Automated Compositional Abstraction Refinement for Concurrent C Programs: a Two-Level Approach},
-    booktitle = {SoftMC 03: Workshop on Software Model Checking},
+    booktitle = {Workshop on Software Model Checking (SoftMC '03)},
+    month = jul,
     year = {2003}
 }
 
