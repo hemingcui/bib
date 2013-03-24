@@ -195,6 +195,7 @@
 
 @string{SAS02 = "9th " # SAS # " (SAS '02)"}
 @string{SAS03 = "10th " # SAS # " (SAS '03)"}
+@string{SAS07 = "14th " # SAS # " (SAS '07)"}
 @string{SAS11 = "18th " # SAS # " (SAS '11)"}
 
 @string{NSDI =  "Symposium on Networked Systems Design and Implementation"}
@@ -14531,7 +14532,7 @@ year = {2008}
 @inproceedings{lbc:cgo12,
  author = {Hasabnis, Niranjan and Misra, Ashish and Sekar, R.},
  title = {Light-weight bounds checking},
- booktitle = {Proceedings of the Tenth International Symposium on Code Generation and Optimization},
+ booktitle = {Proceedings of 10th International Symposium on Code Generation and Optimization (CGO '12)},
  year = {2012},
 } 
 
@@ -14553,6 +14554,8 @@ year = {2008}
  author = {Prountzos, Dimitrios and Manevich, Roman and Pingali, Keshav and McKinley, Kathryn S.},
  title = {A shape analysis for optimizing parallel graph programs},
  booktitle = POPL11,
+ pages = {159--172},
+ month = jan,
  year = {2011},
 } 
 
@@ -14640,8 +14643,7 @@ year = {2008}
 @inproceedings{benh:sas07,
  author = {Hardekopf, Ben and Lin, Calvin},
  title = {Exploiting pointer and location equivalence to optimize pointer analysis},
- booktitle = {Proceedings of the 14th international conference on Static Analysis},
- series = {SAS'07},
+ booktitle = SAS07,
  year = {2007},
  pages = {265--280},
 }
@@ -14649,8 +14651,7 @@ year = {2008}
 @inproceedings{ant:pldi07,
  author = {Hardekopf, Ben and Lin, Calvin},
  title = {The {Ant} and the {Grasshopper}: fast and accurate pointer analysis for millions of lines of code},
- booktitle = {Proceedings of the 2007 ACM SIGPLAN conference on Programming language design and implementation},
- series = {PLDI '07},
+ booktitle = SIGPLAN07,
  year = {2007},
  pages = {290--299},
 }
@@ -14658,8 +14659,7 @@ year = {2008}
 @inproceedings{safecode:pldi06,
  author = {Dhurjati, Dinakar and Kowshik, Sumant and Adve, Vikram},
  title = {{SAFECode}: enforcing alias analysis for weakly typed languages},
- booktitle = {Proceedings of the 2006 ACM SIGPLAN conference on Programming language design and implementation},
- series = {PLDI '06},
+ booktitle = SIGPLAN06,
  year = {2006},
  pages = {144--157},
 }
@@ -14685,17 +14685,15 @@ year = {2008}
 @inproceedings{dymand:cgo12,
  author = {Jablin, Thomas B. and Jablin, James A. and Prabhu, Prakash and Liu, Feng and August, David I.},
  title = {Dynamically managed data for {CPU-GPU} architectures},
- booktitle = {Proceedings of the Tenth International Symposium on Code Generation and Optimization},
- series = {CGO '12},
+ booktitle = {Proceedings of 10th International Symposium on Code Generation and Optimization (CGO '12)},
  year = {2012},
- pages = {165--174},
 }
+ pages = {165--174},
 
 @inproceedings{nasre:cgo11,
  author = {Nasre, Rupesh and Govindarajan, R.},
  title = {Prioritizing constraint evaluation for efficient points-to analysis},
- booktitle = {Proceedings of the 9th Annual IEEE/ACM International Symposium on Code Generation and Optimization},
- series = {CGO '11},
+ booktitle = {Proceedings of the 9th Annual IEEE/ACM International Symposium on Code Generation and Optimization (CGO '11)},
  year = {2011},
  pages = {267--276},
 }
@@ -14721,8 +14719,7 @@ year = {2008}
 @inproceedings{jones-kelly-bounds,
     author = {Jones, Richard W. M. and Kelly, Paul H. J.},
     title = {Backwards-compatible bounds checking for arrays and pointers in {C} programs},
-    booktitle = {Proceedings of The Third International Workshop on Automatic Debugging},
-    series = {AADEBUG '97},
+    booktitle = {Proceedings of The Third International Workshop on Automatic Debugging (AADEBUG '97)},
     year = {1997},
     pages = {13--26},
 }
@@ -14756,18 +14753,32 @@ Revision = 160292
 RepositoryRoot = http://llvm.org/svn/llvm-project
 
 @misc{dsaa:bugrep,
-    year = "2012",
-    month = may,
-    title = {{Bug 12744 - Missing Call Edges, LLVM Bugzilla}},
-    howpublished = "\url{http://llvm.org/bugs/show_bug.cgi?id=12744}",
+ title = {{Bug 12744 - Missing Call Edges, LLVM Bugzilla}},
+ howpublished = "\url{http://llvm.org/bugs/show_bug.cgi?id=12744}",
 }
+ year = "2012",
+ month = may,
 
 @misc{dsaa:bugrep2,
+ title = {{Bug 12786 - External Function Summaries, LLVM Bugzilla}},
+ howpublished = "\url{http://llvm.org/bugs/show_bug.cgi?id=12786}",
+}
+ year = "2012",
+ month = may,
+
+@misc{dsaa:bugrep3,
+ title = {{Bug 14147 - Handling of Variable Length Arguments, LLVM Bugzilla}},
+ howpublished = "\url{http://llvm.org/bugs/show_bug.cgi?id=14147}",
+}
  year = "2012",
  month = oct,
+
+@misc{dsaa:bugrep4,
  title = {{Bug 14190 - Handling Function Pointers, LLVM Bugzilla}},
  howpublished = "\url{http://llvm.org/bugs/show_bug.cgi?id=14190}",
 }
+ year = "2012",
+ month = oct,
 
 @inproceedings{baggy,
  author = {Akritidis, Periklis and Costa, Manuel and Castro, Miguel and Hand, Steven},
@@ -14816,8 +14827,7 @@ RepositoryRoot = http://llvm.org/svn/llvm-project
 @inproceedings{regehr:pldi12,
  author = {Regehr, John and Chen, Yang and Cuoq, Pascal and Eide, Eric and Ellison, Chucky and Yang, Xuejun},
  title = {Test-case reduction for {C} compiler bugs},
- booktitle = {Proceedings of the 33rd ACM SIGPLAN conference on Programming Language Design and Implementation},
- series = {PLDI '12},
+ booktitle = SIGPLAN12,
  year = {2012},
  pages = {335--346},
 }
@@ -14901,8 +14911,7 @@ RepositoryRoot = http://llvm.org/svn/llvm-project
 @inproceedings{tristan:pldi09,
  author = {Tristan, Jean-Baptiste and Leroy, Xavier},
  title = {Verified validation of lazy code motion},
- booktitle = {Proceedings of the 2009 ACM SIGPLAN conference on Programming language design and implementation},
- series = {PLDI '09},
+ booktitle = SIGPLAN09,
  year = {2009},
  pages = {316--326},
 }
@@ -14910,8 +14919,7 @@ RepositoryRoot = http://llvm.org/svn/llvm-project
 @inproceedings{bddaa:pldi03,
  author = {Berndl, Marc and Lhot\'{a}k, Ondrej and Qian, Feng and Hendren, Laurie and Umanee, Navindra},
  title = {Points-to analysis using {BDDs}},
- booktitle = {Proceedings of the ACM SIGPLAN 2003 conference on Programming language design and implementation},
- series = {PLDI '03},
+ booktitle = SIGPLAN03,
  year = {2003},
  pages = {103--114},
 }
@@ -15020,3 +15028,72 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
     year = {2003}
 }
 
+@TechReport{neongoby-tr,
+  author = {Jingyue Wu and Gang Hu and Yang Tang and Junfeng Yang},
+  title = {Effective Dynamic Detection of Alias Analysis Errors},
+  institution = {Columbia University},
+  number =      "CUCS-003-13",
+}
+
+@TechReport{smt-tr,
+  author = {Junfeng Yang and Heming Cui and Jingyue Wu and John Gallagher and Chia-che Tsai and Huayang Guo and Yang Tang and Gang Hu},
+  title = {Make Parallel Programs Reliable with Stable Multithreading},
+  institution = {Columbia University},
+  number =      "CUCS-006-13",
+}
+
+@misc{andersaa-impl,
+    title={{LLVM's Implementation of Andersen's Interprocedural Alias Analysis}},
+    howpublished="\url{http://llvm.org/svn/llvm-project/llvm/branches/release_26/lib/Analysis/IPA/Andersens.cpp}"
+}
+
+@inproceedings{mock:paste01,
+  author = {Mock, Markus and Das, Manuvir and Chambers, Craig and Eggers, Susan J.},
+  title = {Dynamic points-to sets: a comparison with static analyses and potential applications in program understanding and optimization},
+  booktitle = {Proceedings of the 2001 ACM SIGPLAN-SIGSOFT workshop on Program analysis for software tools and engineering (PASTE '01)},
+  year = {2001},
+  month = jun,
+  pages = {66--72},
+}
+  isbn = {1-58113-413-4},
+  location = {Snowbird, Utah, USA},
+  numpages = {7},
+  url = {http://doi.acm.org/10.1145/379605.379671},
+  doi = {10.1145/379605.379671},
+  acmid = {379671},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {alias analysis, calpa, dynamic analysis, points-to
+    analysis, program instrumentation, program optimization,
+    program understanding},
+
+@inproceedings{dbug:spin11,
+  author = {Simsa, Jiri and Gibson, Garth and Bryant, Randy},
+  title     = {{dBug: Systematic Testing of Unmodified Distributed and Multi-Threaded Systems}},
+  booktitle = {The 18th International SPIN Workshop on Model Checking of Software (SPIN'11)},
+  year      = {2011},
+  pages     = {188--193},
+}
+
+@inproceedings{Kilby2006,
+  author    = {
+    Philip Kilby and
+    John K. Slaney and
+    Sylvie Thi{\'e}baux and
+    Toby Walsh},
+  title     = {Estimating Search Tree Size},
+  booktitle = {AAAI},
+  year      = {2006},
+  pages     = {1014--1019}
+}
+
+@article{Knuth1975,
+  title = {{Estimating the Efficiency of Backtrack Programs}},
+  author = {Knuth, Donald E.},
+  journal = {Mathematics of Computation},
+  volume = {29},
+  number = {129},
+  pages = {121--136},
+  year = {1975},
+  publisher = {American Mathematical Society},
+}
