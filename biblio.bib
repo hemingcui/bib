@@ -275,6 +275,8 @@
 @string{ESECFSE6 = POT # " Sixth " # ESECFSE # " (ESEC-FSE '07)"}
 @string{FSE16 = POT # " 16th " # FSE # " (SIGSOFT '08/FSE-16)"} 
 @string{ESECFSE7 = POT # " Seventh " # ESECFSE # " (ESEC-FSE '09)"}
+@string{FSE18 = POT # " 18th " # FSE # " (SIGSOFT '10/FSE-18)"} 
+@string{FSE20 = POT # " 20th " # FSE # " (SIGSOFT '12/FSE-20)"} 
 
 @string{CCS = "ACM conference on Computer and communications security"}
 @string{CCS10 = POT # " 10th " # CCS # " (CCS '03)"}
@@ -9842,7 +9844,7 @@ Report CSTR-2005-04, Computer Systems Laboratory, Stanford University}
 
 @InProceedings{dart:pldi,
     author = "Patrice Godefroid and Nils Klarlund and Koushik Sen",
-    title = "DART: Directed Automated Random Testing",
+    title = "{DART}: Directed Automated Random Testing",
     booktitle=SIGPLAN05,
     pages = {213--223},
     month=jun,
@@ -12732,7 +12734,7 @@ pages = "361--376"
 
 @article{recplay:tocs,
  author = {Ronsse, Michiel and De Bosschere, Koen},
- title = {RecPlay: a fully integrated practical record/replay system},
+ title = {{RecPlay}: a fully integrated practical record/replay system},
  journal = {ACM Trans. Comput. Syst.},
  volume = {17},
  number = {2},
@@ -13097,7 +13099,7 @@ pages = "361--376"
 
 @article{jarec:spe,
  author = {Georges, A. and Christiaens, M. and Ronsse, M. and De Bosschere, K.},
- title = {JaRec: a portable record/replay environment for multi-threaded Java applications},
+ title = {{JaRec}: a portable record/replay environment for multi-threaded {Java} applications},
  journal = {Softw. Pract. Exper.},
  volume = {34},
  number = {6},
@@ -15203,11 +15205,20 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
 }
 
 @inproceedings{cleanos:osdi12,
-  title={{CleanOS}: Limiting mobile data exposure with idle eviction},
-  author={Tang, Yang and Ames, Phillip and Bhamidipati, Sravan and Bijlani, Ashish and Geambasu, Roxana and Sarda, Nikhil},
-  year={2012},
-  organization={OSDI}
-}
+ author = {Tang, Yang and Ames, Phillip and Bhamidipati, Sravan and Bijlani, Ashish and Geambasu, Roxana and Sarda, Nikhil},
+ title = {{CleanOS}: limiting mobile data exposure with idle eviction},
+ booktitle = {Proceedings of the 10th USENIX conference on Operating Systems Design and Implementation},
+ series = {OSDI'12},
+ year = {2012},
+ pages = {77--91},
+ numpages = {15},
+} 
+ isbn = {978-1-931971-96-6},
+ location = {Hollywood, CA, USA},
+ url = {http://dl.acm.org/citation.cfm?id=2387880.2387888},
+ acmid = {2387888},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
 
 @misc{androidframework:buildingblocks,
   title={{Building Blocks in Android Developers Site}},
@@ -15230,11 +15241,20 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
 }
 
 @inproceedings{cfix:osdi12,
-  title={Automated concurrency-bug fixing},
-  author={Guoliang Jin and Wei Zhang and Dongdong Deng and Ben Liblit and Shan Lu},
-  year={2012},
-  organization={OSDI}
-}
+ author = {Jin, Guoliang and Zhang, Wei and Deng, Dongdong and Liblit, Ben and Lu, Shan},
+ title = {Automated concurrency-bug fixing},
+ booktitle = {Proceedings of the 10th USENIX conference on Operating Systems Design and Implementation},
+ series = {OSDI'12},
+ year = {2012},
+ pages = {221--236},
+ numpages = {16},
+} 
+ isbn = {978-1-931971-96-6},
+ location = {Hollywood, CA, USA},
+ url = {http://dl.acm.org/citation.cfm?id=2387880.2387902},
+ acmid = {2387902},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
 
 @inproceedings{riskranker:mobisys2012,
   title={{RiskRanker}: scalable and accurate zero-day {Android} malware detection},
@@ -15242,8 +15262,8 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
   booktitle={Proceedings of the 10th international conference on Mobile systems, applications, and services},
   pages={281--294},
   year={2012},
-  organization={ACM}
 }
+  organization={ACM}
 
 @inproceedings{crowdroid:spsm2011,
   title={Crowdroid: behavior-based malware detection system for {Android}},
@@ -15251,8 +15271,8 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
   booktitle={Proceedings of the 1st ACM workshop on Security and privacy in smartphones and mobile devices},
   pages={15--26},
   year={2011},
-  organization={ACM}
 }
+  organization={ACM}
 
 @inproceedings{nosleep:mobisys2012,
   title={What is keeping my phone awake?: characterizing and detecting no-sleep energy bugs in smartphone apps},
@@ -15260,8 +15280,8 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
   booktitle={Proceedings of the 10th international conference on Mobile systems, applications, and services},
   pages={267--280},
   year={2012},
-  organization={ACM}
 }
+  organization={ACM}
 
 @inproceedings{androidripper:ase2012,
   title={Using {GUI} ripping for automated testing of {Android} applications},
@@ -15269,12 +15289,17 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
   booktitle={Proceedings of the 27th IEEE/ACM International Conference on Automated Software Engineering},
   pages={258--261},
   year={2012},
-  organization={ACM}
 }
+  organization={ACM}
 
-@article{dynodroid,
+@TechReport{dynodroid,
   title={Dynodroid: An Input Generation System for Android Apps},
-  author={MacHiry, Aravind and Tahiliani, Rohan and Naik, Mayur}
+  author={MacHiry, Aravind and Tahiliani, Rohan and Naik, Mayur},
+  institution =         "Georgia Tech",
+  month = "Dec",
+  year =        "2012",
+  type =     "Tech Report",
+  OPTannotation =       ""
 }
 
 @inproceedings{scribe:sigmetrics2010,
@@ -15285,8 +15310,8 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
   number={1},
   pages={155--166},
   year={2010},
-  organization={ACM}
 }
+  organization={ACM}
 
 @inproceedings{autoguitest:ast2011,
   title={Automating {GUI} testing for {Android} applications},
@@ -15294,8 +15319,8 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
   booktitle={Proceedings of the 6th International Workshop on Automation of Software Test},
   pages={77--83},
   year={2011},
-  organization={ACM}
 }
+  organization={ACM}
 
 @article{symdroid,
   title={{SymDroid}: Symbolic Execution for {Dalvik} Bytecode},
@@ -15324,10 +15349,10 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
 @inproceedings{concolicsmartphonetest:fse2012,
  author = {Anand, Saswat and Naik, Mayur and Harrold, Mary Jean and Yang, Hongseok},
  title = {Automated concolic testing of smartphone apps},
- booktitle = {Proceedings of the ACM SIGSOFT 20th International Symposium on the Foundations of Software Engineering},
- series = {FSE '12},
- year = {2012},
+ booktitle = FSE20,
 } 
+ year = {2012},
+ series = {FSE '12},
 
 @inproceedings{greybox:fase2013,
  author = {Yang, Wei and Prasad, Mukul R. and Xie, Tao},
@@ -15403,3 +15428,20 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
            "\url{http://code.google.com/p/android-apktool/}"
 }
 
+@inproceedings{itarget,
+ author = {Wu, Ming and Long, Fan and Wang, Xi and Xu, Zhilei and Lin, Haoxiang and Liu, Xuezheng and Guo, Zhenyu and Guo, Huayang and Zhou, Lidong and Zhang, Zheng},
+ title = {Language-based replay via data flow cut},
+ booktitle = FSE18,
+ pages = {197--206},
+ numpages = {10},
+} 
+ year = {2010},
+ series = {FSE '10},
+ isbn = {978-1-60558-791-2},
+ location = {Santa Fe, New Mexico, USA},
+ url = {http://doi.acm.org/10.1145/1882291.1882322},
+ doi = {10.1145/1882291.1882322},
+ acmid = {1882322},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {data flow, graph cut, instrumentation, replay},
