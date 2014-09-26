@@ -194,6 +194,7 @@
 @string{SIGPLAN11 = POTAS # " 2011 " # PLDI # " (PLDI '11)"}
 @string{SIGPLAN12 = POTAS # " 2012 " # PLDI # " (PLDI '12)"}
 @string{SIGPLAN13 = POTAS # " 2013 " # PLDI # " (PLDI '13)"}
+@string{SIGPLAN14 = POTAS # " 2014 " # PLDI # " (PLDI '14)"}
 
 @string{CC02 = POT # " 11th " # CC # " (CC '02)"}
 @string{CC03 = POT # " 12th " # CC # " (CC '03)"}
@@ -11851,10 +11852,10 @@ pages = {261-260}}
   pages = {281--294},
 }
 
-@article{ginseng:pldi06,
-  title = {{Practical dynamic software updating for {C}}},
-  booktitle = SIGPLAN06,
+@inproceedings{ginseng:pldi06,
   author = {Iulian Neamtiu and Michael Hicks and Garath Stoyle and Manuel Oriol},
+  title = {Practical dynamic software updating for {C}},
+  booktitle = SIGPLAN06,
   month = jun,
   year = {2006},
   pages = {72--83},
@@ -12279,6 +12280,13 @@ pages = "361--376"
   howpublished = "\url{http://llvm.org}",
   year = 2013
 }
+
+@misc{llvm-lrm,
+  title = {{LLVM Language Reference Manual}},
+  howpublished = "\url{http://llvm.org/docs/LangRef.html}",
+  year = 2013
+}
+key = {LLVM LRM},
 
 @misc{llvm-gep,
     title={{The Often Misunderstood GEP Instruction}},
@@ -15598,7 +15606,8 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
 }
 
 @misc{dalvik-vm,
-	howpublished = "\url{http://source.android.com/tech/dalvik/}"
+	howpublished = "\url{http://source.android.com/tech/dalvik/}",
+  year = 2013,
 }
 
 @misc{android-manifest,
@@ -16194,3 +16203,114 @@ author={Weiss, Michael and Ferrière, François and Delsart, Bertrand and Fabre,
  booktitle = SOSP20,
  year = {2005},
 }
+
+@article{multilisp:toplas85,
+  author = {Halstead,Jr., Robert H.},
+  title = {MULTILISP: A Language for Concurrent Symbolic Computation},
+  journal = TOPLAS,
+  volume = {7},
+  number = {4},
+  month = oct,
+  year = {1985},
+  pages = {501--538},
+} 
+
+@article{arvind:toplas89,
+  author = {Arvind and Nikhil, Rishiyur S. and Pingali, Keshav K.},
+  title = {I-structures: Data Structures for Parallel Computing},
+  journal = TOPLAS,
+  volume = {11},
+  number = {4},
+  month = oct,
+  year = {1989},
+  pages = {598--632},
+} 
+
+@inproceedings{marlow:haskell11,
+  author = {Marlow, Simon and Newton, Ryan and Peyton Jones, Simon},
+  title = {A Monad for Deterministic Parallelism},
+  booktitle = {Proceedings of the 4th ACM Symposium on Haskell},
+  year = {2011},
+  pages = {71--82},
+}
+
+@article{trinder:jfp98,
+  author =   {Philip W. Trinder and Kevin Hammond and Hans-Wolfgang Loidl and
+    Simon L. {Peyton Jones}},
+  title =    {Algorithm + {S}trategy = {P}arallelism},
+  journal =    {Journal of Functional Programming},
+  year =   {1998},
+  volume =   {8},
+  number =   {1},
+  month =    jan,
+  pages =    {23--60}
+}
+
+@inproceedings{abadi:cfi:ccs05,
+  author = {Abadi, Mart\'{\i}n and Budiu, Mihai and Erlingsson, \'{U}lfar and
+    Ligatti, Jay},
+  title = {Control-flow Integrity},
+  booktitle = CCS12,
+  year = {2005},
+  pages = {340--353},
+}
+
+@inproceedings{schonberg:pldi89,
+  author = {Schonberg, D.},
+  title = {On-the-fly Detection of Access Anomalies},
+  booktitle = SIGPLAN89,
+  year = {1989},
+  pages = {285--297},
+} 
+
+@inproceedings{praun:pldi03,
+  author = {von Praun, Christoph and Gross, Thomas R.},
+  title = {Static Conflict Analysis for Multi-threaded Object-oriented
+    Programs},
+  booktitle = SIGPLAN03,
+  year = {2003},
+  pages = {115--128},
+} 
+
+@techreport{choi:datarace,
+  author = {Alexey Loginov and Vivek Sarkar and Jong-deok Choi and Jong-deok
+    Choi and Alexey Logthor and I Vivek Sarkar},
+  title = {Static Datarace Analysis for Multithreaded Object-Oriented
+    Programs},
+  institution = {IBM Research Division, Thomas J. Watson Research
+    Centre},
+  year = {2001}
+}
+
+@inproceedings{diwan:pldi98,
+  author = {Diwan, Amer and McKinley, Kathryn S. and Moss, J. Eliot B.},
+  title = {Type-based Alias Analysis},
+  booktitle = SIGPLAN98,
+  year = {1998},
+  pages = {106--117},
+}
+
+@inproceedings{commutativity:pldi14,
+  author = {Dimitrov, Dimitar and Raychev, Veselin and Vechev, Martin and
+    Koskinen, Eric},
+  title = {Commutativity Race Detection},
+  booktitle = SIGPLAN14,
+  year = {2014},
+  pages = {305--315},
+} 
+
+@inproceedings{manson:popl05,
+  author = {Manson, Jeremy and Pugh, William and Adve, Sarita V.},
+  title = {The Java Memory Model},
+  booktitle = POPL05,
+  year = {2005},
+  pages = {378--391},
+}
+
+@inproceedings{boehm:pldi08,
+  author = {Boehm, Hans-J. and Adve, Sarita V.},
+  title = {Foundations of the C++ Concurrency Memory Model},
+  booktitle = PLDI08,
+  year = {2008},
+  pages = {68--78},
+} 
