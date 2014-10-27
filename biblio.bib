@@ -10608,7 +10608,8 @@ month= {August},
  pages = {243--256},
 }
 %@inproceedings{citeulike:1488063,
-	abstract = {<p> Modern software model checkers find safety violations: breaches where the system enters some bad state. However, we argue that checking liveness properties offers both a richer and more natural way to search for errors, particularly in complex concurrent and distributed systems. Liveness properties specify desirable system behaviors which must be satisfied eventually, but are not always satisfied, perhaps as a result of failure or during system initialization. Existing software model checkers cannot verify liveness because doing so requires finding an infinite execution that does not satisfy a liveness property. We present heuristics to find a large class of liveness violations and the critical transition of the execution. The critical transition is the step in an execution that moves the system from a state that does not currently satisfy some liveness property\&\#151;but where recovery is possible in the future\&\#151;to a dead state that can never achieve the liveness property. Our software model checker, MACEMC, isolates complex liveness errors in our implementations of PASTRY, CHORD, a reliable transport protocol, and an overlay tree. </p>},
+	abstract = {<p> Modern software model checkers find safety violations: breaches where the system enters some bad state. However, we argue that checking liveness properties offers both a richer and more natural way to search for errors, particularly in complex concurrent and distributed systems. Liveness properties specify desirable system behaviors which must be satisfied eventually, but are not always satisfied, perhaps as a result of failure or during system initialization. Existing software model checkers cannot verify liveness because doing so requires finding an infinite execution that does not satisfy a liveness property. We present heuristics to find a large class of liveness violations and the critical transition of the execution. The critical transition is the step in an execution that moves the system from a state that does not currently satisfy some liveness property\&\#151;but where recovery is possible in the future\&\#151;to a dead state that can never achieve the liveness property. Our 
+software model checker, MACEMC, isolates complex liveness errors in our implementations of PASTRY, CHORD, a reliable transport protocol, and an overlay tree. </p>},
 	author = {Killian, Charles   and Anderson, James  W.  and Jhala, Ranjit   and Vahdat, Amin  },
 	citeulike-article-id = {1488063},
 	pages = {243--256},
@@ -11755,6 +11756,15 @@ year = {2008},
 }
   location = {Boston, Massachusetts}
 
+@inproceedings{remus:nsdi08,
+  title={Remus: High availability via asynchronous virtual machine replication},
+  author={Cully, Brendan and Lefebvre, Geoffrey and Meyer, Dutch and Feeley, Mike and Hutchinson, Norm and Warfield, Andrew},
+  booktitle={Proceedings of the 5th USENIX Symposium on Networked Systems Design and Implementation},
+  pages={161--174},
+  year={2008},
+  organization={San Francisco}
+}
+
 @inproceedings{crystalball:nsdi09,
   author = {Maysam Yabandeh and Nikola Knezevic and Dejan Kostic and Viktor Kuncak},
   title = {{CrystalBall}: Predicting and Preventing Inconsistencies in Deployed Distributed Systems},
@@ -12086,6 +12096,43 @@ booktitle = OSDI5,
 month = dec,
 year = 2002,
 pages = "361--376"
+}
+
+@inproceedings{oren:atc07,
+  title={Transparent Checkpoint-Restart of Multiple Processes on Commodity Operating Systems.},
+  author={Laadan, Oren and Nieh, Jason},
+  booktitle={USENIX Annual Technical Conference},
+  pages={323--336},
+  year={2007}
+}
+
+@article{beguelin:jpdc97,
+  title={Application level fault tolerance in heterogeneous networks of workstations},
+  author={Beguelin, Adam and Seligman, Erik and Stephan, Peter},
+  journal={Journal of Parallel and Distributed Computing},
+  volume={43},
+  number={2},
+  pages={147--155},
+  year={1997},
+  publisher={Elsevier}
+}
+
+@inproceedings{dmtcp:ipdps09,
+  title={DMTCP: Transparent checkpointing for cluster computations and the desktop},
+  author={Ansel, Jason and Arya, Kapil and Cooperman, Gene},
+  booktitle={Parallel \& Distributed Processing, 2009. IPDPS 2009. IEEE International Symposium on},
+  pages={1--12},
+  year={2009},
+  organization={IEEE}
+}
+
+@inproceedings{dejavu:ipdps07,
+  title={Dejavu: Transparent user-level checkpointing, migration, and recovery for distributed systems},
+  author={Ruscio, Joseph F and Heffner, Michael A and Varadarajan, Srinidhi},
+  booktitle={Parallel and Distributed Processing Symposium, 2007. IPDPS 2007. IEEE International},
+  pages={1--10},
+  year={2007},
+  organization={IEEE}
 }
 
 
@@ -12513,6 +12560,14 @@ key = {LLVM LRM},
  address = {New York, NY, USA},
  isbn = {978-1-60558-406-5},
  location = {Washington, DC, USA},
+
+@inproceedings{dune:osdi12,
+  title={Dune: Safe User-level Access to Privileged CPU Features.},
+  author={Belay, Adam and Bittau, Andrea and Mashtizadeh, Ali Jos{\'e} and Terei, David and Mazieres, David and Kozyrakis, Christos},
+  booktitle={OSDI},
+  pages={335--348},
+  year={2012}
+}
 
 @inproceedings{smp-revirt:vee08,
  author = {Dunlap, George W. and Lucchetti, Dominic G. and Fetterman, Michael A. and Chen, Peter M.},
@@ -13429,10 +13484,14 @@ key = {LLVM LRM},
   howpublished="\url{http://hadoop.apache.org/hdfs/}"
 }
 
-
 @misc{zookeeper,
-  title = {{Hadoop ZooKeeper}},
+  title = {{ZooKeeper}},
   howpublished="\url{http://hadoop.apache.org/zookeeper/}"
+}
+
+@misc{docker,
+  title = {{Docker}},
+  howpublished="\url{http://http://criu.org/Docker}"
 }
 
 @misc{junfeng-os-course,
@@ -14158,6 +14217,13 @@ year = {2008}
   title = "The Native {POSIX} Thread Library for {Linux}",
   author = "Ulrich Drepper and Ingo Molnar",
   howpublished = "\url{http://www.redhat.com/whitepapers/developer/POSIX_Linux_Threading.pdf}",
+}
+
+@techreport{paxos:practical,
+  title={Paxos made practical},
+  author={Mazieres, David},
+  year={2007},
+  institution={Technical report, 2007. http://www. scs. stanford. edu/dm/home/papers}
 }
 
 @misc{libpaxos,
