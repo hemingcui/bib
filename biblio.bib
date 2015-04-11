@@ -85,6 +85,8 @@
 @string{SOSP23 = "Proceedings of the 23rd " # SOSP # " (SOSP '11)"}
 @string{SOSP24 = "Proceedings of the 24th " # SOSP # " (SOSP '13)"}
 
+@string{SOSP2013 = SOSP24}
+
 @string{SOCC = "Symposium on Cloud Computing"}
 
 @string{SOCC10 = POT # " 1st " # SOCC # " (SOCC '10)"}
@@ -219,6 +221,7 @@
 
 @string{FAST = "USENIX conference on File and Storage Technologies"}
 @string{FAST02 = "First " # FAST}
+@string{FAST2012 = "Proceedings of the 10th USENIX Conference on File and Storage Technologies"}
 
 
 @string{UWTC = POT # " USENIX Winter Technical Conference"}
@@ -234,6 +237,7 @@
 @string{UATC09 = UATC # " (USENIX '09)"}
 @string{UATC10 = UATC # " (USENIX '10)"}
 @string{UATC11 = UATC # " (USENIX '11)"}
+@string{ATC2014 = "Proceedings of the 2014 USENIX Conference on USENIX Annual Technical Conference"}
 
 @string{SPIN = "International SPIN Workshop on Model Checking of Software"}
 @string{SPIN7 = POT # " Seventh " # SPIN # " (SPIN '00)"}
@@ -312,8 +316,16 @@
 @string{SP05 = POT # " 2005 " # SP # " (S\&P '05)"}
 @string{SP06 = POT # " 2006 " # SP # " (S\&P '06)"}
 @string{SP07 = POT # " 2007 " # SP # " (S\&P '07)"}
+@string{SP15 = POT # " 2015 " # SP # " (S\&P '15)"}
 
+@string{IMC2010 = "Proceedings of the 10th ACM SIGCOMM Conference on Internet Measurement"}
+@string{HOTCLOUD2011 = "Proceedings of the 3rd USENIX Conference on Hot Topics in Cloud Computing"}
+@string{INFOCOM2013 = "INFOCOM, 2013 Proceedings IEEE"}
+@string{SC2012 = "Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis"}
 
+@string{EUROSYS2012 = EUROSYS7}
+@string{SOCC2010 = "Proceedings of the 1st ACM symposium on Cloud computing"}
+@string{CLOUD2011 = "Cloud Computing (CLOUD), 2011 IEEE International Conference on"}
 @string{ACSD = "International Conference on Applications of Concurrency to System Design"}
 @string{ACSD2 = POT # " Second " # ACSD # " (ACSD '01)"}
 
@@ -9794,6 +9806,13 @@ s},
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
+@MISC{mongodb,
+  title = {MongoDB},
+  key = "{mongodb}",
+  howpublished = "\url{http://www.mongodb.org}",
+  year = 2012
+}
+
 @MISC{apache,
   title = {Apache Web Server},
   key = "{Apache}",
@@ -12117,6 +12136,15 @@ pages = "361--376"
   publisher={Elsevier}
 }
 
+@inproceedings{hft:sosp95,
+ author = {Bressoud, T. C. and Schneider, F. B.},
+ title = {Hypervisor-based Fault Tolerance},
+ booktitle = SOSP15,
+ month = dec,
+ year = {1995},
+ location = {Copper Mountain, Colorado, USA},
+} 
+
 @inproceedings{dmtcp:ipdps09,
   title={DMTCP: Transparent checkpointing for cluster computations and the desktop},
   author={Ansel, Jason and Arya, Kapil and Cooperman, Gene},
@@ -12716,6 +12744,13 @@ key = {LLVM LRM},
   howpublished = "\url{http://www.er.doe.gov/ascr/Research/CS/DARPA exascale - hardware (2008).pdf}",
 }
 
+@misc{mongodb-rep-lag,
+  author = {Adam Horwich},
+  title = {MongoDB replication lag and the road to recovery},
+  year = 2012,
+  month = jul,
+  howpublished = "\url{http://metabroadcast.com/blog/mongodb-replication-lag-and-the-road-to-recovery}",
+}
 
 @misc{northeast-blackout,
   author = {Kevin Poulsen},
@@ -13160,6 +13195,66 @@ key = {LLVM LRM},
   year={2004},
   organization={IEEE}
 }
+
+@MISC{criu,
+  title = {CRIU},
+  key = "{criu}",
+  howpublished = "\url{http://criu.org}",
+  year = 2015
+}
+
+@MISC{libevent,
+  title = {libevent},
+  key = "{libevent}",
+  howpublished = "\url{libevent.org/}",
+  year = 2015
+}
+
+
+@MISC{mencoder,
+  title = {MEncoder},
+  key = "{mencoder}",
+  howpublished = "\url{https://www.mplayerhq.hu/}",
+  year = 2015
+}
+
+@MISC{tsan,
+  title = {ThreadSanitizer},
+  key = "{tsan}",
+  howpublished = "\url{https://code.google.com/p/data-race-test/wiki/ThreadSanitizer}",
+  year = 2015
+}
+
+@MISC{concoord,
+  title = {OpenReplica},
+  key = "{concoord}",
+  howpublished = "\url{http://openreplica.org/download/}",
+  year = 2015
+}
+
+@misc{repbox:github,
+    title = {Complete source code, benchmark suite, and raw results of the 
+{REPBOX} state machine replication system for general multithreaded server 
+programs.},
+    howpublished = "\url{https://github.com/hemingcui/m-smr}"
+}
+
+
+@inproceedings{zyzzyva:sosp07,
+ Author = {Kotla, Ramakrishna and Alvisi, Lorenzo and Dahlin, Mike and Clement, Allen and Wong, Edmund},
+ title = {Zyzzyva: Speculative Byzantine Fault Tolerance},
+ booktitle = SOSP21,
+ month = oct,
+ year = {2007},
+} 
+
+@inproceedings{pbft:osdi99,
+ Author = {Castro, Miguel and Liskov, Barbara},
+ Title = {Practical Byzantine Fault Tolerance},
+ booktitle = OSDI3,
+ month = oct,
+ year = {1999},
+} 
 
 @inproceedings{nonstop:dsn05,
   title={NonStop{\textregistered} advanced architecture},
@@ -14224,6 +14319,12 @@ year = {2008}
   author={Mazieres, David},
   year={2007},
   institution={Technical report, 2007. http://www. scs. stanford. edu/dm/home/papers}
+}
+
+@misc{paxos:simple,
+  title = "Paxos made simple",
+  author = "Leslie Lamport",
+  howpublished = "\url{http://research.microsoft.com/en-us/um/people/lamport/pubs/paxos-simple.pdf}",
 }
 
 @misc{libpaxos,
@@ -15328,6 +15429,17 @@ RepositoryRoot = http://llvm.org/svn/llvm-project
  address = {Berkeley, CA, USA},
 } 
 
+@inproceedings{bolosky:nsdi11,
+ author = {Bolosky, William J. and Bradshaw, Dexter and Haagens, Randolph B. and Kusters, Norbert P. and Li, Peng},
+ title = {Paxos Replicated State Machines As the Basis of a High-performance Data Store},
+ booktitle = {Proceedings of the 8th USENIX Conference on Networked Systems Design and Implementation},
+ series = {NSDI'11},
+ year = {2011},
+ location = {Boston, MA},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+}
+
 @article{brumley:symbolic,
 author={Brumley, D. and Newsome, J. and Song, D. and Hao Wang and Jha, S.}, 
 journal={Dependable and Secure Computing, IEEE Transactions on},
@@ -15386,6 +15498,13 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
   title = {Make Parallel Programs Reliable with Stable Multithreading},
   institution = {Columbia University},
   number =      "CUCS-006-13",
+}
+
+@TechReport{lockit-tr,
+  author = {Xinhao Yuan and David Williams-King and Junfeng Yang and Simha Sethumadhavan},
+  title = {Making Lock-free Data Structures Verifiable with Artificial Transactions},
+  institution = {Columbia University},
+  number =      "CUCS-026-14",
 }
 
 @misc{andersaa-impl,
@@ -16097,6 +16216,14 @@ author={Weiss, Michael and Ferrière, François and Delsart, Bertrand and Fabre,
  year = 2013,
 }
 
+@inproceedings{misconfig:sosp13,
+ author = {Xu, Tianyin and Zhang, Jiaqi and Huang, Peng and Zheng, Jing and Sheng, Tianwei and Yuan, Ding and Zhou, Yuanyuan and Pasupathy, Shankar},
+ title = {Do Not Blame Users for Misconfigurations},
+ booktitle = SOSP24,
+ month = nov,
+ year = 2013,
+} 
+
 @inproceedings{appdoctor:eurosys14,
  author = {Gang Hu and Xinhao Yuan and Yang Tang and Junfeng Yang},
  title = {Efficiently, Effectively Detecting Mobile App Bugs with AppDoctor},
@@ -16358,6 +16485,14 @@ author={Weiss, Michael and Ferrière, François and Delsart, Bertrand and Fabre,
  year = {1997},
 }
 
+@inproceedings{unlearning:sp15,
+ author = {Yinzhi Cao and Junfeng Yang},
+ title = {Towards Making Systems Forget with Machine Unlearning},
+ booktitle = {Proceedings of the 2015 IEEE Symposium on Security and Privacy},
+ series = SP15,
+ year = {2015},
+}
+
 @MISC{Arbaugh98automatedrecovery,
   author = {William A. Arbaugh and Angelos D. Keromytis and David J. Farber and Jonathan M. Smith},
   title = {Automated Recovery in a Secure Bootstrap Process},
@@ -16482,3 +16617,274 @@ author={Weiss, Michael and Ferrière, François and Delsart, Bertrand and Fabre,
   year = {2008},
   pages = {68--78},
 } 
+
+@Misc{fuse,
+ howpublished = "\url{http://fuse.sourceforge.net/}",
+ key = "Filesystem in Userspace",
+}
+
+@Misc{protobuf,
+ howpublished = "\url{https://developers.google.com/protocol-buffers/}",
+ key = "Protocol Buffers",
+}
+
+@Misc{amazon:ebs,
+ howpublished = "\url{http://aws.amazon.com/ebs/details/}",
+ key = "Amazon EBS Product Details",
+}
+
+@inproceedings{ang:imc2010,
+  author = {Li, Ang and Yang, Xiaowei and Kandula, Srikanth and Zhang, Ming},
+  title = {CloudCmp: Comparing Public Cloud Providers},
+  booktitle = IMC2010,
+  year = {2010},
+  pages = {1--14},
+}
+
+@inproceedings{tak:hotcloud2011,
+  author = {Tak, Byung Chul and Urgaonkar, Bhuvan and Sivasubramaniam, Anand},
+  title = {To Move or Not to Move: The Economics of Cloud Computing},
+  booktitle = HOTCLOUD2011,
+  year = {2011},
+}
+
+@inproceedings{spanstore:sosp2013,
+  author = {Wu, Zhe and Butkiewicz, Michael and Perkins, Dorian and Katz-Bassett, Ethan and Madhyastha, Harsha V.},
+  title = {SPANStore: Cost-effective Geo-replicated Storage Spanning Multiple Cloud Services},
+  booktitle = SOSP2013,
+  year = {2013},
+  isbn = {978-1-4503-2388-8},
+  location = {Farminton, Pennsylvania},
+  pages = {292--308},
+}
+
+@inproceedings{khanafer:infocom2013,
+  title={The constrained ski-rental problem and its application to online cloud cost optimization},
+  author={Khanafer, Ali and Kodialam, Murali and Puttaswamy, Krishna PN},
+  booktitle=INFOCOM2013,
+  pages={1492--1500},
+  year={2013},
+  organization={IEEE}
+}
+
+@inproceedings{scalia:sc2012,
+  author = {Papaioannou, Thanasis G. and Bonvin, Nicolas and Aberer, Karl},
+  title = {Scalia: An Adaptive Scheme for Efficient Multi-cloud Storage},
+  booktitle = SC2012,
+  series = {SC '12},
+  year = {2012},
+  isbn = {978-1-4673-0804-5},
+  location = {Salt Lake City, Utah},
+  pages = {20:1--20:10},
+}
+
+@inproceedings{frugal:eurosys2012,
+  title={Frugal storage for cloud file systems},
+  author={Puttaswamy, Krishna PN and Nandagopal, Thyaga and Kodialam, Murali},
+  booktitle=EUROSYS2012,
+  pages={71--84},
+  year={2012},
+  organization={ACM}
+}
+
+@inproceedings{racs:socc2010,
+  title={RACS: a case for cloud storage diversity},
+  author={Abu-Libdeh, Hussam and Princehouse, Lonnie and Weatherspoon, Hakim},
+  booktitle=SOCC2010,
+  pages={229--240},
+  year={2010},
+  organization={ACM}
+}
+
+@article{depsky:tos,
+  title={DepSky: dependable and secure storage in a cloud-of-clouds},
+  author={Bessani, Alysson and Correia, Miguel and Quaresma, Bruno and Andr{\'e}, Fernando and Sousa, Paulo},
+  journal=TOS,
+  volume={9},
+  number={4},
+  pages={12},
+  year={2013},
+  publisher={ACM}
+}
+
+@inproceedings{metastore:cloud2011,
+  title={Metastorage: A federated cloud storage system to manage consistency-latency tradeoffs},
+  author={Bermbach, David and Klems, Markus and Tai, Stefan and Menzel, Michael},
+  booktitle=CLOUD2011,
+  pages={452--459},
+  year={2011},
+  organization={IEEE}
+}
+
+@inproceedings{nccloud:fast2012,
+  title={NCCloud: applying network coding for the storage repair in a cloud-of-clouds.},
+  author={Hu, Yuchong and Chen, Henry CH and Lee, Patrick PC and Tang, Yang},
+  booktitle=FAST2012,
+  pages={21},
+  year={2012}
+}
+
+@inproceedings{scfs:atc2014,
+  author = {Bessani, Alysson and Mendes, Ricardo and Oliveira, Tiago and Neves, Nuno and Correia, Miguel and Pasin, Marcelo and Verissimo, Paulo},
+  title = {SCFS: A Shared Cloud-backed File System},
+  booktitle = ATC2014,
+  year = {2014},
+  isbn = {978-1-931971-10-2},
+  location = {Philadelphia, PA},
+  pages = {169--180},
+} 
+
+@inproceedings{bluesky:fast2012,
+  author = {Vrable, Michael and Savage, Stefan and Voelker, Geoffrey M.},
+  title = {BlueSky: A Cloud-backed File System for the Enterprise},
+  booktitle = FAST2012,
+  series = {FAST'12},
+  year = {2012},
+}
+
+@Misc{s3fs,
+ howpublished = "\url{https://code.google.com/p/s3fs/}",
+ key = "s3fs",
+}
+
+@Misc{amazon:limit,
+ howpublished = "\url{http://docs.aws.amazon.com/AmazonS3/latest/dev/request-rate-perf-considerations.html}",
+ key = "Request Rate and Performance Considerations",
+}
+
+@Misc{youtube:videolen,
+ howpublished = "\url{http://www.minimatters.com/blog/youtube-best-video-length/}",
+ key = "The Best Video Length for Different Videos on YouTube",
+}
+
+@Misc{2014onlinevideo,
+    howpublished = "\url{http://www.comscore.com/Insights/Press-Releases/2014/2/comScore-Releases-January-2014-US-Online-Video-Rankings}",
+    key = "comScore Releases January 2014 U.S. Online Video Rankings",
+}
+
+@Misc{evernoteblog,
+    howpublished = "\url{https://blog.evernote.com/tech/}",
+    key = "Evernote Tech Blog",
+}
+
+@Misc{youtube,
+    howpublished = "\url{http://www.youtube.com}",
+    key = "YouTube",
+}
+
+@Misc{wiki:fb,
+    howpublished = "\url{http://en.wikipedia.org/wiki/Facebook}",
+    key = "Facebook - Wikipedia, the free encyclopedia",
+}
+
+@Misc{fb,
+    howpublished = "\url{http://www.facebook.com}",
+    key = "Facebook",
+}
+
+@Misc{youtube:stat,
+    howpublished = "\url{https://www.youtube.com/yt/press/statistics.html}",
+    key = "Statistics - Youtube",
+}
+
+@INPROCEEDINGS{stat:youtube,
+    author={Xu Cheng and Dale, C. and Jiangchuan Liu},
+    booktitle={Quality of Service, 2008. IWQoS 2008. 16th International Workshop on},
+    title={Statistics and Social Network of YouTube Videos},
+    year={2008},
+    month={June},
+    pages={229-238},
+}
+
+@inproceedings{flickr:icwsm07,
+ author = {Kristina Lerman and Laurie A. Jones},
+ title = {Social Browsing on Flickr},
+ booktitle = {International Conference on Weblogs and Social Media},
+ year = {2007},
+}
+
+@inproceedings{socnet:sigcomm09,
+    author = {Benevenuto, Fabr\'{\i}cio and Rodrigues, Tiago and Cha, Meeyoung and Almeida, Virg\'{\i}lio},
+    title = {Characterizing User Behavior in Online Social Networks},
+    booktitle = {Proceedings of the 9th ACM SIGCOMM Conference on Internet Measurement Conference},
+    series = {IMC '09},
+    year = {2009},
+    pages = {49--62},
+}
+
+@Misc{db:stat,
+    howpublished = "\url{https://www.dropbox.com/static/docs/DropboxFactSheet.pdf}",
+    key = "Dropbox Fact Sheet",
+}
+
+@Misc{db,
+    howpublished = "\url{https://www.dropbox.com}",
+    key = "Dropbox",
+}
+
+@Misc{flickr,
+    howpublished = "\url{http://www.flickr.com}",
+    key = "Flickr",
+}
+
+@article{cumulus,
+    author = {Vrable, Michael and Savage, Stefan and Voelker, Geoffrey M.},
+    title = {Cumulus: Filesystem Backup to the Cloud},
+    journal = {Trans. Storage},
+    issue_date = {December 2009},
+    volume = {5},
+    number = {4},
+    month = dec,
+    year = {2009},
+    pages = {14:1--14:28},
+}
+
+@Misc{flickr:verge,
+    howpublished = "\url{http://www.theverge.com/2013/3/20/4121574/flickr-chief-markus-spiering-talks-photos-and-marissa-mayer}",
+    key = "The man behind Flickr on making the service 'awesome again'",
+}
+
+@inproceedings{p2p:nsdi06,
+    author = {Walsh, Kevin and Sirer, Emin G\"{u}n},
+    title = {Experience with an Object Reputation System for Peer-to-peer Filesharing},
+    booktitle = {Proceedings of the 3rd Conference on Networked Systems Design \& Implementation - Volume 3},
+    series = {NSDI'06},
+    year = {2006},
+}
+
+@string{NSDI2012 = "Proceedings of the 9th USENIX Conference on Networked Systems Design and Implementation"}
+
+@inproceedings{conductor:nsdi2012,
+  author = {Wieder, Alexander and Bhatotia, Pramod and Post, Ansley and Rodrigues, Rodrigo},
+  title = {Orchestrating the Deployment of Computations in the Cloud with Conductor},
+  booktitle = NSDI2012,
+  year = {2012},
+  location = {San Jose, CA},
+}
+
+@Misc{s3ql,
+  howpublished = "\url{https://bitbucket.org/nikratio/s3ql}",
+  key = "s3ql",
+}
+
+@Misc{amazon:startups,
+    howpublished = "\url{http://aws.amazon.com/start-ups/}",
+    key = "Startups and Amazon Web Services",
+}
+
+@Misc{amazon:dropcomp,
+    howpublished = "\url{http://www.techrepublic.com/article/amazon-web-services-lead-the-war-on-cloud-price-reductions/}",
+    key = "Amazon Web Services leads war on cloud price reductions",
+}
+
+@Misc{amazon:dropssd,
+    howpublished = "\url{http://www.networkworld.com/article/2364506/cloud-storage/amazon-speeds-up-its-cloud-with-ssd-block-storage.html}",
+    key = "Amazon speeds up its cloud with SSD block storage",
+}
+
+@inproceedings{malware:cisrc15,
+  author = {Suzanna Schmeelk and Junfeng Yang and Alfred Aho},
+  title = {Android Malware Static Analysis Techniques},
+  booktitle = {The 10th Annual Cyber and Information Security Research (CISR) Conference},
+  year = {2015},
+}
