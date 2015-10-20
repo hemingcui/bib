@@ -45,6 +45,7 @@
 @string{OSDI8 = "Proceedings of the Eighth " # OSDI # " (OSDI '08)"}
 @string{OSDI9 = "Proceedings of the Ninth " # OSDI # " (OSDI '10)"}
 @string{OSDI10 = "Proceedings of the Tenth " # OSDI # " (OSDI '12)"}
+@string{OSDI11 = "Proceedings of the Eleventh " # OSDI # " (OSDI '14)"}
 
 @string{CAV = "International Conference On Computer Aided Verification"}
 @string{CAV03 = "Proceedings of the 15th " # CAV # " (CAV '03)"}
@@ -238,7 +239,10 @@
 @string{UATC09 = UATC # " (USENIX '09)"}
 @string{UATC10 = UATC # " (USENIX '10)"}
 @string{UATC11 = UATC # " (USENIX '11)"}
+@string{UATC12 = UATC # " (USENIX '12)"}
+@string{UATC14 = UATC # " (USENIX '14)"}
 @string{ATC2014 = "Proceedings of the 2014 USENIX Conference on USENIX Annual Technical Conference"}
+@string{UATC15 = UATC # " (USENIX ATC '15)"}
 
 @string{SPIN = "International SPIN Workshop on Model Checking of Software"}
 @string{SPIN7 = POT # " Seventh " # SPIN # " (SPIN '00)"}
@@ -307,7 +311,7 @@
 @string{CCS15 = POT # " 15th " # CCS # " (CCS '08)"}
 @string{CCS16 = POT # " 16th " # CCS # " (CCS '09)"}
 @string{CCS17 = POT # " 17th " # CCS # " (CCS '10)"}
-
+@string{CCS18 = POT # " 18th " # CCS # " (CCS '11)"}
 
 @string{SP = "IEEE Symposium on Security and Privacy"}
 @string{SP01 = POT # " 2001 " # SP # " (S\&P '01)"}
@@ -8266,6 +8270,11 @@ year    = "1995"}
   month = mar
 }
 
+@unpublished{paxos:fast,        author = "Leslie Lamport",
+        title = "Fast Paxos",        month = aug,
+        year = 2006,        institution =         "Microsoft Research",        note = "Fast Paxos"
+}
+
 @unpublished{lucco:personal,        author = "Steve Lucco",
         title = "Personal Communication",        month = aug,
         year = 1997,        institution =         "Microsoft Research",        note = "Use of undocumented proprietary formats as a technique to impede third-party additions"
@@ -9299,14 +9308,43 @@ year = 1999,
 }
  location = {Helsinki, Finland}
 
- @inproceedings{shadowreplica:ccs13,
+@inproceedings{shadowreplica:ccs13,
  author = {Jee, Kangkook and Kemerlis, Vasileios P. and Keromytis, Angelos D. and Portokalidis, Georgios},
  title = {ShadowReplica: Efficient Parallelization of Dynamic Data Flow Tracking},
  booktitle = {Proceedings of the 9th ACM conference on Computer and communications security},
  year = {2013},
-} 
+}
 
+@MISC{mediatomb,
+  title = {MediaTomb - Free UPnP MediaServer},
+  key = "{MediaTomb}",
+  howpublished = "\url{http://mediatomb.cc}",
+  year = 2012
+}
+
+@misc{heming-hku-resume,
+    title = {Heming Cui's resume.},
+    howpublished = "\url{https://http://i.cs.hku.hk/~heming/files/heming-resume.pdf}"
+}
+
+@misc{mysql,
+ title = "{MySQL Database}",
+ year = {2014},
+ howpublished = "\url{http://www.mysql.com/}",
+}
  
+@misc{tern-patent,
+ key = {tern-patent},
+ author = {Junfeng Yang and Heming Cui and Jingyue Wu},
+ title = {Methods, Systems, and Media for Providing Determinism in Multithreaded Programs ({U.S.} Patent No. 20120102470)},
+}
+ 
+@misc{loom-patent,
+ key = {loom-patent},
+ author = {Junfeng Yang and Heming Cui and Jingyue Wu},
+ title = {Methods, Systems, and Media for Protecting Applications from Races ({U.S.} Patent No. 20120096449)},
+}
+
 @inproceedings{edwards:ccs:02,
  author = {Antony Edwards and Trent Jaeger and Xiaolan Zhang},
  title = {Runtime verification of authorization hook placement for the linux security modules framework},
@@ -9813,13 +9851,6 @@ s},
   pages     = {1-16},
   ee        = {http://www.usenix.org/events/osdi04/tech/swift.html},
   bibsource = {DBLP, http://dblp.uni-trier.de}
-}
-
-@MISC{mediatomb,
-  title = {MediaTomb - Free UPnP MediaServer},
-  key = "{MediaTomb}",
-  howpublished = "\url{http://mediatomb.cc}",
-  year = 2012
 }
 
 @MISC{mongodb,
@@ -10753,6 +10784,18 @@ OPTNote="Kaiserslautern Germany, October 8-11"
   pages     = {423-437},
 }
 
+@article{paxos:complex,
+  title={Paxos Made Moderately Complex},
+  author={Van Renesse, Robbert and Altinbuken, Deniz},
+  journal={ACM Computing Surveys (CSUR)},
+  volume={47},
+  number={3},
+  pages={42:1--42:36},
+  year={2015},
+  publisher={ACM}
+}
+
+
 @article{smr:tutorial,
   title={Implementing fault-tolerant services using the state machine approach: A tutorial},
   author={Schneider, Fred B},
@@ -10843,6 +10886,32 @@ OPTNote="Kaiserslautern Germany, October 8-11"
  optisbn = {1-59593-518-5},
  location = {Alexandria, Virginia, USA},
 
+@inproceedings{Askarov:ccs10,
+ author = {Askarov, Aslan and Zhang, Danfeng and Myers, Andrew C.},
+ title = {Predictive Black-box Mitigation of Timing Channels},
+ booktitle = CCS17,
+ month = oct,
+ year = {2010},
+}  
+
+@inproceedings{Zhang:ccs11,
+ author = {Zhang, Danfeng and Askarov, Aslan and Myers, Andrew C.},
+ title = {Predictive Mitigation of Timing Channels in Interactive Systems},
+ booktitle = CCS18,
+ month = oct,
+ year = {2011}
+} 
+
+@inproceedings{Aviram:ccsw10,
+ author = {Aviram, Amittai and Hu, Sen and Ford, Bryan and Gummadi, 
+Ramakrishna},
+ title = {Determinating Timing Channels in Compute Clouds},
+ booktitle = {Proceedings of the 2010 ACM Workshop on Cloud Computing Security 
+Workshop (CCSW '10)},
+ month = oct,
+ year = {2010}
+} 
+ 
 @inproceedings{friday2007,
  author = {Dennis Geels and Gautam Altekar and Petros Maniatis and Timothy Roscoe and Ion Stoica},
  title = {Friday: global comprehension for distributed replay},
@@ -11478,24 +11547,7 @@ year = {2008},
  issn = {0146-4833},
  address = {New York, NY, USA},
 
-@misc{heming-hku-resume,
-    title = {Heming Cui's resume.},
-    howpublished = "\url{https://http://i.cs.hku.hk/~heming/files/heming-resume.pdf}"
-}
- 
- 
-@misc{tern-patent,
- key = {tern-patent},
- author = {Junfeng Yang and Heming Cui and Jingyue Wu},
- title = {Methods, Systems, and Media for Providing Determinism in Multithreaded Programs ({U.S.} Patent No. 20120102470)},
-}
 
-@misc{loom-patent,
- key = {loom-patent},
- author = {Junfeng Yang and Heming Cui and Jingyue Wu},
- title = {Methods, Systems, and Media for Protecting Applications from Races ({U.S.} Patent No. 20120096449)},
-}
- 
 @misc{ms-office,
  key = {Microsoft Office},
  author = {Microsoft Cooperation},
@@ -11514,13 +11566,6 @@ year = {2008},
  title = "{Google Chrome Web Browser}",
  howpublished = "\url{http://www.google.com/chrome/}",
 }
-
-@misc{mysql,
- title = "{MySQL Database}",
- year = {2014},
- howpublished = "\url{http://www.mysql.com/}",
-}
- key = "{MySQL Database}",
 
 @misc{open-office,
  key = "{OpenOffice: The Free and Open Productivity Suite}",
@@ -12354,13 +12399,6 @@ pages = "361--376"
  address = {Berkeley, CA, USA},
  location = {Anaheim, CA},
 
-@inproceedings{superpin,
-  title={Superpin: Parallelizing dynamic instrumentation for real-time performance},
-  author={Wallace, Steven and Hazelwood, Kim},
-  booktitle={Proceedings of the International Symposium on Code Generation and Optimization},
-  year={2007},
-}
- 
 @conference{pin:pldi05,
   title={{Pin: building customized program analysis tools with dynamic instrumentation}},
   author={Luk, C.K. and Cohn, R. and Muth, R. and Patil, H. and Klauser, A. and Lowney, G. and Wallace, S. and Reddi, V.J. and Hazelwood, K.},
@@ -12368,7 +12406,7 @@ pages = "361--376"
   pages={190--200},
   year={2005},
 }
-  organization={ACM}  
+  organization={ACM}
 
 @conference{path-slicing:pldi05,
   title={{Path slicing}},
@@ -12584,15 +12622,6 @@ key = {LLVM LRM},
  address = {London, UK},
  isbn = {3-540-43369-4},
 
-@inproceedings{jungwoo:oopsla09,
- author = {Ha, Jungwoo and Arnold, Matthew and Blackburn, Stephen M. and McKinley, Kathryn S.},
- title = {A Concurrent Dynamic Analysis Framework for Multicore Hardware},
- booktitle = {Proceedings of the 24th ACM SIGPLAN Conference on Object Oriented Programming Systems Languages and Applications},
- series = {OOPSLA '09},
- year = {2009},
-} 
-
- 
 @inproceedings{grace:oopsla09,
   title = {{Grace}: safe and efficient concurrent programming},
   author = {E. Berger and T. Yang and T. Liu and D. Krishnan and A. Novark},
@@ -13014,6 +13043,14 @@ key = {LLVM LRM},
  month = jun,
  }
 
+@inproceedings{raft:usenix14,
+ author = {Ongaro, Diego and Ousterhout, John},
+ title = {In Search of an Understandable Consensus Algorithm},
+ booktitle = UATC14,
+ year = 2014,
+ month = jun,
+} 
+
 @article{general-isr,
   title = {{On The General Applicability of Instruction-Set Randomization}},
   author = {S.~W. Boyd and G.~S. Kc and M.~E. Locasto and A.~D. Keromytis
@@ -13303,6 +13340,15 @@ programs.},
  booktitle = OSDI3,
  month = oct,
  year = {1999},
+} 
+
+@inproceedings{upright:sosp09,
+ author = {Clement, Allen and Kapritsos, Manos and Lee, Sangmin and Wang, Yang 
+and Alvisi, Lorenzo and Dahlin, Mike and Riche, Taylor},
+ title = {Upright Cluster Services},
+ booktitle = SOSP22,
+ month = oct,
+ year = {2009},
 } 
 
 @inproceedings{nonstop:dsn05,
@@ -13630,12 +13676,43 @@ programs.},
 
 @misc{zookeeper,
   title = {{ZooKeeper}},
-  howpublished="\url{http://hadoop.apache.org/zookeeper/}"
+  howpublished="\url{https://zookeeper.apache.org/}"
 }
 
 @misc{docker,
   title = {{Docker}},
   howpublished="\url{http://http://criu.org/Docker}"
+}
+
+@misc{lxc,
+  title = {{LXC}},
+  howpublished="\url{https://linuxcontainers.org/}"
+}
+
+@misc{sqlite,
+  title = {{SQLite}},
+  howpublished="\url{https://www.sqlite.org/}"
+}
+
+@misc{mysql:replication,
+  title = {{MySQL Replication}},
+  howpublished="\url{https://dev.mysql.com/doc/refman/5.0/en/replication.html}"
+}
+
+@misc{mysql,
+  title = {{MySQL}},
+  howpublished="\url{http://www.mysql.com/}"
+}
+
+@misc{mediatomb,
+ title = "{MediaTomb - Free UPnP MediaServer}",
+ year = {2014},
+ howpublished = "\url{http://mediatomb.cc/}",
+}
+
+@misc{boost,
+  title = {{Boost C++ Libraries}},
+  howpublished="\url{http://www.boost.org/}"
 }
 
 @misc{junfeng-os-course,
@@ -13924,14 +14001,6 @@ howpublished = "\url{http://boinc.berkeley.edu/}"}
   booktitle = {the Fourth USENIX Workshop on Hot Topics in Parallelism (HOTPAR '12)},
   month = jun,
   year = 2012,
-}
-
-@inproceedings{repframe:apsys15,
- author = {Heming Cui and Rui Gu and Cheng Liu and Junfeng Yang},
- title = {REPFRAME: An Efficient and Transparent Framework for Dynamic Program Analysis},
- booktitle = {Proceedings of 6th Asia-Pacific Workshop on Systems (APSys '15)},
- month = jul,
- year = {2015},
 }
 
 @inproceedings{relay:fse07,
@@ -14371,12 +14440,29 @@ year = {2008}
   howpublished = "\url{http://www.redhat.com/whitepapers/developer/POSIX_Linux_Threading.pdf}",
 }
 
+@inproceedings{epaxos:sosp13,
+ author = {Moraru, Iulian and Andersen, David G. and Kaminsky, Michael},
+ title = {There is More Consensus in Egalitarian Parliaments},
+ booktitle = SOSP13,
+ month = nov,
+ year = 2013,
+} 
+
+
 @techreport{paxos:practical,
   title={Paxos made practical},
   author={Mazieres, David},
   year={2007},
   institution={Technical report, 2007. http://www. scs. stanford. edu/dm/home/papers}
 }
+
+@inproceedings{paxos:live,
+ author = {Chandra, Tushar D. and Griesemer, Robert and Redstone, Joshua},
+ title = {Paxos Made Live: An Engineering Perspective},
+ booktitle = {Proceedings of the Twenty-sixth Annual ACM Symposium on Principles of Distributed Computing (PODC '07)},
+ month = aug,
+ year = {2007},
+} 
 
 @misc{paxos:simple,
   title = "Paxos made simple",
@@ -14394,18 +14480,8 @@ year = {2008}
  author = {Rao, Jun and Shekita, Eugene J. and Tata, Sandeep},
  title = {Using Paxos to Build a Scalable, Consistent, and Highly Available Datastore},
  journal = {Proc. VLDB Endow.},
- issue_date = {January 2011},
- volume = {4},
- number = {4},
  month = jan,
  year = {2011},
- issn = {2150-8097},
- pages = {243--254},
- numpages = {12},
- url = {http://dx.doi.org/10.14778/1938545.1938549},
- doi = {10.14778/1938545.1938549},
- acmid = {1938549},
- publisher = {VLDB Endowment},
 } 
 
 @inproceedings{sched:eurosys11,
@@ -15645,6 +15721,15 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
   year={2012}
 }
 
+@inproceedings{spanner:osdi12,
+ author = {Corbett, James C. and Dean, Jeffrey and Epstein, Michael and Fikes, Andrew and Frost, Christopher and Furman, J. J. and Ghemawat, Sanjay and Gubarev, Andrey and Heiser, Christopher and Hochschild, Peter and Hsieh, Wilson and Kanthak, Sebastian and Kogan, Eugene and Li, Hongyi and Lloyd, Alexander and Melnik, Sergey and Mwaura, David and Nagle, David and Quinlan, Sean and Rao, Rajesh and Rolig, Lindsay and Saito, Yasushi and Szymaniak, Michal and Taylor, Christopher and Wang, Ruth and Woodford, Dale},
+ title = {Spanner: Google's Globally-distributed Database},
+ booktitle = OSDI12,
+ month = oct,
+ year = 2012,
+} 
+
+
 @inproceedings{rex:eurosys14,
   title={Rex: Replication at the Speed of Multi-core},
   author={Guo, Zhenyu and Hong, Chuntao and Yang, Mao and Zhou, Dong and Zhou, Lidong and Zhuang, Li},
@@ -16298,15 +16383,9 @@ author={Weiss, Michael and Ferrière, François and Delsart, Bertrand and Fabre,
 }
 
 @misc{Parrot:github,
-    title = {The {PARROT} thread runtime for greatly reducing the number of possible schedules in multithreaded programs.},
+    title = {Complete source code, benchmark suite, and raw results of the {PARROT} thread runtime.},
     howpublished = "\url{https://github.com/columbia/smt-mc}"
 }
-
-@misc{Loom:github,
-    title = {The {LOOM} thread runtime for fixing data races in multithreaded programs.},
-    howpublished = "\url{https://github.com/columbia/loom}"
-}
-
 
 @inproceedings{bergan:oopsla13,
   title={Input-Covering Schedules for Multithreaded Programs},
@@ -16359,7 +16438,6 @@ author={Weiss, Michael and Ferrière, François and Delsart, Bertrand and Fabre,
   howpublished="\url{http://mashable.com/2013/07/24/google-play-1-million}"
 }
 
-
 @inproceedings{wester:parallelizing:asplos13,
 	author = {Wester, Benjamin and Devecsery, David and Chen, Peter M. and Flinn, Jason and Narayanasamy, Satish},
 	title = {Parallelizing Data Race Detection},
@@ -16411,7 +16489,7 @@ author={Weiss, Michael and Ferrière, François and Delsart, Bertrand and Fabre,
 @inproceedings{Manber:1994:FSF:1267074.1267076,
   author = {Manber, Udi},
   title = {Finding Similar Files in a Large File System},
-  booktitle = {Proceedings of the USENIX Winter 1994 Technical Conference on USENIX Winter 1994 Technical Conference},
+  booktitle = {Proceedings of the USENIX Winter 1994 Technical Conference},
   series = {WTEC'94},
   year = {1994},
 }
@@ -16958,5 +17036,42 @@ author={Weiss, Michael and Ferrière, François and Delsart, Bertrand and Fabre,
   author = {Suzanna Schmeelk and Junfeng Yang and Alfred Aho},
   title = {Android Malware Static Analysis Techniques},
   booktitle = {The 10th Annual Cyber and Information Security Research (CISR) Conference},
+  year = {2015},
+}
+
+@misc{intel-sgx,
+  author = {Intel},
+  title = {Software Guard Extensions Programming Reference},
+  howpublished = "\url{https://software.intel.com/sites/default/files/329298-001.pdf}",
+}
+
+@inproceedings{haven:osdi14,
+  author = {Andrew Baumann and Marcus Peinado and Galen Hunt},
+  title = {Shielding Applications from an Untrusted Cloud with {Haven}},
+  booktitle = OSDI11,
+  year = {2014},
+  month = Oct,
+  pages = {267--283},
+}
+
+@inproceedings{asan:atc12,
+  author = {Konstantin Serebryany and Derek Bruening and Alexander Potapenko and Dmitry Vyukov},
+  title = {{AddressSanitizer}: A Fast Address Sanity Checker},
+  booktitle = UATC12,
+  year = 2012,
+}
+
+@inproceedings{unic:atc15,
+  author = {Yang Tang and Junfeng Yang},
+  title = {Secure Deduplication of General Computations},
+  booktitle = UATC15,
+  year = 2015,
+}
+
+@inproceedings{repframe:apsys15,
+  author = {Heming Cui and Rui Gu and Cheng Liu and Junfeng Yang},
+  title = {REPFRAME: An Efficient and Transparent Framework for Dynamic Program Analysis},
+  booktitle = {Proceedings of 6th Asia-Pacific Workshop on Systems (APSys '15)},
+  month = jul,
   year = {2015},
 }
