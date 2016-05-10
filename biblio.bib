@@ -11466,6 +11466,17 @@ year = {2008},
  address = {Berkeley, CA, USA},
  location = {San Francisco, CA},
 
+@article{calvin:sigmod12,
+ author = {Thomson, Alexander and Diamond, Thaddeus and Weng, Shu-Chun and Ren, 
+Kun and Shao, Philip and Abadi, Daniel J.},
+ title = {Fast Distributed Transactions and Strongly Consistent Replication for 
+OLTP Database Systems},
+ booktitle = {SIGMOD '12: Proceedings of the 2012 ACM SIGMOD international 
+conference on Management of data},
+month = may,
+ year = {2014},
+} 
+
 
 @inproceedings{piglatin,
  author = {Christopher Olston and Benjamin Reed and Utkarsh Srivastava and Ravi Kumar and Andrew Tomkins},
@@ -12778,6 +12789,16 @@ key = {LLVM LRM},
   year = {2009}
 }
 
+@inproceedings{manos:hotdep10,
+ author = {Kapritsos, Manos and Junqueira, Flavio P.},
+ title = {Scalable Agreement: Toward Ordering As a Service},
+ booktitle = {Proceedings of the Sixth International Conference on Hot Topics in 
+System Dependability},
+ series = {HotDep'10},
+ year = {2010},
+} 
+
+
 @article{cilk,
  author = {Blumofe, Robert D. and Joerg, Christopher F. and Kuszmaul, Bradley C. and Leiserson, Charles E. and Randall, Keith H. and Zhou, Yuli},
  title = {Cilk: an efficient multithreaded runtime system},
@@ -13072,6 +13093,15 @@ key = {LLVM LRM},
  month = jun,
  }
 
+@inproceedings{pilaf:usenix14,
+ author = {Mitchell, Christopher and Geng, Yifeng and Li, Jinyang},
+ title = {Using One-sided RDMA Reads to Build a Fast, CPU-efficient Key-value 
+Store},
+ booktitle = UATC14,
+ year = {2013},
+ month = jun,
+} 
+ 
 @inproceedings{raft:usenix14,
  author = {Ongaro, Diego and Ousterhout, John},
  title = {In Search of an Understandable Consensus Algorithm},
@@ -13698,6 +13728,16 @@ and Alvisi, Lorenzo and Dahlin, Mike and Riche, Taylor},
     year = 2010,
 }
 
+@misc{roce,
+  title = {{Mellanox Products: RDMA over Converged Ethernet (RoCE)}},  
+howpublished="\url{http://www.mellanox.com/page/products_dyn?product_family=79}"
+}
+
+@misc{infiniband,
+  title = {{An Introduction to the InfiniBand Architecture}},
+  howpublished="\url{http://buyya.com/superstorage/chap42.pdf}"
+}
+
 @misc{hdfs,
   title = {{The Hadoop Distributed File System}},
   howpublished="\url{http://hadoop.apache.org/hdfs/}"
@@ -13973,6 +14013,15 @@ howpublished = "\url{http://boinc.berkeley.edu/}"}
     booktitle = UATC11,
     year = "2011"
 }
+
+@inproceedings{scatter:sosp11,
+ author = {Glendenning, Lisa and Beschastnikh, Ivan and Krishnamurthy, Arvind 
+and Anderson, Thomas},
+ title = {Scalable Consistency in Scatter},
+ booktitle = SOSP23,
+ month = oct,
+ year = {2011},
+} 
 
 @inproceedings{racepro:sosp11,
  author = {Oren Laadan and Nicolas Viennot and Chia-che Tsai and Chris Blinn and Junfeng Yang and Jason Nieh},
@@ -15758,6 +15807,23 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
  year = 2012,
 } 
 
+@article{herd:sigcomm14,
+ author = {Kalia, Anuj and Kaminsky, Michael and Andersen, David G.},
+ title = {Using RDMA Efficiently for Key-value Services},
+ booktitle = {SIGCOMM '14: Proceedings of the 2014 conference on Applications, 
+technologies, architectures, and protocols for computer communications},
+ month = aug,
+ year = {2014},
+} 
+
+@inproceedings{dare:hpdc15,
+ author = {Poke, Marius and Hoefler, Torsten},
+ title = {DARE: High-Performance State Machine Replication on RDMA Networks},
+ booktitle = {Proceedings of the 24th International Symposium on 
+High-Performance Parallel and Distributed Computing},
+ series = {HPDC '15},
+ year = {2015},
+}
 
 @inproceedings{rex:eurosys14,
   title={Rex: Replication at the Speed of Multi-core},
@@ -16251,6 +16317,16 @@ author={Weiss, Michael and Ferrière, François and Delsart, Bertrand and Fabre,
  year = {2013},
 }
 
+@inproceedings{farm:nsdi14,
+ author = {Dragojevi\'{c}, Aleksandar and Narayanan, Dushyanth and Hodson, 
+Orion 
+and Castro, Miguel},
+ title = {FaRM: Fast Remote Memory},
+ booktitle = {Proceedings of the 11th USENIX Conference on Networked Systems 
+Design and Implementation},
+ series = {NSDI'14},
+ year = {2014},
+} 
 
 @misc{android-instrumentation,
     title = {Android instrumentation framework},
@@ -16392,6 +16468,16 @@ author={Weiss, Michael and Ferrière, François and Delsart, Bertrand and Fabre,
  author = {Heming Cui and Rui Gu and Cheng Liu and Junfeng Yang},
  title = {Paxos Made Transparent},
  booktitle = SOSP25,
+ month = oct,
+ year = 2015,
+}
+
+@inproceedings{drtm:sosp15,
+ author = {Wei, Xingda and Shi, Jiaxin and Chen, Yanzhe and Chen, Rong and Chen, 
+Haibo},
+ title = {Fast In-memory Transaction Processing Using RDMA and HTM},
+ booktitle = SOSP25,
+ series = {SOSP '15},
  month = oct,
  year = 2015,
 }
