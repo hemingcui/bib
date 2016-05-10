@@ -240,6 +240,7 @@
 @string{UATC10 = UATC # " (USENIX '10)"}
 @string{UATC11 = UATC # " (USENIX '11)"}
 @string{UATC12 = UATC # " (USENIX '12)"}
+@string{UATC13 = UATC # " (USENIX '13)"}
 @string{UATC14 = UATC # " (USENIX '14)"}
 @string{ATC2014 = "Proceedings of the 2014 USENIX Conference on USENIX Annual Technical Conference"}
 @string{UATC15 = UATC # " (USENIX ATC '15)"}
@@ -13738,6 +13739,14 @@ howpublished="\url{http://www.mellanox.com/page/products_dyn?product_family=79}"
   howpublished="\url{http://buyya.com/superstorage/chap42.pdf}"
 }
 
+@misc{datacenter:os,
+  title = {{Why the data center needs an operating system}},
+  
+howpublished="\url{
+http://radar.oreilly.com/2014/12/why-the-data-center-needs-an-operating-system.h
+tml}"
+}
+
 @misc{hdfs,
   title = {{The Hadoop Distributed File System}},
   howpublished="\url{http://hadoop.apache.org/hdfs/}"
@@ -14007,6 +14016,14 @@ howpublished = "\url{http://boinc.berkeley.edu/}"}
  year = 2011,
  }
 
+@inproceedings{Bessani:usenix13,
+ author = {Bessani, Alysson and Santos, Marcel and Felix, Jo\~{a}o and Neves, 
+Nuno and Correia, Miguel},
+ title = {On the Efficiency of Durable State Machine Replication},
+    booktitle = UATC13,
+    year = "2013"
+}  
+ 
 @inproceedings{code:usenix11,
     author = {Ding Yuan and Yinglian Xie and Rina Panigrahy and Junfeng Yang and Chad Verbowski and Arunvijay Kumar},
     title = {Context-based Online Configuration-Error Detection},
@@ -15640,6 +15657,20 @@ RepositoryRoot = http://llvm.org/svn/llvm-project
  address = {Berkeley, CA, USA},
 } 
 
+@inproceedings{mesos:nsdi11,
+ author = {Hindman, Benjamin and Konwinski, Andy and Zaharia, Matei and Ghodsi, 
+Ali and Joseph, Anthony D. and Katz, Randy and Shenker, Scott and Stoica, Ion},
+ title = {Mesos: A Platform for Fine-grained Resource Sharing in the Data 
+Center},
+ booktitle = {Proceedings of the 8th USENIX conference on Networked Systems 
+Design and Implementation},
+ series = {NSDI'11},
+ year = {2011},
+ location = {Boston, MA},   
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+} 
+
 @inproceedings{bolosky:nsdi11,
  author = {Bolosky, William J. and Bradshaw, Dexter and Haagens, Randolph B. and Kusters, Norbert P. and Li, Peng},
  title = {Paxos Replicated State Machines As the Basis of a High-performance Data Store},
@@ -16464,6 +16495,17 @@ Design and Implementation},
  year = 2013,
 }
 
+@inproceedings{farm:sosp15,
+ author = {Dragojevi\'{c}, Aleksandar and Narayanan, Dushyanth and Nightingale, 
+Edmund B. and Renzelmann, Matthew and Shamis, Alex and Badam, Anirudh and 
+Castro, Miguel},
+ title = {No Compromises: Distributed Transactions with Consistency, 
+Availability, and Performance},
+ booktitle = SOSP25,
+ month = oct,
+ year = 2015,
+}
+
 @inproceedings{crane:sosp15,
  author = {Heming Cui and Rui Gu and Cheng Liu and Junfeng Yang},
  title = {Paxos Made Transparent},
@@ -16906,6 +16948,14 @@ Haibo},
   year = {2010},
   pages = {1--14},
 }
+
+@inproceedings{matei:hotcloud11,
+ author = {Zaharia, Matei and Hindman, Benjamin and Konwinski, Andy and Ghodsi, 
+Ali and Joesph, Anthony D. and Katz, Randy and Shenker, Scott and Stoica, Ion},
+ title = {The Datacenter Needs an Operating System},
+ booktitle = HOTCLOUD2011,
+ year = {2011},
+} 
 
 @inproceedings{tak:hotcloud2011,
   author = {Tak, Byung Chul and Urgaonkar, Bhuvan and Sivasubramaniam, Anand},
