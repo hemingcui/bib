@@ -46,6 +46,7 @@
 @string{OSDI9 = "Proceedings of the Ninth " # OSDI # " (OSDI '10)"}
 @string{OSDI10 = "Proceedings of the Tenth " # OSDI # " (OSDI '12)"}
 @string{OSDI11 = "Proceedings of the Eleventh " # OSDI # " (OSDI '14)"}
+@string{OSDI12 = "Proceedings of the 12th " # OSDI # " (OSDI '16)"}
 
 @string{CAV = "International Conference On Computer Aided Verification"}
 @string{CAV03 = "Proceedings of the 15th " # CAV # " (CAV '03)"}
@@ -13304,6 +13305,16 @@ Store},
  isbn = {1-59593-332-6},
  location = {Ottawa, Ontario, Canada},
 
+@inproceedings{spaxos:srds12,
+ author = {Biely, Martin and Milosevic, Zarko and Santos, Nuno and Schiper, 
+Andre},
+ title = {S-Paxos: Offloading the Leader for High Throughput State Machine 
+Replication},
+ booktitle = {Proceedings of the 2012 IEEE 31st Symposium on Reliable 
+Distributed Systems},
+ series = {SRDS '12},
+ year = {2012},
+} 
 
 @inproceedings{basile:srds02,
  author = {Basile, Claudio and Whisnant, Keith and Kalbarczyk, Zbigniew and Iyer, Ravi},
@@ -13378,6 +13389,17 @@ Store},
     year = {2002},
     pages = {149--158}
 }
+
+@inproceedings{ssmr:dsn14,
+ author = {Bezerra, Carlos Eduardo and Pedone, Fernando and Renesse, Robbert 
+Van},
+ title = {Scalable State-Machine Replication},
+ booktitle = {Proceedings of the 2014 44th Annual IEEE/IFIP International 
+Conference on Dependable Systems and Networks},
+ series = {DSN '14},
+ year = {2014},
+} 
+
 
 @inproceedings{cbase:dsn04,
   title={High throughput Byzantine fault tolerance},
@@ -13789,6 +13811,14 @@ howpublished="\url{http://www.mellanox.com/page/products_dyn?product_family=79}"
   title = {{An Introduction to the InfiniBand Architecture}},
   howpublished="\url{http://buyya.com/superstorage/chap42.pdf}"
 }
+
+@misc{dpdk,
+  title = {{Data Plane Development Kit (DPDK)}},
+  howpublished="\url{http://dpdk.org/}"
+}
+
+
+http://dpdk.org/
 
 @misc{datacenter:os,
   title = {{Why the data center needs an operating system}},
@@ -17264,6 +17294,26 @@ Ali and Joesph, Anthony D. and Katz, Randy and Shenker, Scott and Stoica, Ion},
   title = {Software Guard Extensions Programming Reference},
   howpublished = "\url{https://software.intel.com/sites/default/files/329298-001.pdf}",
 }
+
+@inproceedings{nopaxos:osdi16,
+ author = {Jialin Li and Ellis Michael and Naveen Kr. Sharma and Adriana 
+Szekeres and Dan R. K. Ports},
+ title = {Fast Replication with NOPaxos: Replacing Consensus with Network 
+Ordering},
+  booktitle = OSDI12,
+  year = {2016},
+  month = Nov,
+} 
+
+@inproceedings{arrakis:osdi14,
+ author = {Peter, Simon and Li, Jialin and Zhang, Irene and Ports, Dan R. K. and 
+Woos, Doug and Krishnamurthy, Arvind and Anderson, Thomas and Roscoe, Timothy},
+ title = {Arrakis: The Operating System is the Control Plane},
+  booktitle = OSDI11,
+  year = {2014},
+  month = Oct,
+} 
+
 
 @inproceedings{haven:osdi14,
   author = {Andrew Baumann and Marcus Peinado and Galen Hunt},
