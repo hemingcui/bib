@@ -4,8 +4,7 @@
 
 ##### Add to your project
 	
-	mkdir bib
-	git submodule add git@github.com:hku-systems/bib.git ./bib
+	git submodule add git@github.com:hemingcui/bib.git ./bib
 
 
 ##### Start from an existing project.
