@@ -2027,24 +2027,7 @@ Article{burton:interlisp,
   annotation =     "Simple alg can eliminate nearly all cache misses.  Only look
     at arrays, when include scalers nothing much changes because they are
     usually allocated to registers.
-    Adds 28% overhead, can be eliminated by filling empty slots on VLIW.
-    Long cache lines require increased bandwidth for support the resultant
-    data traffic. They provide an algorithm that can reduce this to about
-    14-7%."
-}
-@InProceedings{wahbe:sandbox,
-  author =      "R. Wahbe and S. Lucco and T. Anderson and S. Graham",
-  title =       "Efficient Software-Based Fault Isolation",
-  booktitle =     SOSP14,
-  month = dec,
-  year =        1993,
-  pages = "203-216",
-  annotation =     "Provide a method to insert general purpose code into a
-    pre-existing large software system efficienlty and safely by
-    guarenteeing that a prog will never execute read/write/jump to
-    any location outside the progs own code and data.  Do this by
-    dividing memory into segments and then forcibly clearing the upper
-    bits in any load/store etc.  Add 7% overhead.  Sandboxing is
+    Adds 28% overhead.  Sandboxing is
     implemented at a cost of two instructions per indirect load, store or
     branch.  Cross domain RPC very cheap."
 }
@@ -13009,6 +12992,24 @@ the Cloud},
  howpublished = "\url{http://tomcat.apache.org/}"
 }
 
+@misc{djangoDashboard,
+ title = {Django Fluent Dashboard},
+ howpublished = "\url{https://github.com/django-fluent/django-fluent-dashboard}"
+}
+
+@misc{tomcatShopping,
+ title = {Simple Shopping Store},
+ howpublished = "\url{https://github.com/SaiUpadhyayula/SimpleShoppingStore}"
+}
+
+
+@misc{phpWatermark,
+ title = {Adding watermarks to images using alpha channels},
+ howpublished = "\url{http://php.net/manual/en/image.examples-watermark.php}"
+}
+
+
+
 @misc{firefox-bug-133773,
  title = {Mozilla Bug 133773},
  howpublished = "\url{https://bugzilla.mozilla.org/show\_bug.cgi?id=133773}"
@@ -18808,6 +18809,55 @@ address = {New York, NY, USA},
  title = "{MediaTomb - Free UPnP MediaServer}",
  year = {2014},
  howpublished = "\url{http://mediatomb.cc/}",
+}
+
+@misc{ken:splitbrain,
+ title = "{Intermediate Course In Operating System: High Availability}",
+ year = {2015},
+ howpublished = "\url{www.cs.cornell.edu/ken/book/New%20514%20slide%20set/12-HighAvailability.ppt}",
+}
+
+@misc{recoversplitbrain,
+ title = "{The OTHER way of recovering from VMware ESXi Split Brain}",
+ year = {2017},
+ howpublished = "\url{https://www.pei.com/2017/02/way-recovering-vmware-esxi-split-brain/}",
+}
+
+
+
+@inproceedings{apus:socc17,
+  title={APUS: Fast and Scalable PAXOS on RDMA},
+  author={Cheng Wang and Jianyu Jiang and Xusheng Chen and Ning Yi and Heming Cui},
+  booktitle={Proceedings of the Eighteenth ACM Symposium on Cloud Computing},
+  pages={17--28},
+  year={2017},
+  organization={ACM}
+}
+
+
+@article{pertet2005causes,
+  title={Causes of failure in web applications (cmu-pdl-05-109)},
+  author={Pertet, Soila and Narasimhan, Priya},
+  journal={Parallel Data Laboratory},
+  pages={48},
+  year={2005}
+}
+
+@article{transientError,
+  title={Transient Error Protection},
+  author={Stratus Technologies},
+  year={2005}
+}
+
+@article{da2017adaptive,
+  title={Adaptive Remus: adaptive checkpointing for Xen-based virtual machine replication},
+  author={da Silva, Marcelo Pereira and Obelheiro, Rafael Rodrigues and Koslovski, Guilherme Piegas},
+  journal={International Journal of Parallel, Emergent and Distributed Systems},
+  volume={32},
+  number={4},
+  pages={348--367},
+  year={2017},
+  publisher={Taylor \& Francis}
 }
 
 
