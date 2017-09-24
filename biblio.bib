@@ -292,15 +292,15 @@
 @string{FSE8 = POT # " Eighth " # FSE # " (SIGSOFT '00/FSE-8)"}
 @string{ESEC8FSE9 = POT # " Eighth " # ESEC # " held jointly with the Ninth " # FSE # " (ESEC/FSE-9)"}
 @string{FSE10 = POT # " 10th " # FSE # " (SIGSOFT '02/FSE-10)"}
-@string{ESEC9FSE11 = POT # " Ninth " # ESEC # " held jointly with the 11th " # FSE # " (ESEC/FSE-11)"} 
+@string{ESEC9FSE11 = POT # " Ninth " # ESEC # " held jointly with the 11th " # FSE # " (ESEC/FSE-11)"}
 @string{FSE12 = POT # " 12th " # FSE # " (SIGSOFT '04/FSE-12)"}
 @string{ESEC10FSE13 = POT # " 10th " # ESEC # " held jointly with the 13th " # FSE # " (ESEC/FSE-13)"}
-@string{FSE14 = POT # " 14th " # FSE # " (SIGSOFT '06/FSE-14)"} 
+@string{FSE14 = POT # " 14th " # FSE # " (SIGSOFT '06/FSE-14)"}
 @string{ESECFSE6 = POT # " Sixth " # ESECFSE # " (ESEC-FSE '07)"}
-@string{FSE16 = POT # " 16th " # FSE # " (SIGSOFT '08/FSE-16)"} 
+@string{FSE16 = POT # " 16th " # FSE # " (SIGSOFT '08/FSE-16)"}
 @string{ESECFSE7 = POT # " Seventh " # ESECFSE # " (ESEC-FSE '09)"}
-@string{FSE18 = POT # " 18th " # FSE # " (SIGSOFT '10/FSE-18)"} 
-@string{FSE20 = POT # " 20th " # FSE # " (SIGSOFT '12/FSE-20)"} 
+@string{FSE18 = POT # " 18th " # FSE # " (SIGSOFT '10/FSE-18)"}
+@string{FSE20 = POT # " 20th " # FSE # " (SIGSOFT '12/FSE-20)"}
 @string{ESECFSE9 = POT # " Ninth " # ESECFSE # " (ESEC-FSE '13)"}
 
 
@@ -2027,24 +2027,7 @@ Article{burton:interlisp,
   annotation =     "Simple alg can eliminate nearly all cache misses.  Only look
     at arrays, when include scalers nothing much changes because they are
     usually allocated to registers.
-    Adds 28% overhead, can be eliminated by filling empty slots on VLIW.
-    Long cache lines require increased bandwidth for support the resultant
-    data traffic. They provide an algorithm that can reduce this to about
-    14-7%."
-}
-@InProceedings{wahbe:sandbox,
-  author =      "R. Wahbe and S. Lucco and T. Anderson and S. Graham",
-  title =       "Efficient Software-Based Fault Isolation",
-  booktitle =     SOSP14,
-  month = dec,
-  year =        1993,
-  pages = "203-216",
-  annotation =     "Provide a method to insert general purpose code into a
-    pre-existing large software system efficienlty and safely by
-    guarenteeing that a prog will never execute read/write/jump to
-    any location outside the progs own code and data.  Do this by
-    dividing memory into segments and then forcibly clearing the upper
-    bits in any load/store etc.  Add 7% overhead.  Sandboxing is
+    Adds 28% overhead.  Sandboxing is
     implemented at a cost of two instructions per indirect load, store or
     branch.  Cross domain RPC very cheap."
 }
@@ -6074,17 +6057,17 @@ XX
     }
 
 @inproceedings{memcached:rdma,
- author = {Jose, Jithin and Subramoni, Hari and Kandalla, Krishna and 
-Wasi-ur-Rahman, Md. and Wang, Hao and Narravula, Sundeep and Panda, Dhabaleswar 
+ author = {Jose, Jithin and Subramoni, Hari and Kandalla, Krishna and
+Wasi-ur-Rahman, Md. and Wang, Hao and Narravula, Sundeep and Panda, Dhabaleswar
 K.},
- title = {Scalable Memcached Design for InfiniBand Clusters Using Hybrid 
+ title = {Scalable Memcached Design for InfiniBand Clusters Using Hybrid
 Transports},
- booktitle = {Proceedings of the 2012 12th IEEE/ACM International Symposium on 
+ booktitle = {Proceedings of the 2012 12th IEEE/ACM International Symposium on
 Cluster, Cloud and Grid Computing (Ccgrid 2012)},
  series = {CCGRID '12},
  year = {2012},
-}     
-    
+}
+
 @inproceedings{morris:coagulate,
     author = "W. G. Morris",
     title = "{CCG}: {A} Prototype Coagulating Code Generator",
@@ -9349,18 +9332,36 @@ year = 1999,
  howpublished = "\url{http://www.mysql.com/}",
 }
 
+@misc{fusionsphere,
+ title = "{Huawei FusionSphere.}",
+ year = {2014},
+ howpublished = "\url{www.huawei.com/ilink/enenterprise/download/HW_193449}",
+}
+
+@misc{vsftpd,
+ title = "{Very secure ftp daemon (vsftpd).}",
+ year = {2014},
+ howpublished = "\url{http://www.nlm.nih.gov/mesh/jablonski/syndrome_title.html.}",
+}
+
+@misc{webbench,
+ title = "{Web bench.}",
+ year = {2014},
+ howpublished = "\url{http://home.tiscali.cz/cz210552/webbench.html}",
+}
+
 @misc{alluxio,
  title = "{Alluxio - Open Source Memory Speed Virtual Distributed Storage}",
  year = {2014},
  howpublished = "\url{http://www.alluxio.org/}",
 }
- 
+
 @misc{tern-patent,
  key = {tern-patent},
  author = {Junfeng Yang and Heming Cui and Jingyue Wu},
  title = {Methods, Systems, and Media for Providing Determinism in Multithreaded Programs ({U.S.} Patent No. 20120102470)},
 }
- 
+
 @misc{loom-patent,
  key = {loom-patent},
  author = {Junfeng Yang and Heming Cui and Jingyue Wu},
@@ -9882,6 +9883,22 @@ s},
   year = 2012
 }
 
+@MISC{apus:techreport,
+  title = {{Fast and Scalable PAXOS on RDMA. HKU CS technical report No.
+2017-03.}},
+  key = "{APUS:techreport}",
+  howpublished =
+"\url{http://www.cs.hku.hk/research/techreps/document/TR-2017-03.pdf}",
+  year = 2017
+}
+
+@MISC{apus,
+  title = {APUS reponse time overhead on nine server programs},
+  key = "{APUS}",
+  howpublished = "\url{http://github.com/icdcs17-p256/extra-figures/la
+tency-overhead.pdf}",
+  year = 2016
+}
 
 @MISC{pgsql,
   title = {PostgreSQL},
@@ -10739,7 +10756,7 @@ month= {August},
  pages = {243--256},
 }
 %@inproceedings{citeulike:1488063,
-	abstract = {<p> Modern software model checkers find safety violations: breaches where the system enters some bad state. However, we argue that checking liveness properties offers both a richer and more natural way to search for errors, particularly in complex concurrent and distributed systems. Liveness properties specify desirable system behaviors which must be satisfied eventually, but are not always satisfied, perhaps as a result of failure or during system initialization. Existing software model checkers cannot verify liveness because doing so requires finding an infinite execution that does not satisfy a liveness property. We present heuristics to find a large class of liveness violations and the critical transition of the execution. The critical transition is the step in an execution that moves the system from a state that does not currently satisfy some liveness property\&\#151;but where recovery is possible in the future\&\#151;to a dead state that can never achieve the liveness property. Our 
+	abstract = {<p> Modern software model checkers find safety violations: breaches where the system enters some bad state. However, we argue that checking liveness properties offers both a richer and more natural way to search for errors, particularly in complex concurrent and distributed systems. Liveness properties specify desirable system behaviors which must be satisfied eventually, but are not always satisfied, perhaps as a result of failure or during system initialization. Existing software model checkers cannot verify liveness because doing so requires finding an infinite execution that does not satisfy a liveness property. We present heuristics to find a large class of liveness violations and the critical transition of the execution. The critical transition is the step in an execution that moves the system from a state that does not currently satisfy some liveness property\&\#151;but where recovery is possible in the future\&\#151;to a dead state that can never achieve the liveness property. Our
 software model checker, MACEMC, isolates complex liveness errors in our implementations of PASTRY, CHORD, a reliable transport protocol, and an overlay tree. </p>},
 	author = {Killian, Charles   and Anderson, James  W.  and Jhala, Ranjit   and Vahdat, Amin  },
 	citeulike-article-id = {1488063},
@@ -10957,7 +10974,7 @@ OPTNote="Kaiserslautern Germany, October 8-11"
  booktitle = CCS17,
  month = oct,
  year = {2010},
-}  
+}
 
 @inproceedings{Zhang:ccs11,
  author = {Zhang, Danfeng and Askarov, Aslan and Myers, Andrew C.},
@@ -10965,18 +10982,18 @@ OPTNote="Kaiserslautern Germany, October 8-11"
  booktitle = CCS18,
  month = oct,
  year = {2011}
-} 
+}
 
 @inproceedings{Aviram:ccsw10,
- author = {Aviram, Amittai and Hu, Sen and Ford, Bryan and Gummadi, 
+ author = {Aviram, Amittai and Hu, Sen and Ford, Bryan and Gummadi,
 Ramakrishna},
  title = {Determinating Timing Channels in Compute Clouds},
- booktitle = {Proceedings of the 2010 ACM Workshop on Cloud Computing Security 
+ booktitle = {Proceedings of the 2010 ACM Workshop on Cloud Computing Security
 Workshop (CCSW '10)},
  month = oct,
  year = {2010}
-} 
- 
+}
+
 @inproceedings{friday2007,
  author = {Dennis Geels and Gautam Altekar and Petros Maniatis and Timothy Roscoe and Ion Stoica},
  title = {Friday: global comprehension for distributed replay},
@@ -11405,6 +11422,11 @@ tests for complex systems programs},
  }
  location = {San Diego, CA, USA},
 
+ @inproceedings{osdi08:dryad,
+   title={DryadLINQ: A System for General-Purpose Distributed Data-Parallel Computing Using a High-Level Language.},
+   author={Yu, Yuan and Isard, Michael and Fetterly, Dennis and Budiu, Mihai and Erlingsson, {\'U}lfar and Gunda, Pradeep Kumar and Currey, Jon}
+ }
+
 @inproceedings{musuvathi:chess:osdi08,
  author = {Madanlal Musuvathi and Shaz Qadeer and Thomas Ball and Gerard Basler
 and Piramanayagam Arumuga Nainar and Iulian Neamtiu},
@@ -11518,16 +11540,60 @@ year = {2008},
  location = {San Francisco, CA},
 
 @article{calvin:sigmod12,
- author = {Thomson, Alexander and Diamond, Thaddeus and Weng, Shu-Chun and Ren, 
+ author = {Thomson, Alexander and Diamond, Thaddeus and Weng, Shu-Chun and Ren,
 Kun and Shao, Philip and Abadi, Daniel J.},
- title = {Fast Distributed Transactions and Strongly Consistent Replication for 
+ title = {Fast Distributed Transactions and Strongly Consistent Replication for
 OLTP Database Systems},
- booktitle = {SIGMOD '12: Proceedings of the 2012 ACM SIGMOD international 
+ booktitle = {SIGMOD '12: Proceedings of the 2012 ACM SIGMOD international
 conference on Management of data},
 month = may,
  year = {2014},
-} 
+}
 
+@inproceedings{pinq:sigmod09,
+author = {McSherry, Frank},
+title = {Privacy Integrated Queries},
+booktitle = {Proceedings of the 2009 ACM SIGMOD International Conference on Management of Data (SIGMOD)},
+year = {2009},
+month = {June},
+abstract = {We report on the design and implementation of the Privacy Integrated Queries (PINQ) platform for privacy-preserving data analysis. PINQ provides analysts with a programming interface to unscrubbed data through a SQL-like language. At the same time, the design of PINQ's analysis language and its careful implementation provide formal guarantees of differential privacy for any and all uses of the platform. PINQ's unconditional structural guarantees require no trust placed in the expertise or diligence of the analysts, substantially broadening the scope for design and deployment of privacy-preserving data analysis, especially by non-experts.
+},
+publisher = {Association for Computing Machinery, Inc.},
+url = {https://www.microsoft.com/en-us/research/publication/privacy-integrated-queries/},
+address = {},
+pages = {},
+journal = {},
+volume = {},
+chapter = {},
+isbn = {},
+}
+
+@inproceedings{gupt:sigmod12,
+ author = {Mohan, Prashanth and Thakurta, Abhradeep and Shi, Elaine and Song, Dawn and Culler, David},
+ title = {GUPT: Privacy Preserving Data Analysis Made Easy},
+ booktitle = {Proceedings of the 2012 ACM SIGMOD International Conference on Management of Data},
+ series = {SIGMOD '12},
+ year = {2012},
+ isbn = {978-1-4503-1247-9},
+ location = {Scottsdale, Arizona, USA},
+ pages = {349--360},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2213836.2213876},
+ doi = {10.1145/2213836.2213876},
+ acmid = {2213876},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {algorithms, data mining, differential privacy, security},
+}
+
+@inproceedings{sigmod10:pregel,
+  title={Pregel: a system for large-scale graph processing},
+  author={Malewicz, Grzegorz and Austern, Matthew H and Bik, Aart JC and Dehnert, James C and Horn, Ilan and Leiser, Naty and Czajkowski, Grzegorz},
+  booktitle={Proceedings of the 2010 ACM SIGMOD International Conference on Management of data},
+  pages={135--146},
+  year={2010},
+  organization={ACM}
+}
 
 @inproceedings{piglatin,
  author = {Christopher Olston and Benjamin Reed and Utkarsh Srivastava and Ravi Kumar and Andrew Tomkins},
@@ -11726,6 +11792,279 @@ month = may,
  address = {New York, NY, USA},
 
 
+@inproceedings{sedic:cloud13,
+   title={Sedic: privacy-aware data intensive computing on hybrid clouds},
+   author={Zhang, Kehuan and Zhou, Xiaoyong and Chen, Yangyi and Wang, XiaoFeng and Ruan, Yaoping},
+   booktitle={Proceedings of the 18th ACM conference on Computer and communications security},
+   pages={515--526},
+   year={2011},
+   organization={ACM}
+ }
+
+ @inproceedings{ramp:cidr11,
+        booktitle = {CIDR 2011},
+            title = {Provenance for Generalized Map and Reduce Workflows},
+           author = {Robert Ikeda and Hyunjung Park and Jennifer Widom},
+        publisher = {Stanford InfoLab},
+              url = {http://ilpubs.stanford.edu:8090/985/}
+ }
+
+ @inproceedings{newt:socc13,
+   title={Scalable lineage capture for debugging disc analytics},
+   author={Logothetis, Dionysios and De, Soumyarupa and Yocum, Kenneth},
+   booktitle={Proceedings of the 4th annual Symposium on Cloud Computing},
+   pages={17},
+   year={2013},
+   organization={ACM}
+ }
+
+ @article{tainteraser:song11,
+  author = {Zhu, David (Yu) and Jung, Jaeyeon and Song, Dawn and Kohno, Tadayoshi and Wetherall, David},
+  title = {TaintEraser: Protecting Sensitive Data Leaks Using Application-level Taint Tracking},
+  journal = {SIGOPS Oper. Syst. Rev.},
+  issue_date = {January 2011},
+  volume = {45},
+  number = {1},
+  month = feb,
+  year = {2011},
+  issn = {0163-5980},
+  pages = {142--154},
+  numpages = {13},
+  url = {http://doi.acm.org/10.1145/1945023.1945039},
+  doi = {10.1145/1945023.1945039},
+  acmid = {1945039},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {dynamic information flow tracking, privacy, sensitive data protection},
+ }
+
+ @inproceedings{assertion:sosp09,
+  author = {Yip, Alexander and Wang, Xi and Zeldovich, Nickolai and Kaashoek, M. Frans},
+  title = {Improving Application Security with Data Flow Assertions},
+  booktitle = {Proceedings of the ACM SIGOPS 22Nd Symposium on Operating Systems Principles},
+  series = {SOSP '09},
+  year = {2009},
+  isbn = {978-1-60558-752-3},
+  location = {Big Sky, Montana, USA},
+  pages = {291--304},
+  numpages = {14},
+  url = {http://doi.acm.org/10.1145/1629575.1629604},
+  doi = {10.1145/1629575.1629604},
+  acmid = {1629604},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {php, privacy, python, security, sql injection, web, xss},
+ }
+
+ @inproceedings{crossifc:ares09,
+   title={Capturing information flow with concatenated dynamic taint analysis},
+   author={Kim, Hyung Chan and Keromytis, Angelos D and Covington, Michael and Sahita, Ravi},
+   booktitle={Availability, Reliability and Security, 2009. ARES'09. International Conference on},
+   pages={355--362},
+   year={2009},
+   organization={IEEE}
+ }
+
+ @inproceedings{dbtaint:webapps10,
+  author = {Davis, Benjamin and Chen, Hao},
+  title = {DBTaint: Cross-application Information Flow Tracking via Databases},
+  booktitle = {Proceedings of the 2010 USENIX Conference on Web Application Development},
+  series = {WebApps'10},
+  year = {2010},
+  location = {Boston, MA},
+  pages = {12--12},
+  numpages = {1},
+  url = {http://dl.acm.org/citation.cfm?id=1863166.1863178},
+  acmid = {1863178},
+  publisher = {USENIX Association},
+  address = {Berkeley, CA, USA},
+ }
+
+ @inproceedings{neon:vee10,
+  author = {Zhang, Qing and McCullough, John and Ma, Justin and Schear, Nabil and Vrable, Michael and Vahdat, Amin and Snoeren, Alex C. and Voelker, Geoffrey M. and Savage, Stefan},
+  title = {Neon: System Support for Derived Data Management},
+  booktitle = {Proceedings of the 6th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments},
+  series = {VEE '10},
+  year = {2010},
+  isbn = {978-1-60558-910-7},
+  location = {Pittsburgh, Pennsylvania, USA},
+  pages = {63--74},
+  numpages = {12},
+  url = {http://doi.acm.org/10.1145/1735997.1736008},
+  doi = {10.1145/1735997.1736008},
+  acmid = {1736008},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {difc, memory tainting, qemu, virtualization, xen},
+ }
+
+ @inproceedings{crosstaint:iwsec11,
+  author = {Zavou, Angeliki and Portokalidis, Georgios and Keromytis, Angelos D.},
+  title = {Taint-exchange: A Generic System for Cross-process and Cross-host Taint Tracking},
+  booktitle = {Proceedings of the 6th International Conference on Advances in Information and Computer Security},
+  series = {IWSEC'11},
+  year = {2011},
+  isbn = {978-3-642-25140-5},
+  location = {Tokyo, Japan},
+  pages = {113--128},
+  numpages = {16},
+  url = {http://dl.acm.org/citation.cfm?id=2075658.2075670},
+  acmid = {2075670},
+  publisher = {Springer-Verlag},
+  address = {Berlin, Heidelberg},
+ }
+
+ @inproceedings{silverlining:ic2e14,
+   title={Silver lining: Enforcing secure information flow at the cloud edge},
+   author={Khan, Safwan Mahmud and Hamlen, Kevin W and Kantarcioglu, Murat},
+   booktitle={Cloud Engineering (IC2E), 2014 IEEE International Conference on},
+   pages={37--46},
+   year={2014},
+   organization={IEEE}
+ }
+
+ @inproceedings{securecloud:nsdi08,
+   title={Securing Distributed Systems with Information Flow Control.},
+   author={Zeldovich, Nickolai and Boyd-Wickizer, Silas and Mazieres, David}
+ }
+
+ @inproceedings{cloudfence:raid13,
+  author = {Pappas, Vasilis and Kemerlis, Vasileios P. and Zavou, Angeliki and Polychronakis, Michalis and Keromytis, Angelos D.},
+  title = {CloudFence: Data Flow Tracking As a Cloud Service},
+  booktitle = {Proceedings of the 16th International Symposium on Research in Attacks, Intrusions, and Defenses - Volume 8145},
+  series = {RAID 2013},
+  year = {2013},
+  isbn = {978-3-642-41283-7},
+  location = {Rodney Bay, St. Lucia},
+  pages = {411--431},
+  numpages = {21},
+  url = {http://dx.doi.org/10.1007/978-3-642-41284-4_21},
+  doi = {10.1007/978-3-642-41284-4_21},
+  acmid = {2941619},
+  publisher = {Springer-Verlag New York, Inc.},
+  address = {New York, NY, USA},
+  keywords = {data auditing, data flow tracking, information confinement},
+ }
+
+ @inproceedings{issta09:dytan,
+  author = {Clause, James and Li, Wanchun and Orso, Alessandro},
+  title = {Dytan: A Generic Dynamic Taint Analysis Framework},
+  booktitle = {Proceedings of the 2007 International Symposium on Software Testing and Analysis},
+  series = {ISSTA '07},
+  year = {2007},
+  isbn = {978-1-59593-734-6},
+  location = {London, United Kingdom},
+  pages = {196--206},
+  numpages = {11},
+  url = {http://doi.acm.org/10.1145/1273463.1273490},
+  doi = {10.1145/1273463.1273490},
+  acmid = {1273490},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {dynamic tainting, general framework, information flow},
+ }
+
+ @article{dawn05:taint,
+   title={Dynamic taint analysis for automatic detection, analysis, and signature generation of exploits on commodity software},
+   author={Newsome, James and Song, Dawn},
+   year={2005},
+   publisher={Internet Society}
+ }
+
+ @inproceedings{paralleltaint:ruwase08,
+   title={Parallelizing dynamic information flow tracking},
+   author={Ruwase, Olatunji and Gibbons, Phillip B and Mowry, Todd C and Ramachandran, Vijaya and Chen, Shimin and Kozuch, Michael and Ryan, Michael},
+   booktitle={Proceedings of the twentieth annual symposium on Parallelism in algorithms and architectures},
+   pages={35--45},
+   year={2008},
+   organization={ACM}
+ }
+
+ @inproceedings{udf:nsdi12,
+   title={Optimizing Data Shuffling in Data-Parallel Computation by Understanding User-Defined Functions.},
+   author={Zhang, Jiaxing and Zhou, Hucheng and Chen, Rishan and Fan, Xuepeng and Guo, Zhenyu and Lin, Haoxiang and Li, Jack Y and Lin, Wei and Zhou, Jingren and Zhou, Lidong}
+ }
+
+ @inproceedings{pig:vldb08,
+   title={Pig latin: a not-so-foreign language for data processing},
+   author={Olston, Christopher and Reed, Benjamin and Srivastava, Utkarsh and Kumar, Ravi and Tomkins, Andrew},
+   booktitle={Proceedings of the 2008 ACM SIGMOD international conference on Management of data},
+   pages={1099--1110},
+   year={2008},
+   organization={ACM}
+ }
+
+ @inproceedings{noise:tcc06,
+  author = {Dwork, Cynthia and McSherry, Frank and Nissim, Kobbi and Smith, Adam},
+  title = {Calibrating Noise to Sensitivity in Private Data Analysis},
+  booktitle = {Proceedings of the Third Conference on Theory of Cryptography},
+  series = {TCC'06},
+  year = {2006},
+  isbn = {3-540-32731-2, 978-3-540-32731-8},
+  location = {New York, NY},
+  pages = {265--284},
+  numpages = {20},
+  url = {http://dx.doi.org/10.1007/11681878_14},
+  doi = {10.1007/11681878_14},
+  acmid = {2180305},
+  publisher = {Springer-Verlag},
+  address = {Berlin, Heidelberg},
+ }
+ @inproceedings{differential:focs07,
+  author = {McSherry, Frank and Talwar, Kunal},
+  title = {Mechanism Design via Differential Privacy},
+  booktitle = {Proceedings of the 48th Annual IEEE Symposium on Foundations of Computer Science},
+  series = {FOCS '07},
+  year = {2007},
+  isbn = {0-7695-3010-9},
+  pages = {94--103},
+  numpages = {10},
+  url = {http://dx.doi.org/10.1109/FOCS.2007.41},
+  doi = {10.1109/FOCS.2007.41},
+  acmid = {1334185},
+  publisher = {IEEE Computer Society},
+  address = {Washington, DC, USA},
+ }
+
+ @article{pig:dataflow:pvldb12,
+  author = {Gates, Alan F. and Natkovich, Olga and Chopra, Shubham and Kamath, Pradeep and Narayanamurthy, Shravan M. and Olston, Christopher and Reed, Benjamin and Srinivasan, Santhosh and Srivastava, Utkarsh},
+  title = {Building a High-level Dataflow System on Top of Map-Reduce: The Pig Experience},
+  journal = {Proc. VLDB Endow.},
+  issue_date = {August 2009},
+  volume = {2},
+  number = {2},
+  month = aug,
+  year = {2009},
+  issn = {2150-8097},
+  pages = {1414--1425},
+  numpages = {12},
+  url = {https://doi.org/10.14778/1687553.1687568},
+  doi = {10.14778/1687553.1687568},
+  acmid = {1687568},
+  publisher = {VLDB Endowment},
+ }
+
+ @article{scope:vldb08,
+  author = {Chaiken, Ronnie and Jenkins, Bob and Larson, Per-\AAke and Ramsey, Bill and Shakib, Darren and Weaver, Simon and Zhou, Jingren},
+  title = {SCOPE: Easy and Efficient Parallel Processing of Massive Data Sets},
+  journal = {Proc. VLDB Endow.},
+  issue_date = {August 2008},
+  volume = {1},
+  number = {2},
+  month = aug,
+  year = {2008},
+  issn = {2150-8097},
+  pages = {1265--1276},
+  numpages = {12},
+  url = {http://dx.doi.org/10.14778/1454159.1454166},
+  doi = {10.14778/1454159.1454166},
+  acmid = {1454166},
+  publisher = {VLDB Endowment},
+ }
+
+
+
+
 @inproceedings{symbolic-mining,
  author = {Mark Gabel and Zhendong Su},
  title = {Symbolic mining of temporal specifications},
@@ -11759,6 +12098,11 @@ month = may,
  }
  issn = {0001-0782},
  address = {New York, NY, USA},
+
+ @article{arthur:dave2013,
+   title={Arthur: Rich post-facto debugging for production analytics applications},
+   author={Dave, Ankur and Zaharia, Matei}
+ }
 
 @article{dynamic_slicing,
     author = {B. Korel and J. Laski},
@@ -11907,7 +12251,7 @@ month = may,
 
 @misc{vmware:license,
  title = {{VMware End User License Agreements}},
- howpublished = 
+ howpublished =
 "\url{
 http://www.vmware.com/download/eula.html
 }",
@@ -11917,25 +12261,25 @@ http://www.vmware.com/download/eula.html
 @misc{cityhash:github,
  key = {Google/cityhash},
  OPTtitle = {Google/cityhash},
- howpublished = 
+ howpublished =
 "\url{
 https://github.com/google/cityhash
 }",
 }
 
 @misc{google-outage,
- title = {Why Gmail went down: Google misconfigured load balancing servers 
+ title = {Why Gmail went down: Google misconfigured load balancing servers
 (Updated)},
- howpublished = 
+ howpublished =
 "\url{
 https://arstechnica.com/civis/viewtopic.php?f=2&t=1188603
 }",
 }
 
 @misc{s3-outage,
- title = {Summary of the Amazon S3 Service Disruption in the Northern 
+ title = {Summary of the Amazon S3 Service Disruption in the Northern
 Virginia (US-EAST-1) Region},
- howpublished = 
+ howpublished =
 "\url{
 https://aws.amazon.com/message/41926/
 }",
@@ -11943,7 +12287,7 @@ https://aws.amazon.com/message/41926/
 
 @misc{hardware-fail,
  title = {{Which Hardware Fails the Most and Why}},
- howpublished = 
+ howpublished =
 "\url{
 http://www.storagecraft.com/blog/hardware-failure/}",
 }
@@ -11951,7 +12295,7 @@ http://www.storagecraft.com/blog/hardware-failure/}",
 
 @misc{qemu-mc,
  title = {{RDMA migration and rdma fault tolerance for QEMU}},
- howpublished = 
+ howpublished =
 "\url{
 http://www.linux-kvm.org/images/0/09/Kvm-forum-2013-rdma.pdf
 }",
@@ -11959,7 +12303,7 @@ http://www.linux-kvm.org/images/0/09/Kvm-forum-2013-rdma.pdf
 
 @misc{qemu-mc-fs,
  title = {{QEMU file system block replication}},
- howpublished = 
+ howpublished =
 "\url{
 https://github.com/qemu/qemu/blob/master/docs/block-replication.txt
 }",
@@ -11970,7 +12314,7 @@ https://github.com/qemu/qemu/blob/master/docs/block-replication.txt
 @misc{gmail-outage,
  key = {Misconfiguration Strikes Again Setting Off Google Apps Outage},
  OPTtitle = {Misconfiguration Strikes Again Setting Off Google Apps Outage},
- howpublished = 
+ howpublished =
 "\url{
 https://www.evolven.com/blog/misconfiguration-strikes-again-setting-off-google-a
 pps-outage.html
@@ -11979,21 +12323,21 @@ pps-outage.html
 
 @misc{vsphere-practice,
  title = {{VMware vSphere 6 Fault Tolerance: Architecture and Performance}},
- howpublished = 
+ howpublished =
 "\url{
 http://www.vmware.com/files/pdf/techpaper/VMware-vSphere6-FT-arch-perf.pdf}",
 }
 
 @misc{vsphere-only4core,
  title = {{Configuration Maximums (vSphere 6.5)}},
- howpublished = 
+ howpublished =
 "\url{
 https://www.vmware.com/pdf/vsphere6/r65/vsphere-65-configuration-maximums.pdf}",
 }
 
 @misc{openfabrics-rdmatcp,
  title = {{Implementing TCP Sockets over RDMA}},
- howpublished = 
+ howpublished =
 "\url{
 https://www.openfabrics.org/images/eventpresos/workshops2014/IBUG/presos/Thursda
 y/PDF/09_Sockets-over-rdma.pdf}",
@@ -12001,7 +12345,7 @@ y/PDF/09_Sockets-over-rdma.pdf}",
 
 @misc{nasa-rdmatcp,
  title = {{Comparison of 40G RDMA and Traditional Ethernet Technologies}},
- howpublished = 
+ howpublished =
 "\url{
 https://www.nas.nasa.gov/assets/pdf/papers/40_Gig_Whitepaper_11-2013.pdf}",
 }
@@ -12020,21 +12364,21 @@ https://www.nas.nasa.gov/assets/pdf/papers/40_Gig_Whitepaper_11-2013.pdf}",
 
 @misc{facebook:ipo:delay,
     title = {Facebook IPO: What Went Wrong?},
-    howpublished = 
+    howpublished =
 "\url{
 http://money.cnn.com/2012/05/23/technology/facebook-ipo-what-went-wrong/}"
 }
 
 @misc{nyse:halt,
     title = {This is why the NYSE shut down today},
-    howpublished = 
+    howpublished =
 "\url{
 http://fortune.com/2015/07/08/nyse-halt/}"
 }
 
 @misc{facebook:outage,
     title = {Is Facebook down? A history of outages},
-    howpublished = 
+    howpublished =
 "\url{
 https://www.theguardian.com/technology/2015/jan/27/is-facebook-down-outages}"
 }
@@ -12083,6 +12427,15 @@ https://www.theguardian.com/technology/2015/jan/27/is-facebook-down-outages}"
  year = {2004},
  }
  location = {Newport Beach, CA},
+
+ @inproceedings{fse12:dtam,
+   title={DTAM: dynamic taint analysis of multi-threaded programs for relevancy},
+   author={Ganai, Malay and Lee, Dongyoon and Gupta, Aarti},
+   booktitle={Proceedings of the ACM SIGSOFT 20th International Symposium on the Foundations of Software Engineering},
+   pages={46},
+   year={2012},
+   organization={ACM}
+ }
 
 @article{kinesis:tos,
  author = {John MacCormick and Nicholas Murphy and Venugopalan Ramasubramanian and Udi Wieder and Junfeng Yang and Lidong Zhou},
@@ -12298,8 +12651,8 @@ pages = {261-260}}
 @INPROCEEDINGS{lazy-parallel-composition,
     author = {H. J. Touati and  H. Savoj and B. Lin and R. K. Brayton and A. Sangiovanni-Vincentelli},
     title = {Implicit State Enumeration of Finite State Machines using BDD's},
-    booktitle = {IEEE Int. Conf. Computer-Aided Design}, 
-    pages = {130--133}, 
+    booktitle = {IEEE Int. Conf. Computer-Aided Design},
+    pages = {130--133},
     year = {1990},
 }
 
@@ -12424,44 +12777,44 @@ pages = "361--376"
  month = dec,
  year = {1995},
  location = {Copper Mountain, Colorado, USA},
-} 
+}
 
 @inproceedings{gerofi:cluster11,
  author = {Gerofi, Balazs and Ishikawa, Yutaka},
- title = {RDMA Based Replication of Multiprocessor Virtual Machines over 
+ title = {RDMA Based Replication of Multiprocessor Virtual Machines over
 High-Performance Interconnects},
- booktitle = {Proceedings of the 2011 IEEE International Conference on Cluster 
+ booktitle = {Proceedings of the 2011 IEEE International Conference on Cluster
 Computing},
  series = {CLUSTER '11},
  year = {2011},
-} 
+}
 
 @article{remus:rdma:sync,
-  title={Multi-site synchronous VM replication for persistent systems with 
+  title={Multi-site synchronous VM replication for persistent systems with
 asymmetric read/write latencies},
   author={Sartakov, Vasily A and Kapitza, R{\"u}diger}
 }
 
 @inproceedings{zhao:osdi16,
- author = {Zhao, Xu and Rodrigues, Kirk and Luo, Yu and Yuan, Ding and Stumm, 
+ author = {Zhao, Xu and Rodrigues, Kirk and Luo, Yu and Yuan, Ding and Stumm,
 Michael},
- title = {Non-intrusive Performance Profiling for Entire Software Stacks Based 
+ title = {Non-intrusive Performance Profiling for Entire Software Stacks Based
 on the Flow Reconstruction Principle},
- booktitle = {Proceedings of the 12th USENIX Conference on Operating Systems 
+ booktitle = {Proceedings of the 12th USENIX Conference on Operating Systems
 Design and Implementation},
  series = {OSDI'16},
  year = {2016},
-} 
+}
 
 @article{outvm:sigmetric14,
- author = {Suneja, Sahil and Isci, Canturk and Bala, Vasanth and de Lara, Eyal 
+ author = {Suneja, Sahil and Isci, Canturk and Bala, Vasanth and de Lara, Eyal
 and Mummert, Todd},
- title = {Non-intrusive, Out-of-band and Out-of-the-box Systems Monitoring in 
+ title = {Non-intrusive, Out-of-band and Out-of-the-box Systems Monitoring in
 the Cloud},
  journal = {SIGMETRICS Perform. Eval. Rev.},
  month = jun,
  year = {2014},
-} 
+}
 
 @inproceedings{dmtcp:ipdps09,
   title={DMTCP: Transparent checkpointing for cluster computations and the desktop},
@@ -13053,11 +13406,11 @@ key = {LLVM LRM},
 @inproceedings{manos:hotdep10,
  author = {Kapritsos, Manos and Junqueira, Flavio P.},
  title = {Scalable Agreement: Toward Ordering As a Service},
- booktitle = {Proceedings of the Sixth International Conference on Hot Topics in 
+ booktitle = {Proceedings of the Sixth International Conference on Hot Topics in
 System Dependability},
  series = {HotDep'10},
  year = {2010},
-} 
+}
 
 
 @article{cilk,
@@ -13349,11 +13702,11 @@ System Dependability},
 @inproceedings{bolosky:atc93,
  author = {Bolosky, William J. and Scott, Michael L.},
  title = {False Sharing and Its Effect on Shared Memory Performance},
- booktitle = {USENIX Systems on USENIX Experiences with Distributed and 
+ booktitle = {USENIX Systems on USENIX Experiences with Distributed and
 Multiprocessor Systems - Volume 4},
  series = {Sedms'93},
  year = {1993},
-} 
+}
 
 
 @article{predator:ppopp14,
@@ -13365,7 +13718,17 @@ Multiprocessor Systems - Volume 4},
  number = {8},
  month = feb,
  year = {2014},
-} 
+}
+
+@inproceedings{zookeeper:usenix10,
+ author = {Hunt, Patrick and Konar, Mahadev and Junqueira, Flavio P. and Reed,
+Benjamin},
+ title = {ZooKeeper: Wait-free Coordination for Internet-scale Systems},
+ booktitle = {Proceedings of the 2010 USENIX Conference on USENIX Annual
+Technical Conference},
+ series = {USENIXATC'10},
+ year = {2010},
+}
 
 @inproceedings{ddt:usenix10,
  author = {Volodymyr Kuznetsov and Vitaly Chipounov and George Candea},
@@ -13377,20 +13740,20 @@ Multiprocessor Systems - Volume 4},
 
 @inproceedings{pilaf:usenix14,
  author = {Mitchell, Christopher and Geng, Yifeng and Li, Jinyang},
- title = {Using One-sided RDMA Reads to Build a Fast, CPU-efficient Key-value 
+ title = {Using One-sided RDMA Reads to Build a Fast, CPU-efficient Key-value
 Store},
  booktitle = UATC14,
  year = {2013},
  month = jun,
-} 
- 
+}
+
 @inproceedings{raft:usenix14,
  author = {Ongaro, Diego and Ousterhout, John},
  title = {In Search of an Understandable Consensus Algorithm},
  booktitle = UATC14,
  year = 2014,
  month = jun,
-} 
+}
 
 @article{general-isr,
   title = {{On The General Applicability of Instruction-Set Randomization}},
@@ -13539,29 +13902,29 @@ Store},
  isbn = {1-59593-332-6},
  location = {Ottawa, Ontario, Canada},
 
- 
- 
- 
- 
+
+
+
+
 @inproceedings{hardpaxos:srds14,
 author={Diogo Behrens and Dmitrii Kuvaiskii and Christof Fetzer},
-booktitle={Reliable Distributed Systems (SRDS), 2014 IEEE 33rd International 
+booktitle={Reliable Distributed Systems (SRDS), 2014 IEEE 33rd International
 Symposium on},
 title={HardPaxos: Replication Hardened against Hardware Errors},
 year={2014},
 month={Oct},
 }
- 
+
 @inproceedings{spaxos:srds12,
- author = {Biely, Martin and Milosevic, Zarko and Santos, Nuno and Schiper, 
+ author = {Biely, Martin and Milosevic, Zarko and Santos, Nuno and Schiper,
 Andre},
- title = {S-Paxos: Offloading the Leader for High Throughput State Machine 
+ title = {S-Paxos: Offloading the Leader for High Throughput State Machine
 Replication},
- booktitle = {Proceedings of the 2012 IEEE 31st Symposium on Reliable 
+ booktitle = {Proceedings of the 2012 IEEE 31st Symposium on Reliable
 Distributed Systems},
  series = {SRDS '12},
  year = {2012},
-} 
+}
 
 @inproceedings{basile:srds02,
  author = {Basile, Claudio and Whisnant, Keith and Kalbarczyk, Zbigniew and Iyer, Ravi},
@@ -13580,7 +13943,7 @@ Distributed Systems},
  booktitle = {Proceedings of the International Conference on Parallel and Distributed Computing and Systems},
  year = 2006,
 }
- 	
+
 @inproceedings{domaschka:ipdps07,
  author = {Jorg Domaschka and Andreas I. Schmied and Hans P. Reiser and Franz J. Hauck},
  title = {Revisiting deterministic multithreading strategies},
@@ -13638,29 +14001,29 @@ Distributed Systems},
 }
 
 @inproceedings{netpaxos:sosr15,
- author = {Dang, Huynh Tu and Sciascia, Daniele and Canini, Marco and Pedone, 
+ author = {Dang, Huynh Tu and Sciascia, Daniele and Canini, Marco and Pedone,
 Fernando and Soul{\'e}, Robert},
  title = {NetPaxos: Consensus at Network Speed},
- booktitle = {Proceedings of the 1st ACM SIGCOMM Symposium on Software Defined 
+ booktitle = {Proceedings of the 1st ACM SIGCOMM Symposium on Software Defined
 Networking Research},
  series = {SOSR '15},
  year = {2015},
-} 
+}
 
 @inproceedings{lu:speculative:vmsync,
  author = {Lu, Maohua and Chiueh, Tzi-cker},
  title = {Speculative Memory State Transfer for Active-Active Fault Tolerance},
- booktitle = {Proceedings of the 2012 12th IEEE/ACM International Symposium on 
+ booktitle = {Proceedings of the 2012 12th IEEE/ACM International Symposium on
 Cluster, Cloud and Grid Computing (Ccgrid 2012)},
  series = {CCGRID '12},
  year = {2012},
-} 
+}
 
 @inproceedings{fastvmsync,
-  title={Fast memory state synchronization for virtualization-based fault 
+  title={Fast memory state synchronization for virtualization-based fault
 tolerance},
   author={Lu, Maohua and Chiueh, Tzi-cker},
-  booktitle={Dependable Systems \& Networks, 2009. DSN'09. IEEE/IFIP 
+  booktitle={Dependable Systems \& Networks, 2009. DSN'09. IEEE/IFIP
 International Conference on},
   pages={534--543},
   year={2009},
@@ -13668,14 +14031,14 @@ International Conference on},
 }
 
 @inproceedings{ssmr:dsn14,
- author = {Bezerra, Carlos Eduardo and Pedone, Fernando and Renesse, Robbert 
+ author = {Bezerra, Carlos Eduardo and Pedone, Fernando and Renesse, Robbert
 Van},
  title = {Scalable State-Machine Replication},
- booktitle = {Proceedings of the 2014 44th Annual IEEE/IFIP International 
+ booktitle = {Proceedings of the 2014 44th Annual IEEE/IFIP International
 Conference on Dependable Systems and Networks},
  series = {DSN '14},
  year = {2014},
-} 
+}
 
 
 @inproceedings{cbase:dsn04,
@@ -13724,8 +14087,8 @@ Conference on Dependable Systems and Networks},
 }
 
 @misc{repbox:github,
-    title = {Complete source code, benchmark suite, and raw results of the 
-{REPBOX} state machine replication system for general multithreaded server 
+    title = {Complete source code, benchmark suite, and raw results of the
+{REPBOX} state machine replication system for general multithreaded server
 programs.},
     howpublished = "\url{https://github.com/hemingcui/m-smr}"
 }
@@ -13737,7 +14100,7 @@ programs.},
  booktitle = SOSP21,
  month = oct,
  year = {2007},
-} 
+}
 
 @inproceedings{pbft:osdi99,
  Author = {Castro, Miguel and Liskov, Barbara},
@@ -13745,16 +14108,16 @@ programs.},
  booktitle = OSDI3,
  month = oct,
  year = {1999},
-} 
+}
 
 @inproceedings{upright:sosp09,
- author = {Clement, Allen and Kapritsos, Manos and Lee, Sangmin and Wang, Yang 
+ author = {Clement, Allen and Kapritsos, Manos and Lee, Sangmin and Wang, Yang
 and Alvisi, Lorenzo and Dahlin, Mike and Riche, Taylor},
  title = {Upright Cluster Services},
  booktitle = SOSP22,
  month = oct,
  year = {2009},
-} 
+}
 
 @inproceedings{nonstop:dsn05,
   title={NonStop{\textregistered} advanced architecture},
@@ -13787,9 +14150,9 @@ and Alvisi, Lorenzo and Dahlin, Mike and Riche, Taylor},
 
 @inproceedings{peluso2015exploiting,
   title={On Exploiting Locality for Generalized Consensus},
-  author={Peluso, Sebastiano and Turcu, Alexandru and Palmieri, Roberto and 
+  author={Peluso, Sebastiano and Turcu, Alexandru and Palmieri, Roberto and
 Ravindran, Binoy},
-  booktitle={Distributed Computing Systems (ICDCS), 2015 IEEE 35th International 
+  booktitle={Distributed Computing Systems (ICDCS), 2015 IEEE 35th International
 Conference on},
   pages={766--767},
   year={2015},
@@ -13804,9 +14167,9 @@ Conference on},
 }
 
 @article{amir2010steward,
-  title={Steward: Scaling Byzantine fault-tolerant replication to wide area 
+  title={Steward: Scaling Byzantine fault-tolerant replication to wide area
 networks},
-  author={Amir, Yair and Danilov, Claudiu and Dolev, Danny and Kirsch, Jonathan 
+  author={Amir, Yair and Danilov, Claudiu and Dolev, Danny and Kirsch, Jonathan
 and Lane, John and Nita-Rotaru, Cristina and Olsen, Josh and Zage, David},
   journal={IEEE Transactions on Dependable and Secure Computing},
   volume={7},
@@ -13818,7 +14181,7 @@ and Lane, John and Nita-Rotaru, Cristina and Olsen, Josh and Zage, David},
 
 @article{gpu:era,
   title={Hyperspectral remote sensing data analysis and future challenges},
-  author={Bioucas-Dias, Jose M and Plaza, Antonio and Camps-Valls, Gustavo and 
+  author={Bioucas-Dias, Jose M and Plaza, Antonio and Camps-Valls, Gustavo and
 Scheunders, Paul and Nasrabadi, Nasser and Chanussot, Jocelyn},
   journal={IEEE Geoscience and remote sensing magazine},
   volume={1},
@@ -13829,19 +14192,19 @@ Scheunders, Paul and Nasrabadi, Nasser and Chanussot, Jocelyn},
 }
 
 @inproceedings{perf:isolation:middleware06,
- author = {Gupta, Diwaker and Cherkasova, Ludmila and Gardner, Rob and Vahdat, 
+ author = {Gupta, Diwaker and Cherkasova, Ludmila and Gardner, Rob and Vahdat,
 Amin},
  title = {Enforcing Performance Isolation Across Virtual Machines in Xen},
- booktitle = {Proceedings of the ACM/IFIP/USENIX 2006 International Conference 
+ booktitle = {Proceedings of the ACM/IFIP/USENIX 2006 International Conference
 on Middleware},
  series = {Middleware '06},
  year = {2006},
-} 
+}
 
 @inproceedings{araujo2012replication,
   title={Replication for dependability on virtualized cloud environments},
   author={Araujo, Filipe and Barbosa, Raul and Casimiro, Ant{\'o}nio},
-  booktitle={Proceedings of the 10th International Workshop on Middleware for 
+  booktitle={Proceedings of the 10th International Workshop on Middleware for
 Grids, Clouds and e-Science},
   pages={2},
   year={2012},
@@ -13849,11 +14212,11 @@ Grids, Clouds and e-Science},
 }
 
 @inproceedings{martins2013experiences,
-  title={Experiences with fault-injection in a Byzantine fault-tolerant 
+  title={Experiences with fault-injection in a Byzantine fault-tolerant
 protocol},
-  author={Martins, Rolando and Gandhi, Rajeev and Narasimhan, Priya and Pertet, 
+  author={Martins, Rolando and Gandhi, Rajeev and Narasimhan, Priya and Pertet,
 Soila and Casimiro, Ant{\'o}nio and Kreutz, Diego and Ver{\'\i}ssimo, Paulo},
-  booktitle={ACM/IFIP/USENIX International Conference on Distributed Systems 
+  booktitle={ACM/IFIP/USENIX International Conference on Distributed Systems
 Platforms and Open Distributed Processing},
   pages={41--61},
   year={2013},
@@ -13865,36 +14228,36 @@ Platforms and Open Distributed Processing},
  title = {Fault Tolerance in Distributed Systems Using Fused State Machines},
  journal = {Distrib. Comput.},
  year = {2014},
-} 
+}
 
 @inproceedings{brun:icdcs12,
- author = {Brun, Yuriy and Edwards, George and Bang, Jae Young and Medvidovic, 
+ author = {Brun, Yuriy and Edwards, George and Bang, Jae Young and Medvidovic,
 Nenad},
  title = {Smart Redundancy for Distributed Computation},
- booktitle = {Proceedings of the 2011 31st International Conference on 
+ booktitle = {Proceedings of the 2011 31st International Conference on
 Distributed Computing Systems},
  series = {ICDCS '11},
  year = {2011},
-} 
+}
 
 @inproceedings{meling:icdcs12,
  author = {Meling, Hein and Marzullo, Keith and Mei, Alessandro},
  title = {When You Don'T Trust Clients: Byzantine Proposer Fast Paxos},
- booktitle = {Proceedings of the 2012 IEEE 32Nd International Conference on 
+ booktitle = {Proceedings of the 2012 IEEE 32Nd International Conference on
 Distributed Computing Systems},
  series = {ICDCS '12},
  year = {2012},
 }
 
 @inproceedings{marandi:icdcs14,
- author = {Marandi, Parisa Jalili and Bezerra, Carlos Eduardo and Pedone, 
+ author = {Marandi, Parisa Jalili and Bezerra, Carlos Eduardo and Pedone,
 Fernando},
  title = {Rethinking State-Machine Replication for Parallelism},
- booktitle = {Proceedings of the 2014 IEEE 34th International Conference on 
+ booktitle = {Proceedings of the 2014 IEEE 34th International Conference on
 Distributed Computing Systems},
  series = {ICDCS '14},
  year = {2014},
-} 
+}
 
 @inproceedings{kobus:icdcs13,
   title={Hybrid replication: State-machine-based and deferred-update replication schemes combined},
@@ -14195,7 +14558,7 @@ Distributed Computing Systems},
 }
 
 @misc{roce,
-  title = {{Mellanox Products: RDMA over Converged Ethernet (RoCE)}},  
+  title = {{Mellanox Products: RDMA over Converged Ethernet (RoCE)}},
 howpublished="\url{http://www.mellanox.com/page/products_dyn?product_family=79}"
 }
 
@@ -14219,7 +14582,7 @@ http://dpdk.org/
 
 @misc{datacenter:os,
   title = {{Why the data center needs an operating system}},
-  
+
 howpublished="\url{
 https://cs.stanford.edu/~matei/papers/2011/hotcloud_datacenter_os.pdf}"
 }
@@ -14227,6 +14590,11 @@ https://cs.stanford.edu/~matei/papers/2011/hotcloud_datacenter_os.pdf}"
 @misc{hdfs,
   title = {{The Hadoop Distributed File System}},
   howpublished="\url{http://hadoop.apache.org/hdfs/}"
+}
+
+@misc{glusterfs,
+  title = {{Gluster File System}},
+  howpublished="\url{http://www.gluster.org}"
 }
 
 @misc{zookeeper,
@@ -14252,6 +14620,16 @@ https://cs.stanford.edu/~matei/papers/2011/hotcloud_datacenter_os.pdf}"
 @misc{mysql:replication,
   title = {{MySQL Replication}},
   howpublished="\url{https://dev.mysql.com/doc/refman/5.0/en/replication.html}"
+}
+
+@misc{redis:replication,
+  title = {{Redis Replication}},
+  howpublished="\url{https://redis.io/topics/replication}"
+}
+
+@misc{bdb:replication,
+  title = {{Berkeley DB Replication}},
+  howpublished="\url{https://docs.oracle.com/cd/E17276_01/html/programmer_reference/rep.html}"
 }
 
 @misc{boost,
@@ -14357,7 +14735,7 @@ month = "April", year = "2008"}
  year = {2010},
  optlocation = {Vancouver, BC, Canada},
  optnumpages = {16},
-} 
+}
 
 @inproceedings{sherlog:asplos10,
  author = {Yuan, Ding and Mai, Haohui and Xiong, Weiwei and Tan, Lin and Zhou, Yuanyuan and Pasupathy, Shankar},
@@ -14367,7 +14745,7 @@ month = "April", year = "2008"}
  year = {2010},
  optlocation = {Pittsburgh, Pennsylvania, USA},
  pages = {143--154},
-} 
+}
 
 
 @inproceedings{conseq:asplos11,
@@ -14378,7 +14756,7 @@ month = "April", year = "2008"}
  year = {2011},
  optlocation = {Newport Beach, California, USA},
  pages = {251--264},
-} 
+}
 
 @inproceedings{esd:eurosys10,
  author = {Zamfir, Cristian and Candea, George},
@@ -14388,7 +14766,7 @@ month = "April", year = "2008"}
  year = {2010},
  optlocation = {Paris, France},
  pages = {321--334},
-} 
+}
 
 @inproceedings{retro:osdi10,
  author = {Kim, Taesoo and Wang, Xi and Zeldovich, Nickolai and Kaashoek, M. Frans},
@@ -14398,7 +14776,7 @@ month = "April", year = "2008"}
  year = {2010},
  optlocation = {Vancouver, BC, Canada},
  pages = {1--9},
-} 
+}
 
 @inproceedings{linearizable:eurosys11,
  author = {Pedro Fonseca and Cheng Li and Rodrigo Rodrigues},
@@ -14407,7 +14785,7 @@ month = "April", year = "2008"}
  month = apr,
  year = {2011},
  pages = {215--228},
-} 
+}
 
 @misc{boinc,
 title = "Open-source software for volunteer computing and grid computing",
@@ -14422,7 +14800,7 @@ howpublished = "\url{http://boinc.berkeley.edu/}"}
  booktitle = SOSP22,
  year = {2009},
  pages = {161--176},
-} 
+}
 
 @inproceedings{speck:asplos08,
  author = {Nightingale, Edmund B. and Peek, Daniel and Chen, Peter M. and Flinn, Jason},
@@ -14430,7 +14808,7 @@ howpublished = "\url{http://boinc.berkeley.edu/}"}
  booktitle = ASPLOS13,
  year = {2008},
  pages = {308--318},
-} 
+}
 
 @INPROCEEDINGS{unionfs,
   AUTHOR =       "D. P. Quigley and J. Sipek and C. P. Wright and E. Zadok",
@@ -14450,7 +14828,7 @@ howpublished = "\url{http://boinc.berkeley.edu/}"}
  booktitle = {Proceedings of the 6th USENIX Conference on File and Storage Technologies},
  year = {2008},
  pages = {13:1--13:18},
-} 
+}
 
 @inproceedings{toctou:usec03,
  author = {Tsyrklevich, Eugene and Yee, Bennet},
@@ -14458,7 +14836,7 @@ howpublished = "\url{http://boinc.berkeley.edu/}"}
  booktitle = {Proceedings of the 12th conference on USENIX Security Symposium - Volume 12},
  year = {2003},
  pages = {17--17},
-} 
+}
 
 @inproceedings{toctou:fast05,
  author = {Wei, Jinpeng and Pu, Calton},
@@ -14466,7 +14844,7 @@ howpublished = "\url{http://boinc.berkeley.edu/}"}
  booktitle = {Proceedings of the 4th conference on USENIX Conference on File and Storage Technologies - Volume 4},
  year = {2005},
  pages = {12--12},
-} 
+}
 
 @inproceedings{racepro:hotos11,
  author = {Oren Laadan and Chia-che Tsai and Nicolas Viennot and Chris Blinn and  Peter Senyao Du and Junfeng Yang and Jason Nieh},
@@ -14483,13 +14861,13 @@ howpublished = "\url{http://boinc.berkeley.edu/}"}
  }
 
 @inproceedings{Bessani:usenix13,
- author = {Bessani, Alysson and Santos, Marcel and Felix, Jo\~{a}o and Neves, 
+ author = {Bessani, Alysson and Santos, Marcel and Felix, Jo\~{a}o and Neves,
 Nuno and Correia, Miguel},
  title = {On the Efficiency of Durable State Machine Replication},
     booktitle = UATC13,
     year = "2013"
-}  
- 
+}
+
 @inproceedings{code:usenix11,
     author = {Ding Yuan and Yinglian Xie and Rina Panigrahy and Junfeng Yang and Chad Verbowski and Arunvijay Kumar},
     title = {Context-based Online Configuration-Error Detection},
@@ -14498,7 +14876,7 @@ Nuno and Correia, Miguel},
 }
 
 @inproceedings{ramcloud:sosp11,
- author = {Ongaro, Diego and Rumble, Stephen M. and Stutsman, Ryan and 
+ author = {Ongaro, Diego and Rumble, Stephen M. and Stutsman, Ryan and
 Ousterhout, John and Rosenblum, Mendel},
  title = {Fast Crash Recovery in RAMCloud},
  booktitle = SOSP23,
@@ -14507,13 +14885,13 @@ Ousterhout, John and Rosenblum, Mendel},
 }
 
 @inproceedings{scatter:sosp11,
- author = {Glendenning, Lisa and Beschastnikh, Ivan and Krishnamurthy, Arvind 
+ author = {Glendenning, Lisa and Beschastnikh, Ivan and Krishnamurthy, Arvind
 and Anderson, Thomas},
  title = {Scalable Consistency in Scatter},
  booktitle = SOSP23,
  month = oct,
  year = {2011},
-} 
+}
 
 @inproceedings{racepro:sosp11,
  author = {Oren Laadan and Nicolas Viennot and Chia-che Tsai and Chris Blinn and Junfeng Yang and Jason Nieh},
@@ -14592,7 +14970,7 @@ and Anderson, Thomas},
  title = {A Sense of Self for Unix Processes},
  booktitle = {Proceedings of the 1996 IEEE Symposium on Security and Privacy},
  year = {1996},
-} 
+}
 
 
 @inproceedings{aslr-fail:ccs04,
@@ -14665,14 +15043,14 @@ and Anderson, Thomas},
  booktitle = POPL02,
  year = {2002},
  pages = {128--139},
-} 
+}
 
 @inproceedings{syscall-ngram,
  author = {Forrest, Stephanie and Hofmeyr, Steven A. and Somayaji, Anil and Longstaff, Thomas A.},
  title = {A Sense of Self for Unix Processes},
  booktitle = {Proceedings of the 1996 IEEE Symposium on Security and Privacy},
  year = {1996},
-} 
+}
 
 @inproceedings{asr:usec03,
     author = {Eep Bhatkar and Daniel C. Duvarney and R. Sekar},
@@ -14688,7 +15066,7 @@ and Anderson, Thomas},
  booktitle = {Proceedings of the 2010 ACM workshop on Cloud computing security workshop},
  year = {2010},
  pages = {103--108},
-} 
+}
 
 
 @MISC{libdft,
@@ -14704,7 +15082,7 @@ and Anderson, Thomas},
  booktitle = {Proceedings of the first USENIX workshop on Offensive Technologies},
  year = {2007},
  pages = {2:1--2:8},
-} 
+}
 
 @misc{concurrency:blackhat08,
 title = "Concurrency Attacks in Web Applications",
@@ -14726,17 +15104,17 @@ year = {2008}
  acmid = {1267554},
  publisher = {USENIX Association},
  address = {Berkeley, CA, USA},
-} 
+}
 
 @misc{mpi,
-  title = "MPI: A message-passing interface standard version 2.2", 
+  title = "MPI: A message-passing interface standard version 2.2",
   author = "Message Passing Interface Forum",
   month = sep,
   year = {2009}
 }
 
 @misc{openmpi,
-  title = "Open MPI: Open Source High Performance Computing", 
+  title = "Open MPI: Open Source High Performance Computing",
   author = "Message Passing Interface Forum",
   month = sep,
   year = {2009}
@@ -14782,6 +15160,25 @@ year = {2008}
  year = {2011},
 }
 
+@inproceedings{libdft:vee12,
+ author = {Kemerlis, Vasileios P. and Portokalidis, Georgios and Jee, Kangkook and Keromytis, Angelos D.},
+ title = {Libdft: Practical Dynamic Data Flow Tracking for Commodity Systems},
+ booktitle = {Proceedings of the 8th ACM SIGPLAN/SIGOPS Conference on Virtual Execution Environments},
+ series = {VEE '12},
+ year = {2012},
+ isbn = {978-1-4503-1176-2},
+ location = {London, England, UK},
+ pages = {121--132},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2151024.2151042},
+ doi = {10.1145/2151024.2151042},
+ acmid = {2151042},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {data flow tracking, dynamic binary instrumentation, exploit prevention, information leak detection, taint analysis},
+}
+
+
 @inproceedings{kendo:wodet11,
  author = {Marek Olszewski and Jason Ansel and Saman Amarasinghe},
  title = {Scaling Deterministic Multithreading},
@@ -14796,7 +15193,7 @@ year = {2008}
     title = "Deterministic OpenMP",
     school = "Yale University",
     year = 2012}
-    
+
 @PhdThesis{ellis:thesis,
     author = "Ellis Michael",
     title = "Scaling Leader-Based Protocols for State Machine Replication",
@@ -14827,7 +15224,7 @@ year = {2008}
  month = jun,
  year = {2000},
  pages = {182--195},
-} 
+}
 
 
 
@@ -14837,7 +15234,7 @@ year = {2008}
  booktitle = {Proceedings of the eighteenth international symposium on Software testing and analysis},
  year = {2009},
  pages = {105--116},
-} 
+}
 
 
 @inproceedings{symbolic-execution,
@@ -14856,7 +15253,7 @@ year = {2008}
  month = apr,
  year = {2011},
  pages = {315--328},
-} 
+}
 
 @inproceedings{alias:icse05,
  author = {Avots, Dzintars and Dalton, Michael and Livshits, V. Benjamin and Lam, Monica S.},
@@ -14865,7 +15262,7 @@ year = {2008}
  month = may,
  year = {2005},
  pages = {332--341},
-} 
+}
 
 @inproceedings{alias:fse06,
  author = {Hackett, Brian and Aiken, Alex},
@@ -14874,7 +15271,7 @@ year = {2008}
  month = nov,
  year = {2006},
  pages = {69--80},
-} 
+}
 
 
 @inproceedings{rwset:tacas08,
@@ -14884,7 +15281,7 @@ year = {2008}
  month = mar,
  year = {2008},
  pages = {351--366},
-} 
+}
 
 @inproceedings{dthreads:sosp11,
  author = {Tongping Liu and Charlie Curtsinger and Emery D. Berger},
@@ -14911,7 +15308,7 @@ year = {2008}
  booktitle = POPL92,
  year = {1992},
  pages = {269--280},
-} 
+}
 
 @inproceedings{jorgensen:popl92,
  author = {J{\o}rgensen, Jesper},
@@ -14919,7 +15316,7 @@ year = {2008}
  booktitle = POPL92,
  year = {1992},
  pages = {258--268},
-} 
+}
 
 @inproceedings{consel:popl93,
  author = {Consel, Charles and Danvy, Olivier},
@@ -14927,7 +15324,7 @@ year = {2008}
  booktitle = POPL93,
  year = {1993},
  pages = {493--501},
-} 
+}
 
 @inproceedings{gluck:plilps95,
  author = {Gl\"{u}ck, Robert and J{\o}rgensen, Jesper},
@@ -14935,14 +15332,14 @@ year = {2008}
  booktitle = {Proceedings of the 7th International Symposium on Programming Languages: Implementations, Logics and Programs},
  year = {1995},
  pages = {259--278},
-} 
+}
 
 @phdthesis{weiser:1979,
  author = {Weiser, Mark David},
  title = {Program slices: formal, psychological, and practical investigations of an automatic program abstraction method},
  year = {1979},
  publisher = {University of Michigan},
-} 
+}
 
 @inproceedings{zhang:pldi04,
  author = {Zhang, Xiangyu and Gupta, Rajiv},
@@ -14950,7 +15347,7 @@ year = {2008}
  booktitle = SIGPLAN04,
  year = {2004},
  pages = {94--106},
-} 
+}
 
 @inproceedings{hpc-replica:fares06,
     author = {C. Engelmann and S. L. Scott and C. Leangsuksun and X. He},
@@ -14971,6 +15368,11 @@ year = {2008}
 @misc{memoize,
   title = "Memoization",
   howpublished = "\url{http://en.wikipedia.org/wiki/Memoization}"
+}
+
+@misc{qcow2,
+  title = "The QCOW2 Image Format",
+  howpublished = "\url{https://people.gnome.org/~markmc/qcow-image-format.html}"
 }
 
 @misc{ibm-marenostrum,
@@ -15030,11 +15432,11 @@ year = {2008}
  booktitle = SOSP13,
  month = nov,
  year = 2013,
-} 
+}
 
 @techreport{caans,
   title={Network Hardware-Accelerated Consensus},
-  author={Huynh Tu, Dang and Pietro, Bressana and Han, Wang and Ki Shu, Lee 
+  author={Huynh Tu, Dang and Pietro, Bressana and Han, Wang and Ki Shu, Lee
 and Hakim, Weatherspoon and Marco, Canini and Fernando, Pedone and Robert,
 Soule},
   year={2016},
@@ -15054,7 +15456,7 @@ Soule},
  booktitle = {Proceedings of the Twenty-sixth Annual ACM Symposium on Principles of Distributed Computing (PODC '07)},
  month = aug,
  year = {2007},
-} 
+}
 
 @misc{paxos:simple,
   title = "Paxos made simple",
@@ -15074,7 +15476,7 @@ Soule},
  journal = {Proc. VLDB Endow.},
  month = jan,
  year = {2011},
-} 
+}
 
 @inproceedings{sched:eurosys11,
  author = {Sukwong, Orathai and Kim, Hyong S.},
@@ -15185,7 +15587,7 @@ Soule},
  year = {2011},
  pages = {369--384},
  keywords = {data race detection, data race survival, uniparallelism},
-} 
+}
 
 @inproceedings{heintze:pldi01,
  author = {Heintze, Nevin and Tardieu, Olivier},
@@ -15193,7 +15595,7 @@ Soule},
  booktitle = SIGPLAN01,
  year = {2001},
  pages = {254--263},
-} 
+}
 
 @inproceedings{landi:pldi93,
  author = {Landi, William and Ryder, Barbara G. and Zhang, Sean},
@@ -15201,7 +15603,7 @@ Soule},
  booktitle = SIGPLAN93,
  year = {1993},
  pages = {56--67},
-} 
+}
 
 @inproceedings{whaley:sas02,
  author = {Whaley, John and Lam, Monica S.},
@@ -15209,7 +15611,7 @@ Soule},
  booktitle = SAS02,
  year = {2002},
  pages = {180--195},
-} 
+}
 
 @inproceedings{emami:pldi94,
  author = {Emami, Maryam and Ghiya, Rakesh and Hendren, Laurie J.},
@@ -15217,7 +15619,7 @@ Soule},
  booktitle = SIGPLAN94,
  year = {1994},
  pages = {242--256},
-} 
+}
 
 @inproceedings{lhotak:cc03,
  author = {Lhot\'{a}k, Ond\v{r}ej and Hendren, Laurie},
@@ -15233,7 +15635,7 @@ Soule},
  booktitle = OOPSLA99,
  year = {1999},
  pages = {187--206},
-} 
+}
 
 @inproceedings{wilson:pldi95,
  author = {Wilson, Robert P. and Lam, Monica S.},
@@ -15241,7 +15643,7 @@ Soule},
  booktitle = SIGPLAN95,
  year = {1995},
  pages = {1--12},
-} 
+}
 
 @inproceedings{lhotak:popl11,
  author = {Lhot\'{a}k, Ondrej and Chung, Kwok-Chiang Andrew},
@@ -15249,7 +15651,24 @@ Soule},
  booktitle = POPL11,
  year = {2011},
  pages = {3--16},
-} 
+}
+
+@inproceedings{popl99:ifc,
+ author = {Myers, Andrew C.},
+ title = {JFlow: Practical Mostly-static Information Flow Control},
+ booktitle = {Proceedings of the 26th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+ series = {POPL '99},
+ year = {1999},
+ isbn = {1-58113-095-3},
+ location = {San Antonio, Texas, USA},
+ pages = {228--241},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/292540.292561},
+ doi = {10.1145/292540.292561},
+ acmid = {292561},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
 
 @inproceedings{smaragdakis:popl11,
  author = {Smaragdakis, Yannis and Bravenboer, Martin and Lhot\'{a}k, Ondrej},
@@ -15257,7 +15676,7 @@ Soule},
  booktitle = POPL11,
  year = {2011},
  pages = {17--30},
-} 
+}
 
 @inproceedings{hardekopf:popl09,
  author = {Hardekopf, Ben and Lin, Calvin},
@@ -15265,7 +15684,7 @@ Soule},
  booktitle = POPL09,
  year = {2009},
  pages = {226--238},
-} 
+}
 
 @inproceedings{sparchs:syssec11,
   author = {Simha Sethumadhavan and Salvatore Stolfo and Angelos Keromytis and Junfeng Yang and David August},
@@ -15394,7 +15813,7 @@ Soule},
  year = {1996},
  pages = {484--495},
  numpages = {12},
-} 
+}
  issn = {0098-5589},
  url = {http://dx.doi.org/10.1109/32.538605},
  doi = {10.1109/32.538605},
@@ -15526,7 +15945,7 @@ Soule},
  booktitle = CAV12,
  year = {2012},
  month = jul
-} 
+}
 
 @inproceedings{meerkats:spcc12,
   author = { Angelos Keromytis and Roxana Geambasu and Simha Sethumadhavan
@@ -15562,7 +15981,7 @@ Soule},
  year = {2012},
  pages = {193--204},
  numpages = {12},
-} 
+}
 
 @inproceedings{par-sym-exec:eurosys11,
  author = {Bucur, Stefan and Ureche, Vlad and Zamfir, Cristian and Candea, George},
@@ -15572,7 +15991,7 @@ Soule},
  year = {2011},
  pages = {183--198},
  numpages = {16},
-} 
+}
 
 @article{bigdata:jacobs:acmqueue,
  author = {Jacobs, Adam},
@@ -15584,7 +16003,7 @@ Soule},
  year = {2009},
  pages = {36--44},
  numpages = {9},
-} 
+}
 
 @article{real-world-concurrency:cacm,
  author = {Cantrill, Bryan and Bonwick, Jeff},
@@ -15596,7 +16015,7 @@ Soule},
  year = {2008},
  pages = {34--39},
  numpages = {6},
-} 
+}
 
 @article{certified-software:cacm,
  author = {Shao, Zhong},
@@ -15608,7 +16027,7 @@ Soule},
  year = {2010},
  pages = {56--66},
  numpages = {11},
-} 
+}
 
 @article{berger:cacm,
  author = {Berger, Emery D.},
@@ -15620,7 +16039,7 @@ Soule},
  year = {2012},
  pages = {48--53},
  numpages = {6},
-} 
+}
 
 @article{determinator:cacm,
  author = {Aviram, Amittai and Weng, Shu-Chun and Hu, Sen and Ford, Bryan},
@@ -15632,7 +16051,7 @@ Soule},
  year = {2012},
  pages = {111--119},
  numpages = {9},
-} 
+}
 
 @article{wu:specialize:sigplan,
  author = {Wu, Jingyue and Tang, Yang and Hu, Gang and Cui, Heming and Yang, Junfeng},
@@ -15644,7 +16063,7 @@ Soule},
  year = {2012},
  pages = {205--216},
  numpages = {12},
-} 
+}
 
 @article{sigops:metrics,
  author = {Chou, Andy and Yang, Junfeng and Chelf, Benjamin and Hallem, Seth and Engler, Dawson},
@@ -15656,7 +16075,7 @@ Soule},
  year = {2001},
  pages = {73--88},
  numpages = {16},
-} 
+}
 
 @article{dejavu:sigplan,
  author = {Gabel, Mark and Yang, Junfeng and Yu, Yuan and Goldszmidt, Moises and Su, Zhendong},
@@ -15668,7 +16087,7 @@ Soule},
  year = {2010},
  pages = {175--190},
  numpages = {16},
-} 
+}
 
 @article{ranking:sigsoft,
  author = {Kremenek, Ted and Ashcraft, Ken and Yang, Junfeng and Engler, Dawson},
@@ -15681,7 +16100,7 @@ Soule},
  year = {2004},
  pages = {83--93},
  numpages = {11},
-} 
+}
 
 @inproceedings{woodpecker:asplos13,
  author = {Cui, Heming and Hu, Gang and Wu, Jingyue and Yang, Junfeng},
@@ -15705,7 +16124,7 @@ Soule},
  title = {Light-weight bounds checking},
  booktitle = {Proceedings of 10th International Symposium on Code Generation and Optimization (CGO '12)},
  year = {2012},
-} 
+}
 
 @inproceedings{pool-bc:icse06,
  author = {Dhurjati, Dinakar and Adve, Vikram},
@@ -15728,7 +16147,7 @@ Soule},
  pages = {159--172},
  month = jan,
  year = {2011},
-} 
+}
 
 @InProceedings{dsa:pldi07,
     author    = {Chris Lattner and Andrew Lenharth and Vikram Adve},
@@ -16157,19 +16576,27 @@ RepositoryRoot = http://llvm.org/svn/llvm-project
  booktitle = {Proceedings of the 8th USENIX conference on Networked Systems Design and Implementation},
  series = {NSDI'11},
  year = {2011},
- location = {Boston, MA},   
+ location = {Boston, MA},
  publisher = {USENIX Association},
  address = {Berkeley, CA, USA},
-} 
+}
 
 @inproceedings{dolly:nsdi13,
- author = {Ananthanarayanan, Ganesh and Ghodsi, Ali and Shenker, Scott and 
+ author = {Ananthanarayanan, Ganesh and Ghodsi, Ali and Shenker, Scott and
 Stoica, Ion},
  title = {Effective Straggler Mitigation: Attack of the Clones},
  booktitle={NSDI'13},
  year = {2013},
-} 
+}
 
+@inproceedings{nsdi12:spark,
+  title={Resilient distributed datasets: A fault-tolerant abstraction for in-memory cluster computing},
+  author={Zaharia, Matei and Chowdhury, Mosharaf and Das, Tathagata and Dave, Ankur and Ma, Justin and McCauley, Murphy and Franklin, Michael J and Shenker, Scott and Stoica, Ion},
+  booktitle={Proceedings of the 9th USENIX conference on Networked Systems Design and Implementation},
+  pages={2--2},
+  year={2012},
+  organization={USENIX Association}
+}
 
 @inproceedings{tripod:apsys16,
  author = {Wang, Cheng and Yang, Jingyu and Yi, Ning and Cui, Heming},
@@ -16177,21 +16604,36 @@ Stoica, Ion},
  booktitle = {Proceedings of the 7th ACM SIGOPS Asia-Pacific Workshop on Systems},
  series = {APSys '16},
  year = {2016},
-} 
+}
+
+@inproceedings{airavat:nsdi10,
+ author = {Roy, Indrajit and Setty, Srinath T. V. and Kilzer, Ann and Shmatikov, Vitaly and Witchel, Emmett},
+ title = {Airavat: Security and Privacy for MapReduce},
+ booktitle = {Proceedings of the 7th USENIX Conference on Networked Systems Design and Implementation},
+ series = {NSDI'10},
+ year = {2010},
+ location = {San Jose, California},
+ pages = {20--20},
+ numpages = {1},
+ url = {http://dl.acm.org/citation.cfm?id=1855711.1855731},
+ acmid = {1855731},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+}
 
 @inproceedings{mesos:nsdi11,
- author = {Hindman, Benjamin and Konwinski, Andy and Zaharia, Matei and Ghodsi, 
+ author = {Hindman, Benjamin and Konwinski, Andy and Zaharia, Matei and Ghodsi,
 Ali and Joseph, Anthony D. and Katz, Randy and Shenker, Scott and Stoica, Ion},
- title = {Mesos: A Platform for Fine-grained Resource Sharing in the Data 
+ title = {Mesos: A Platform for Fine-grained Resource Sharing in the Data
 Center},
- booktitle = {Proceedings of the 8th USENIX conference on Networked Systems 
+ booktitle = {Proceedings of the 8th USENIX conference on Networked Systems
 Design and Implementation},
  series = {NSDI'11},
  year = {2011},
- location = {Boston, MA},   
+ location = {Boston, MA},
  publisher = {USENIX Association},
  address = {Berkeley, CA, USA},
-} 
+}
 
 @inproceedings{bolosky:nsdi11,
  author = {Bolosky, William J. and Bradshaw, Dexter and Haagens, Randolph B. and Kusters, Norbert P. and Li, Peng},
@@ -16205,15 +16647,15 @@ Design and Implementation},
 }
 
 @article{brumley:symbolic,
-author={Brumley, D. and Newsome, J. and Song, D. and Hao Wang and Jha, S.}, 
+author={Brumley, D. and Newsome, J. and Song, D. and Hao Wang and Jha, S.},
 journal={Dependable and Secure Computing, IEEE Transactions on},
-title={Theory and Techniques for Automatic Generation of Vulnerability-Based Signatures}, 
-year={2008}, 
-month={oct.-dec. }, 
-volume={5}, 
-number={4}, 
-pages={224--241}, 
-keywords={Turing-complete language;automated generation;multiple vulnerable program paths;multiple-path vulnerability;program vulnerability;vulnerability-based signatures;Turing machines;computational complexity;digital signatures;}, 
+title={Theory and Techniques for Automatic Generation of Vulnerability-Based Signatures},
+year={2008},
+month={oct.-dec. },
+volume={5},
+number={4},
+pages={224--241},
+keywords={Turing-complete language;automated generation;multiple vulnerable program paths;multiple-path vulnerability;program vulnerability;vulnerability-based signatures;Turing machines;computational complexity;digital signatures;},
 }
 
 @inproceedings{dpj:oopsla09,
@@ -16358,21 +16800,21 @@ keywords={Turing-complete language;automated generation;multiple vulnerable prog
  booktitle = OSDI12,
  month = oct,
  year = 2012,
-} 
+}
 
 @article{herd:sigcomm14,
  author = {Kalia, Anuj and Kaminsky, Michael and Andersen, David G.},
  title = {Using RDMA Efficiently for Key-value Services},
- booktitle = {SIGCOMM '14: Proceedings of the 2014 conference on Applications, 
+ booktitle = {SIGCOMM '14: Proceedings of the 2014 conference on Applications,
 technologies, architectures, and protocols for computer communications},
  month = aug,
  year = {2014},
-} 
+}
 
 @inproceedings{dare:hpdc15,
  author = {Poke, Marius and Hoefler, Torsten},
  title = {DARE: High-Performance State Machine Replication on RDMA Networks},
- booktitle = {Proceedings of the 24th International Symposium on 
+ booktitle = {Proceedings of the 24th International Symposium on
 High-Performance Parallel and Distributed Computing},
  series = {HPDC '15},
  year = {2015},
@@ -16381,7 +16823,7 @@ High-Performance Parallel and Distributed Computing},
 @misc{tupperware,
  title = "{Tupperware}",
  year = {2014},
- howpublished = 
+ howpublished =
 "\url{
 https://www.youtube.com/watch?v=C_WuUgTqgOc}",
 }
@@ -16404,24 +16846,24 @@ https://www.youtube.com/watch?v=C_WuUgTqgOc}",
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {automatic management, cluster computing},
-} 
+}
 
 @inproceedings{colo:socc13,
- author = {Dong, YaoZu and Ye, Wei and Jiang, YunHong and Pratt, Ian and Ma, 
+ author = {Dong, YaoZu and Ye, Wei and Jiang, YunHong and Pratt, Ian and Ma,
 ShiQing and Li, Jian and Guan, HaiBing},
- title = {COLO: COarse-grained LOck-stepping Virtual Machines for Non-stop 
+ title = {COLO: COarse-grained LOck-stepping Virtual Machines for Non-stop
 Service},
  booktitle = {Proceedings of the 4th Annual Symposium on Cloud Computing},
  series = {SOCC '13},
  year = {2013},
-} 
+}
 
 
 @inproceedings{yarn:socc13,
- author = {Vavilapalli, Vinod Kumar and Murthy, Arun C. and Douglas, Chris and 
-Agarwal, Sharad and Konar, Mahadev and Evans, Robert and Graves, Thomas and 
-Lowe, Jason and Shah, Hitesh and Seth, Siddharth and Saha, Bikas and Curino, 
-Carlo and O'Malley, Owen and Radia, Sanjay and Reed, Benjamin and 
+ author = {Vavilapalli, Vinod Kumar and Murthy, Arun C. and Douglas, Chris and
+Agarwal, Sharad and Konar, Mahadev and Evans, Robert and Graves, Thomas and
+Lowe, Jason and Shah, Hitesh and Seth, Siddharth and Saha, Bikas and Curino,
+Carlo and O'Malley, Owen and Radia, Sanjay and Reed, Benjamin and
 Baldeschwieler, Eric},
  title = {Apache Hadoop YARN: Yet Another Resource Negotiator},
  booktitle = {Proceedings of the 4th Annual Symposium on Cloud Computing},
@@ -16440,11 +16882,11 @@ Baldeschwieler, Eric},
 }
 
 @inproceedings{apollo:osdi14,
- author = {Boutin, Eric and Ekanayake, Jaliya and Lin, Wei and Shi, Bing and 
+ author = {Boutin, Eric and Ekanayake, Jaliya and Lin, Wei and Shi, Bing and
 Zhou, Jingren and Qian, Zhengping and Wu, Ming and Zhou, Lidong},
- title = {Apollo: Scalable and Coordinated Scheduling for Cloud-scale 
+ title = {Apollo: Scalable and Coordinated Scheduling for Cloud-scale
 Computing},
- booktitle = {Proceedings of the 11th USENIX Conference on Operating Systems 
+ booktitle = {Proceedings of the 11th USENIX Conference on Operating Systems
 Design and Implementation},
  series = {OSDI'14},
  year = {2014},
@@ -16456,13 +16898,18 @@ Design and Implementation},
  acmid = {2685071},
  publisher = {USENIX Association},
  address = {Berkeley, CA, USA},
-} 
+}
+
+@inproceedings{osdi14:pserver,
+  title={Scaling Distributed Machine Learning with the Parameter Server.},
+  author={Li, Mu and Andersen, David G and Park, Jun Woo}
+}
 
 @inproceedings{quincy:sosp09,
- author = {Isard, Michael and Prabhakaran, Vijayan and Currey, Jon and Wieder, 
+ author = {Isard, Michael and Prabhakaran, Vijayan and Currey, Jon and Wieder,
 Udi and Talwar, Kunal and Goldberg, Andrew},
  title = {Quincy: Fair Scheduling for Distributed Computing Clusters},
- booktitle = {Proceedings of the ACM SIGOPS 22Nd Symposium on Operating Systems 
+ booktitle = {Proceedings of the ACM SIGOPS 22Nd Symposium on Operating Systems
 Principles},
  series = {SOSP '09},
  year = {2009},
@@ -16475,9 +16922,9 @@ Principles},
  acmid = {1629601},
  publisher = {ACM},
  address = {New York, NY, USA},
- keywords = {cluster scheduling, dryad, fair scheduling, mapreduce, network flow 
+ keywords = {cluster scheduling, dryad, fair scheduling, mapreduce, network flow
 scheduling},
-} 
+}
 
 @article{nosql:finance,
 author = {Robin Hecht and Stefan Jablonski},
@@ -16493,9 +16940,9 @@ address = {Los Alamitos, CA, USA},
 }
 
 @article{fuxi:vldb14,
- author = {Zhang, Zhuo and Li, Chao and Tao, Yangyu and Yang, Renyu and Tang, 
+ author = {Zhang, Zhuo and Li, Chao and Tao, Yangyu and Yang, Renyu and Tang,
 Hong and Xu, Jie},
- title = {Fuxi: A Fault-tolerant Resource Management and Job Scheduling System 
+ title = {Fuxi: A Fault-tolerant Resource Management and Job Scheduling System
 at Internet Scale},
  journal = {Proc. VLDB Endow.},
  issue_date = {August 2014},
@@ -16510,10 +16957,39 @@ at Internet Scale},
  doi = {10.14778/2733004.2733012},
  acmid = {2733012},
  publisher = {VLDB Endowment},
-} 
+}
+
+@article{vldb15:titian,
+ author = {Interlandi, Matteo and Shah, Kshitij and Tetali, Sai Deep and Gulzar, Muhammad Ali and Yoo, Seunghyun and Kim, Miryung and Millstein, Todd and Condie, Tyson},
+ title = {Titian: Data Provenance Support in Spark},
+ journal = {Proc. VLDB Endow.},
+ issue_date = {November 2015},
+ volume = {9},
+ number = {3},
+ month = nov,
+ year = {2015},
+ issn = {2150-8097},
+ pages = {216--227},
+ numpages = {12},
+ url = {http://dx.doi.org/10.14778/2850583.2850595},
+ doi = {10.14778/2850583.2850595},
+ acmid = {2850595},
+ publisher = {VLDB Endowment},
+}
+
+@article{vldb16:output,
+  title={Explaining outputs in modern data analytics},
+  author={Chothia, Zaheer and Liagouris, John and McSherry, Frank and Roscoe, Timothy},
+  journal={Proceedings of the VLDB Endowment},
+  volume={9},
+  number={12},
+  pages={1137--1148},
+  year={2016},
+  publisher={VLDB Endowment}
+}
 
 @inproceedings{borg:eurosys15,
- author = {Verma, Abhishek and Pedrosa, Luis and Korupolu, Madhukar and 
+ author = {Verma, Abhishek and Pedrosa, Luis and Korupolu, Madhukar and
 Oppenheimer, David and Tune, Eric and Wilkes, John},
  title = {Large-scale Cluster Management at Google with Borg},
  booktitle = {Proceedings of the Tenth European Conference on Computer Systems},
@@ -16529,7 +17005,7 @@ Oppenheimer, David and Tune, Eric and Wilkes, John},
  acmid = {2741964},
  publisher = {ACM},
  address = {New York, NY, USA},
-} 
+}
 
 @inproceedings{rex:eurosys14,
   title={Rex: Replication at the Speed of Multi-core},
@@ -16546,7 +17022,7 @@ Oppenheimer, David and Tune, Eric and Wilkes, John},
  booktitle = OSDI10,
  year = {2012},
  pages = {77--91},
-} 
+}
  isbn = {978-1-931971-96-6},
  location = {Hollywood, CA, USA},
  url = {http://dl.acm.org/citation.cfm?id=2387880.2387888},
@@ -16581,7 +17057,7 @@ Oppenheimer, David and Tune, Eric and Wilkes, John},
  year = {2012},
  pages = {221--236},
  numpages = {16},
-} 
+}
  isbn = {978-1-931971-96-6},
  location = {Hollywood, CA, USA},
  url = {http://dl.acm.org/citation.cfm?id=2387880.2387902},
@@ -16633,7 +17109,7 @@ Oppenheimer, David and Tune, Eric and Wilkes, John},
  series = {ESEC/FSE 2013},
  year = {2013},
  pages = {224--234},
-} 
+}
 
 @inproceedings{scribe:sigmetrics2010,
   title={Transparent, lightweight application execution replay on commodity multiprocessor operating systems},
@@ -16669,7 +17145,7 @@ Oppenheimer, David and Tune, Eric and Wilkes, John},
  number = {6},
  month = nov,
  year = {2012},
-} 
+}
 
 @inproceedings{symtestandroid:jpf2012,
  author = {Mirzaei, Nariman and Malek, Sam and P\u{a}s\u{a}reanu, Corina S. and Esfahani, Naeem and Mahmood, Riyadh},
@@ -16677,7 +17153,7 @@ Oppenheimer, David and Tune, Eric and Wilkes, John},
  booktitle = {The Java Pathfinder Workshop 2012},
  series = {JPF 2012},
  year = {2012},
-} 
+}
 
 @inproceedings{symtestgui:icfem09,
  author = {Ganov, Svetoslav and Killmar, Chip and Khurshid, Sarfraz and Perry, Dewayne E.},
@@ -16685,13 +17161,13 @@ Oppenheimer, David and Tune, Eric and Wilkes, John},
  booktitle = {Proceedings of the 11th International Conference on Formal Engineering Methods: Formal Methods and Software Engineering},
  series = {ICFEM '09},
  year = {2009},
-} 
+}
 
 @inproceedings{concolicsmartphonetest:fse2012,
  author = {Anand, Saswat and Naik, Mayur and Harrold, Mary Jean and Yang, Hongseok},
  title = {Automated concolic testing of smartphone apps},
  booktitle = FSE20,
-} 
+}
  year = {2012},
  series = {FSE '12},
 
@@ -16775,7 +17251,7 @@ Oppenheimer, David and Tune, Eric and Wilkes, John},
  booktitle = FSE18,
  pages = {197--206},
  numpages = {10},
-} 
+}
  year = {2010},
  series = {FSE '10},
  isbn = {978-1-60558-791-2},
@@ -16933,7 +17409,7 @@ author={Weiss, Michael and Ferrière, François and Delsart, Bertrand and Fabre,
  booktitle = {Proceedings of the 3rd conference on USENIX Conference on Object-Oriented Technologies (COOTS) - Volume 3},
  series = {COOTS'97},
  year = {1997},
-} 
+}
 
 
 @inproceedings{fijivm:eurosys10,
@@ -16942,12 +17418,12 @@ author={Weiss, Michael and Ferrière, François and Delsart, Bertrand and Fabre,
  booktitle = {Proceedings of the 5th European conference on Computer systems},
  series = {EuroSys '10},
  year = {2010},
-} 
+}
 
 @inproceedings{cha:ecoop95,
   title={Optimization of object-oriented programs using static class hierarchy analysis},
   author={Dean, Jeffrey and Grove, David and Chambers, Craig},
-  booktitle={ECOOP'95—Object-Oriented Programming, 9th European Conference, 
+  booktitle={ECOOP'95—Object-Oriented Programming, 9th European Conference,
 {\AA}arhus, Denmark, August 7--11, 1995},
   pages={77--101},
   year={1995},
@@ -17024,36 +17500,36 @@ author={Weiss, Michael and Ferrière, François and Delsart, Bertrand and Fabre,
 }
 
 @inproceedings{farm:nsdi14,
- author = {Dragojevi\'{c}, Aleksandar and Narayanan, Dushyanth and Hodson, 
-Orion 
+ author = {Dragojevi\'{c}, Aleksandar and Narayanan, Dushyanth and Hodson,
+Orion
 and Castro, Miguel},
  title = {FaRM: Fast Remote Memory},
- booktitle = {Proceedings of the 11th USENIX Conference on Networked Systems 
+ booktitle = {Proceedings of the 11th USENIX Conference on Networked Systems
 Design and Implementation},
  series = {NSDI'14},
  year = {2014},
 }
 
 @inproceedings{specpaxos:nsdi15,
- author = {Ports, Dan R. K. and Li, Jialin and Liu, Vincent and Sharma, Naveen 
+ author = {Ports, Dan R. K. and Li, Jialin and Liu, Vincent and Sharma, Naveen
 Kr. and Krishnamurthy, Arvind},
- title = {Designing Distributed Systems Using Approximate Synchrony in Data 
+ title = {Designing Distributed Systems Using Approximate Synchrony in Data
 Center Networks},
- booktitle = {Proceedings of the 12th USENIX Conference on Networked Systems 
+ booktitle = {Proceedings of the 12th USENIX Conference on Networked Systems
 Design and Implementation},
  series = {NSDI'15},
  year = {2015},
 }
 
 @inproceedings{consensusbox:nsdi16,
- author = {Istv\'{a}n, Zsolt and Sidler, David and Alonso, Gustavo and Vukolic, 
+ author = {Istv\'{a}n, Zsolt and Sidler, David and Alonso, Gustavo and Vukolic,
 Marko},
  title = {Consensus in a Box: Inexpensive Coordination in Hardware},
- booktitle = {Proceedings of the 13th Usenix Conference on Networked Systems 
+ booktitle = {Proceedings of the 13th Usenix Conference on Networked Systems
 Design and Implementation},
  series = {NSDI'16},
  year = {2016},
-} 
+}
 
 @misc{android-instrumentation,
     title = {Android instrumentation framework},
@@ -17111,6 +17587,17 @@ Design and Implementation},
            Reliable with Stable Multithreading},
   journal = CACM,
   year = 2014,
+}
+
+@inproceedings{dtap:vldb12,
+  title={Distributed time-aware provenance},
+  author={Zhou, Wenchao and Mapara, Suyog and Ren, Yiqing and Li, Yang and Haeberlen, Andreas and Ives, Zachary and Loo, Boon Thau and Sherr, Micah},
+  booktitle={Proceedings of the VLDB Endowment},
+  volume={6},
+  number={2},
+  pages={49--60},
+  year={2012},
+  organization={VLDB Endowment}
 }
 
 @inproceedings{ruf:pldi95,
@@ -17181,7 +17668,7 @@ Design and Implementation},
  month = dec,
  year = {1992},
  pages = {323--337}
-} 
+}
 
 @inproceedings{parrot:sosp13,
  author = {Heming Cui and Jiri Simsa and Yi-Hong Lin and Hao Li and Ben Blum and Xinan Xu and Junfeng Yang and Garth A. Gibson and Randal E. Bryant},
@@ -17192,10 +17679,10 @@ Design and Implementation},
 }
 
 @inproceedings{farm:sosp15,
- author = {Dragojevi\'{c}, Aleksandar and Narayanan, Dushyanth and Nightingale, 
-Edmund B. and Renzelmann, Matthew and Shamis, Alex and Badam, Anirudh and 
+ author = {Dragojevi\'{c}, Aleksandar and Narayanan, Dushyanth and Nightingale,
+Edmund B. and Renzelmann, Matthew and Shamis, Alex and Badam, Anirudh and
 Castro, Miguel},
- title = {No Compromises: Distributed Transactions with Consistency, 
+ title = {No Compromises: Distributed Transactions with Consistency,
 Availability, and Performance},
  booktitle = SOSP25,
  month = oct,
@@ -17203,14 +17690,14 @@ Availability, and Performance},
 }
 
 @inproceedings{failure:sketch:sosp15,
- author = {Kasikci, Baris and Schubert, Benjamin and Pereira, Cristiano and 
+ author = {Kasikci, Baris and Schubert, Benjamin and Pereira, Cristiano and
 Pokam, Gilles and Candea, George},
- title = {Failure Sketching: A Technique for Automated Root Cause Diagnosis of 
+ title = {Failure Sketching: A Technique for Automated Root Cause Diagnosis of
 In-production Failures},
  booktitle = SOSP25,
  month = oct,
  year = 2015,
-} 
+}
 
 @inproceedings{crane:sosp15,
  author = {Heming Cui and Rui Gu and Cheng Liu and Junfeng Yang},
@@ -17221,7 +17708,7 @@ In-production Failures},
 }
 
 @inproceedings{drtm:sosp15,
- author = {Wei, Xingda and Shi, Jiaxin and Chen, Yanzhe and Chen, Rong and Chen, 
+ author = {Wei, Xingda and Shi, Jiaxin and Chen, Yanzhe and Chen, Rong and Chen,
 Haibo},
  title = {Fast In-memory Transaction Processing Using RDMA and HTM},
  booktitle = SOSP25,
@@ -17236,7 +17723,16 @@ Haibo},
  booktitle = SOSP24,
  month = nov,
  year = 2013,
-} 
+}
+
+@inproceedings{hardwardtaint:isca08,
+  title={From speculation to security: Practical and efficient information flow tracking using speculative hardware},
+  author={Chen, Haibo and Wu, Xi and Yuan, Liwei and Zang, Binyu and Yew, Pen-chung and Chong, Frederic T},
+  booktitle={Computer Architecture, 2008. ISCA'08. 35th International Symposium on},
+  pages={401--412},
+  year={2008},
+  organization={IEEE}
+}
 
 @inproceedings{appdoctor:eurosys14,
  author = {Gang Hu and Xinhao Yuan and Yang Tang and Junfeng Yang},
@@ -17265,7 +17761,7 @@ Haibo},
  booktitle = ICSE35,
  year = {2013},
  pages = {1474--1476},
-} 
+}
 
 
 @inproceedings{reran:icse13,
@@ -17274,7 +17770,34 @@ Haibo},
  booktitle = ICSE35,
  year = {2013},
  pages = {72--81},
-} 
+}
+
+@inproceedings{sparksql:sigmod15,
+  title={Spark sql: Relational data processing in spark},
+  author={Armbrust, Michael and Xin, Reynold S and Lian, Cheng and Huai, Yin and Liu, Davies and Bradley, Joseph K and Meng, Xiangrui and Kaftan, Tomer and Franklin, Michael J and Ghodsi, Ali and others},
+  booktitle={Proceedings of the 2015 ACM SIGMOD International Conference on Management of Data},
+  pages={1383--1394},
+  year={2015},
+  organization={ACM}
+}
+
+@inproceedings{icse16:bigdebug,
+ author = {Gulzar, Muhammad Ali and Interlandi, Matteo and Yoo, Seunghyun and Tetali, Sai Deep and Condie, Tyson and Millstein, Todd and Kim, Miryung},
+ title = {BigDebug: Debugging Primitives for Interactive Big Data Processing in Spark},
+ booktitle = {Proceedings of the 38th International Conference on Software Engineering},
+ series = {ICSE '16},
+ year = {2016},
+ isbn = {978-1-4503-3900-1},
+ location = {Austin, Texas},
+ pages = {784--795},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2884781.2884813},
+ doi = {10.1145/2884781.2884813},
+ acmid = {2884813},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {big data analytics, data-intensive scalable computing (DISC), debugging, fault localization and recovery, interactive tools},
+}
 
 @inproceedings{fasttrack:pldi09,
  author = {Flanagan, Cormac and Freund, Stephen N.},
@@ -17367,7 +17890,7 @@ Haibo},
   month = jan,
   year = {2012},
   pages = {14:1--14:20},
-} 
+}
 
 @misc{dropbox-dedup,
   author = {Christopher Soghoian},
@@ -17393,13 +17916,13 @@ Haibo},
   year = {2010},
 }
 
-@INPROCEEDINGS{bind:sp05, 
-  author={Shi, E. and Perrig, A. and van Doorn, L.}, 
-  booktitle={Security and Privacy, 2005 IEEE Symposium on}, 
-  title={{BIND}: a fine-grained attestation service for secure distributed systems}, 
-  year={2005}, 
-  month={May}, 
-  pages={154-168}, 
+@INPROCEEDINGS{bind:sp05,
+  author={Shi, E. and Perrig, A. and van Doorn, L.},
+  booktitle={Security and Privacy, 2005 IEEE Symposium on},
+  title={{BIND}: a fine-grained attestation service for secure distributed systems},
+  year={2005},
+  month={May},
+  pages={154-168},
 }
 
 @misc{enterprise-storage,
@@ -17438,7 +17961,7 @@ Haibo},
   month = apr,
   year = {1968},
   pages = {19--22},
-} 
+}
 
 @inproceedings{pugh:popl89,
   author = {Pugh, W. and Teitelbaum, T.},
@@ -17530,7 +18053,7 @@ Haibo},
   month = oct,
   year = {1985},
   pages = {501--538},
-} 
+}
 
 @article{arvind:toplas89,
   author = {Arvind and Nikhil, Rishiyur S. and Pingali, Keshav K.},
@@ -17541,7 +18064,7 @@ Haibo},
   month = oct,
   year = {1989},
   pages = {598--632},
-} 
+}
 
 @inproceedings{marlow:haskell11,
   author = {Marlow, Simon and Newton, Ryan and Peyton Jones, Simon},
@@ -17578,7 +18101,7 @@ Haibo},
   booktitle = SIGPLAN89,
   year = {1989},
   pages = {285--297},
-} 
+}
 
 @inproceedings{praun:pldi03,
   author = {von Praun, Christoph and Gross, Thomas R.},
@@ -17587,7 +18110,7 @@ Haibo},
   booktitle = SIGPLAN03,
   year = {2003},
   pages = {115--128},
-} 
+}
 
 @techreport{choi:datarace,
   author = {Alexey Loginov and Vivek Sarkar and Jong-deok Choi and Jong-deok
@@ -17597,6 +18120,13 @@ Haibo},
   institution = {IBM Research Division, Thomas J. Watson Research
     Centre},
   year = {2001}
+}
+
+@techreport{mit07:coverage,
+  title={Coverage maximization using dynamic taint tracing},
+  author={Leek, Timothy Robert and Baker, Graham Z and Brown, Ruben Edward and Zhivich, Michael A and Lippmann, RP},
+  year={2007},
+  institution={DTIC Document}
 }
 
 @inproceedings{diwan:pldi98,
@@ -17614,7 +18144,7 @@ Haibo},
   booktitle = SIGPLAN14,
   year = {2014},
   pages = {305--315},
-} 
+}
 
 @inproceedings{manson:popl05,
   author = {Manson, Jeremy and Pugh, William and Adve, Sarita V.},
@@ -17630,7 +18160,7 @@ Haibo},
   booktitle = PLDI08,
   year = {2008},
   pages = {68--78},
-} 
+}
 
 @Misc{fuse,
  howpublished = "\url{http://fuse.sourceforge.net/}",
@@ -17671,18 +18201,33 @@ Haibo},
 }
 
 @inproceedings{matei:hotcloud11,
- author = {Zaharia, Matei and Hindman, Benjamin and Konwinski, Andy and Ghodsi, 
+ author = {Zaharia, Matei and Hindman, Benjamin and Konwinski, Andy and Ghodsi,
 Ali and Joesph, Anthony D. and Katz, Randy and Shenker, Scott and Stoica, Ion},
  title = {The Datacenter Needs an Operating System},
  booktitle = HOTCLOUD2011,
  year = {2011},
-} 
+}
 
 @inproceedings{tak:hotcloud2011,
   author = {Tak, Byung Chul and Urgaonkar, Bhuvan and Sivasubramaniam, Anand},
   title = {To Move or Not to Move: The Economics of Cloud Computing},
   booktitle = HOTCLOUD2011,
   year = {2011},
+}
+
+@inproceedings{hotcloud14:mrlazy,
+ author = {Akoush, Sherif and Carata, Lucian and Sohan, Ripduman and Hopper, Andy},
+ title = {MrLazy: Lazy Runtime Label Propagation for MapReduce},
+ booktitle = {Proceedings of the 6th USENIX Conference on Hot Topics in Cloud Computing},
+ series = {HotCloud'14},
+ year = {2014},
+ location = {Philadelphia, PA},
+ pages = {17--17},
+ numpages = {1},
+ url = {http://dl.acm.org/citation.cfm?id=2696535.2696552},
+ acmid = {2696552},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
 }
 
 @inproceedings{spanstore:sosp2013,
@@ -17693,6 +18238,37 @@ Ali and Joesph, Anthony D. and Katz, Randy and Shenker, Scott and Stoica, Ion},
   isbn = {978-1-4503-2388-8},
   location = {Farminton, Pennsylvania},
   pages = {292--308},
+}
+
+@inproceedings{dixit2013impact,
+  author = {Dixit, Advait Abhay and Prakash, Pawan and Hu, Y. Charlie and
+Kompella, Ramana Rao},
+  title = {On the impact of packet spraying in data center networks.},
+  booktitle = {INFOCOM},
+  year = 2013
+}
+
+@inproceedings{al2008scalable,
+  title={A scalable, commodity data center network architecture},
+  author={Al-Fares, Mohammad and Loukissas, Alexander and Vahdat, Amin},
+  booktitle={ACM SIGCOMM Computer Communication Review},
+  volume={38},
+  number={4},
+  pages={63--74},
+  year={2008},
+  organization={ACM}
+}
+
+@inproceedings{lee2011fine,
+  title={Fine-grained latency and loss measurements in the presence of
+reordering},
+  author={Lee, Myungjin and Goldberg, Sharon and Kompella, Ramana Rao and
+Varghese, George},
+  booktitle={Proceedings of the ACM SIGMETRICS joint international conference on
+Measurement and modeling of computer systems},
+  pages={329--340},
+  year={2011},
+  organization={ACM}
 }
 
 @inproceedings{khanafer:infocom2013,
@@ -17769,7 +18345,7 @@ Ali and Joesph, Anthony D. and Katz, Randy and Shenker, Scott and Stoica, Ion},
   isbn = {978-1-931971-10-2},
   location = {Philadelphia, PA},
   pages = {169--180},
-} 
+}
 
 @inproceedings{bluesky:fast2012,
   author = {Vrable, Michael and Savage, Stefan and Voelker, Geoffrey M.},
@@ -17777,6 +18353,13 @@ Ali and Joesph, Anthony D. and Katz, Randy and Shenker, Scott and Stoica, Ion},
   booktitle = FAST2012,
   series = {FAST'12},
   year = {2012},
+}
+
+@inproceedings{martin2012provenance,
+  title={Provenance as a Security Control.},
+  author={Martin, Andrew P and Lyle, John and Namiluko, Cornelius},
+  booktitle={TaPP},
+  year={2012}
 }
 
 @Misc{s3fs,
@@ -17822,6 +18405,16 @@ Ali and Joesph, Anthony D. and Katz, Randy and Shenker, Scott and Stoica, Ion},
 @Misc{youtube:stat,
     howpublished = "\url{https://www.youtube.com/yt/press/statistics.html}",
     key = "Statistics - Youtube",
+}
+
+@Misc{spark:example,
+    howpublished = "\url{https://spark.apache.org/examples.html}",
+    key = "Spark example",
+}
+
+@Misc{kakuteeval,
+  howpublished = "\url{https://github.com/acsac17-p78/kakute/tree/master/examples/src/main/scala/edu/anonymous/cs/dft/examples}",
+  key = "Kakute Evaluation Programs",
 }
 
 @INPROCEEDINGS{stat:youtube,
@@ -17883,18 +18476,18 @@ Ali and Joesph, Anthony D. and Katz, Randy and Shenker, Scott and Stoica, Ion},
 
 
 @inproceedings{rhymes,
- author = {King-Tin, Lam and Jinghao, Shi and Dominic, Hung and Cho-Li, Wang 
+ author = {King-Tin, Lam and Jinghao, Shi and Dominic, Hung and Cho-Li, Wang
 and Zhiquan, Lai and Wangbin, Zhu and Youliang, Yan},
- title = {Rhymes: A Shared Virtual Memory System for Non-Coherent Tiled 
+ title = {Rhymes: A Shared Virtual Memory System for Non-Coherent Tiled
 Many-Core Architectures},
  booktitle = {ICPADS 2014},
  year = {2014},
-} 
+}
 
 @inproceedings{shengdi1,
- author = {Sheng, Di and Yves, Robert and Frederic, Vivien and Derrick, Kondo 
+ author = {Sheng, Di and Yves, Robert and Frederic, Vivien and Derrick, Kondo
 and Cho-Li, Wang and Franck, Cappello},
- title = {Optimization of Cloud Task Processing with Checkpoint-Restart 
+ title = {Optimization of Cloud Task Processing with Checkpoint-Restart
 Mechanism},
  booktitle = {SC '13},
  year = {2013},
@@ -17906,7 +18499,7 @@ Mechanism},
 with Virtual Machines},
  booktitle = {IEEE Transactions on Computers},
  year = {2014},
-} 
+}
 
 @inproceedings{jessica2,
  author = {W, Zhu and Cho-Li, Wang and and F.C.M., Lau},
@@ -17915,14 +18508,14 @@ Transparent Thread Migration Support},
  booktitle = {IEEE Fourth International Conference on Cluster
 Computing (Cluster2002)},
  year = {2002},
-} 
+}
 
 @inproceedings{jessica,
  author = {M.J.M., Ma and C.L., Wang and F.C.M., Lau},
  title = {JESSICA: Java-Enabled Single-System-Image Computing Architecture},
  booktitle = {Journal of Parallel and Distributed Computing},
  year = {2000},
-} 
+}
 
 @inproceedings{cheung,
  author = {B.W.L., Cheung and C.L., Wang and K. Hwang},
@@ -17937,7 +18530,7 @@ Consistency Model on a Cluster of Workstations},
  title = {Heterogeneous Computing: Challenges and Opportunities},
  booktitle = {IEEE Computer},
  year = {1993},
-} 
+}
 
 @inproceedings{sheng,
  author = {Sheng, Di and Cho-Li, Wang},
@@ -17945,7 +18538,7 @@ Consistency Model on a Cluster of Workstations},
 Cloud System},
  booktitle = {IEEE Transactions on Parallel and Distributed Systems (TPDS)},
  year = {2013},
-} 
+}
 
 
 @inproceedings{hwang,
@@ -17954,15 +18547,15 @@ Cloud System},
 Checkpointing and Single I/O Space},
  booktitle = {IEEE Concurrency},
  year = {1999},
-} 
+}
 
 @inproceedings{powerrock,
  author = {Zhiquan, Lai and King-Tin, Lam and Cho-Li, Wang and and Jinshu, Su},
- title = {PoweRock: Power Modeling and Flexible Dynamic Power Management for 
+ title = {PoweRock: Power Modeling and Flexible Dynamic Power Management for
 Many-core Architectures},
  booktitle = {IEEE Systems Journal},
  year = {2016},
-} 
+}
 
 
 
@@ -17973,7 +18566,7 @@ Many-core Architectures},
  journal = {SIGOPS Oper. Syst. Rev.},
  month = dec,
  year = {2010},
-} 
+}
 
 @article{vm:consolidation,
  author = {Corradi, Antonio and Fanelli, Mario and Foschini, Luca},
@@ -17981,7 +18574,7 @@ Many-core Architectures},
  journal = {Future Gener. Comput. Syst.},
  month = mar,
  year = {2014},
-} 
+}
 
 
 @inproceedings{vmotion:atc05,
@@ -17990,7 +18583,7 @@ Many-core Architectures},
  booktitle = {Proceedings of the Annual Conference on USENIX Annual Technical Conference},
  series = {ATEC '05},
  year = {2005},
-} 
+}
 
 @inproceedings{xen:migration:nsdi05,
  author = {Clark, Christopher and Fraser, Keir and Hand, Steven and Hansen, Jacob Gorm and Jul, Eric and Limpach, Christian and Pratt, Ian and Warfield, Andrew},
@@ -17998,7 +18591,7 @@ Many-core Architectures},
  booktitle = {Proceedings of the 2Nd Conference on Symposium on Networked Systems Design \& Implementation - Volume 2},
  series = {NSDI'05},
  year = {2005},
-} 
+}
 
 @inproceedings{p2p:nsdi06,
     author = {Walsh, Kevin and Sirer, Emin G\"{u}n},
@@ -18021,6 +18614,11 @@ Many-core Architectures},
 @Misc{s3ql,
   howpublished = "\url{https://bitbucket.org/nikratio/s3ql}",
   key = "s3ql",
+}
+
+@Misc{pigmix,
+  howpublished = "\url{https://cwiki.apache.org/confluence/display/PIG/PigMix}",
+  key = "pigmix",
 }
 
 @Misc{amazon:startups,
@@ -18053,7 +18651,7 @@ Many-core Architectures},
 
 @inproceedings {fasst:osdi16,
 author = {Anuj Kalia and Michael Kaminsky and David G. Andersen},
-title = {FaSST: Fast, Scalable and Simple Distributed Transactions with 
+title = {FaSST: Fast, Scalable and Simple Distributed Transactions with
 Two-Sided (RDMA) Datagram RPCs},
   booktitle = OSDI12,
   year = {2016},
@@ -18061,23 +18659,23 @@ Two-Sided (RDMA) Datagram RPCs},
 }
 
 @inproceedings{nopaxos:osdi16,
- author = {Jialin Li and Ellis Michael and Naveen Kr. Sharma and Adriana 
+ author = {Jialin Li and Ellis Michael and Naveen Kr. Sharma and Adriana
 Szekeres and Dan R. K. Ports},
- title = {Fast Replication with NOPaxos: Replacing Consensus with Network 
+ title = {Fast Replication with NOPaxos: Replacing Consensus with Network
 Ordering},
   booktitle = OSDI12,
   year = {2016},
   month = Nov,
-} 
+}
 
 @inproceedings{arrakis:osdi14,
- author = {Peter, Simon and Li, Jialin and Zhang, Irene and Ports, Dan R. K. and 
+ author = {Peter, Simon and Li, Jialin and Zhang, Irene and Ports, Dan R. K. and
 Woos, Doug and Krishnamurthy, Arvind and Anderson, Thomas and Roscoe, Timothy},
  title = {Arrakis: The Operating System is the Control Plane},
   booktitle = OSDI11,
   year = {2014},
   month = Oct,
-} 
+}
 
 
 @inproceedings{haven:osdi14,
@@ -18109,6 +18707,94 @@ Woos, Doug and Krishnamurthy, Arvind and Anderson, Thomas and Roscoe, Timothy},
   booktitle = {Proceedings of 6th Asia-Pacific Workshop on Systems (APSys '15)},
   month = jul,
   year = {2015},
+}
+
+@inproceedings{oo14:phosphor,
+ author = {Bell, Jonathan and Kaiser, Gail},
+ title = {Phosphor: Illuminating Dynamic Data Flow in Commodity Jvms},
+ booktitle = {Proceedings of the 2014 ACM International Conference on Object Oriented Programming Systems Languages \& Applications},
+ series = {OOPSLA '14},
+ year = {2014},
+ isbn = {978-1-4503-2585-1},
+ location = {Portland, Oregon, USA},
+ pages = {83--101},
+ numpages = {19},
+ url = {http://doi.acm.org/10.1145/2660193.2660212},
+ doi = {10.1145/2660193.2660212},
+ acmid = {2660212},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {dataflow analysis, taint tracking},
+}
+
+@inproceedings{twitter:socialdata,
+author = {Kwak, Haewoon and Lee, Changhyun and Park, Hosung and Moon, Sue},
+title = "{W}hat is {T}witter, a social network or a news media?",
+booktitle = {WWW '10: Proceedings of the 19th international conference on World wide web},
+year = {2010},
+isbn = {978-1-60558-799-8},
+pages = {591--600},
+location = {Raleigh, North Carolina, USA},
+doi = {http://doi.acm.org/10.1145/1772690.1772751},
+publisher = {ACM},
+address = {New York, NY, USA},
+}
+
+@inproceedings{pileus:acsac16,
+ author = {Sun, Yuqiong and Petracca, Giuseppe and Ge, Xinyang and Jaeger, Trent},
+ title = {Pileus: Protecting User Resources from Vulnerable Cloud Services},
+ booktitle = {Proceedings of the 32Nd Annual Conference on Computer Security Applications},
+ series = {ACSAC '16},
+ year = {2016},
+ isbn = {978-1-4503-4771-6},
+ location = {Los Angeles, California},
+ pages = {52--64},
+ numpages = {13},
+ url = {http://doi.acm.org/10.1145/2991079.2991109},
+ doi = {10.1145/2991079.2991109},
+ acmid = {2991109},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@incollection{asghar2012securing,
+  title={Securing data provenance in the cloud},
+  author={Asghar, Muhammad Rizwan and Ion, Mihaela and Russello, Giovanni and Crispo, Bruno},
+  booktitle={Open problems in network security},
+  pages={145--160},
+  year={2012},
+  publisher={Springer}
+}
+
+@article{provenancesecurity:ieeesp11,
+  title={Data provenance and security},
+  author={McDaniel, Patrick},
+  journal={IEEE Security \& Privacy},
+  volume={9},
+  number={2},
+  pages={83--85},
+  year={2011},
+  publisher={IEEE}
+}
+
+@inproceedings{murthy2014top,
+  title={Top ten challenges in Big Data security and privacy},
+  author={Murthy, Praveen K},
+  booktitle={Test Conference (ITC), 2014 IEEE International},
+  pages={1--1},
+  year={2014},
+  organization={IEEE}
+}
+
+@article{cui2003lineage,
+  title={Lineage tracing for general data warehouse transformations},
+  author={Cui, Yingwei and Widom, Jennifer},
+  journal={The International Journal on Very Large Data Bases},
+  volume={12},
+  number={1},
+  pages={41--58},
+  year={2003},
+  publisher={Springer-Verlag New York, Inc.}
 }
 
 @misc{mediatomb,
@@ -18166,3 +18852,434 @@ Woos, Doug and Krishnamurthy, Arvind and Anderson, Thomas and Roscoe, Timothy},
   publisher={Taylor \& Francis}
 }
 
+
+@inproceedings{drbd,
+  title={Drbd 9 and device-mapper: Linux block level storage replication},
+  author={Ellenberg, Lars},
+  booktitle={Proceedings of the 15th International Linux System Technology Conference},
+  year={2008}
+}
+
+@article{fio,
+  title={Fio-flexible io tester},
+  author={Axboe, Jens},
+  journal={URL http://freemeat.net/projects/fio},
+  year={2014}
+}
+
+@inproceedings{paratus,
+  title={Paratus: Instantaneous failover via virtual machine replication},
+  author={Du, Yuyang and Yu, Hongliang},
+  booktitle={Grid and Cooperative Computing, 2009. GCC'09. Eighth International Conference on},
+  pages={307--312},
+  year={2009},
+  organization={IEEE}
+}
+
+@inproceedings{atc:seneca,
+  title={Seneca: remote mirroring done write.},
+  author={Ji, Minwen and Veitch, Alistair C and Wilkes, John and others},
+  booktitle={USENIX Annual Technical Conference, General Track},
+  pages={253--268},
+  year={2003}
+}
+
+
+@inproceedings{weatherspoon2009smoke,
+  title={Smoke and Mirrors: Reflecting Files at a Geographically Remote Location Without Loss of Performance.},
+  author={Weatherspoon, Hakim and Ganesh, Lakshmi and Marian, Tudor and Balakrishnan, Mahesh and Birman, Ken},
+  booktitle={FAST},
+  pages={211--224},
+  year={2009}
+}
+
+@inproceedings{wang2007rwar,
+  title={Rwar: A resilient window-consistent asynchronous replication protocol},
+  author={Wang, Yanlong and Li, Zhanhuai and Lin, Wei},
+  booktitle={Availability, Reliability and Security, 2007. ARES 2007. The Second International Conference on},
+  pages={499--505},
+  year={2007},
+  organization={IEEE}
+}
+
+@article{xtreemfs,
+  title={The XtreemFS architecture—a case for object-based file systems in Grids},
+  author={Hupfeld, Felix and Cortes, Toni and Kolbeck, Bj{\"o}rn and Stender, Jan and Focht, Erich and Hess, Matthias and Malo, Jesus and Marti, Jonathan and Cesario, Eugenio},
+  journal={Concurrency and computation: Practice and experience},
+  volume={20},
+  number={17},
+  pages={2049--2060},
+  year={2008},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{zhu2010improving,
+  title={Improving the performance of hypervisor-based fault tolerance},
+  author={Zhu, Jun and Dong, Wei and Jiang, Zhefu and Shi, Xiaogang and Xiao, Zhen and Li, Xiaoming},
+  booktitle={Parallel \& Distributed Processing (IPDPS), 2010 IEEE International Symposium on},
+  pages={1--10},
+  year={2010},
+  organization={IEEE}
+}
+
+@inproceedings{vishwanath2010characterizing,
+  title={Characterizing cloud computing hardware reliability},
+  author={Vishwanath, Kashi Venkatesh and Nagappan, Nachiappan},
+  booktitle={Proceedings of the 1st ACM symposium on Cloud computing},
+  pages={193--204},
+  year={2010},
+  organization={ACM}
+}
+
+@article{barroso2013datacenter,
+  title={The datacenter as a computer: An introduction to the design of warehouse-scale machines},
+  author={Barroso, Luiz Andr{\'e} and Clidaras, Jimmy and H{\"o}lzle, Urs},
+  journal={Synthesis lectures on computer architecture},
+  volume={8},
+  number={3},
+  pages={1--154},
+  year={2013},
+  publisher={Morgan \& Claypool Publishers}
+}
+
+
+@article{satyanarayanan1990coda,
+  title={Coda: A highly available file system for a distributed workstation environment},
+  author={Satyanarayanan, Mahadev and Kistler, James J. and Kumar, Puneet and Okasaki, Maria E. and Siegel, Ellen H. and Steere, David C.},
+  journal={IEEE Transactions on computers},
+  volume={39},
+  number={4},
+  pages={447--459},
+  year={1990},
+  publisher={IEEE}
+}
+
+@inproceedings{guy1990implementation,
+  title={Implementation of the Ficus Replicated File System.},
+  author={Guy, Richard G and Heidemann, John S and Mak, Wai-Kei and Page Jr, Thomas W and Popek, Gerald J and Rothmeier, Dieter and others},
+  booktitle={USENIX Summer},
+  pages={63--72},
+  year={1990}
+}
+
+@inproceedings{popek1990replication,
+  title={Replication in Ficus distributed file systems},
+  author={Popek, Gerald J and Guy, Richard G and Page, TW and Heidemann, John S},
+  booktitle={Management of Replicated Data, 1990. Proceedings., Workshop on the},
+  pages={5--10},
+  year={1990},
+  organization={IEEE}
+}
+
+@inproceedings{hisgen1990granularity,
+  title={Granularity and semantic level of replication in the Echo distributed file system},
+  author={Hisgen, Andy and Birrell, Andrew and Jerian, Charles and Mann, Timothy and Schroeder, Michael and Swart, Garret},
+  booktitle={Management of Replicated Data, 1990. Proceedings., Workshop on the},
+  pages={2--4},
+  year={1990},
+  organization={IEEE}
+}
+
+
+@inproceedings{kistler1990increasing,
+  title={Increasing file system availability through second-class replication},
+  author={Kistler, James J},
+  booktitle={Management of Replicated Data, 1990. Proceedings., Workshop on the},
+  pages={65--69},
+  year={1990},
+  organization={IEEE}
+}
+
+@article{stockinger2002file,
+  title={File and object replication in data grids},
+  author={Stockinger, Heinz and Samar, Asad and Holtman, Koen and Allcock, Bill and Foster, Ian and Tierney, Brian},
+  journal={Cluster Computing},
+  volume={5},
+  number={3},
+  pages={305--314},
+  year={2002},
+  publisher={Springer}
+}
+
+@inproceedings{welch2008scalable,
+  title={Scalable Performance of the Panasas Parallel File System.},
+  author={Welch, Brent and Unangst, Marc and Abbasi, Zainul and Gibson, Garth A and Mueller, Brian and Small, Jason and Zelenka, Jim and Zhou, Bin},
+  booktitle={FAST},
+  volume={8},
+  pages={1--17},
+  year={2008}
+}
+
+@article{lakshman2010cassandra,
+  title={Cassandra: a decentralized structured storage system},
+  author={Lakshman, Avinash and Malik, Prashant},
+  journal={ACM SIGOPS Operating Systems Review},
+  volume={44},
+  number={2},
+  pages={35--40},
+  year={2010},
+  publisher={ACM}
+}
+
+@inproceedings{mashtizadeh2013replication,
+  title={Replication, history, and grafting in the ori file system},
+  author={Mashtizadeh, Ali Jos{\'e} and Bittau, Andrea and Huang, Yifeng Frank and Mazieres, David},
+  booktitle={Proceedings of the Twenty-Fourth ACM Symposium on Operating Systems Principles},
+  pages={151--166},
+  year={2013},
+  organization={ACM}
+}
+
+@article{muthitacharoen2002ivy,
+  title={Ivy: A read/write peer-to-peer file system},
+  author={Muthitacharoen, Athicha and Morris, Robert and Gil, Thomer M and Chen, Benjie},
+  journal={ACM SIGOPS Operating Systems Review},
+  volume={36},
+  number={SI},
+  pages={31--44},
+  year={2002},
+  publisher={ACM}
+}
+
+@article{saito2002taming,
+  title={Taming aggressive replication in the Pangaea wide-area file system},
+  author={Saito, Yasushi and Karamanolis, Christos and Karlsson, Magnus and Mahalingam, Mallik},
+  journal={ACM SIGOPS Operating Systems Review},
+  volume={36},
+  number={SI},
+  pages={15--30},
+  year={2002},
+  publisher={ACM}
+}
+
+@inproceedings{weil2006ceph,
+  title={Ceph: A scalable, high-performance distributed file system},
+  author={Weil, Sage A and Brandt, Scott A and Miller, Ethan L and Long, Darrell DE and Maltzahn, Carlos},
+  booktitle={Proceedings of the 7th symposium on Operating systems design and implementation},
+  pages={307--320},
+  year={2006},
+  organization={USENIX Association}
+}
+
+@inproceedings{wang2012gnothi,
+  title={Gnothi: Separating Data and Metadata for Efficient and Available Storage Replication.},
+  author={Wang, Yang and Alvisi, Lorenzo and Dahlin, Mike},
+  booktitle={USENIX Annual Technical Conference},
+  pages={413--424},
+  year={2012}
+}
+
+@inproceedings{wei2010cdrm,
+  title={CDRM: A cost-effective dynamic replication management scheme for cloud storage cluster},
+  author={Wei, Qingsong and Veeravalli, Bharadwaj and Gong, Bozhao and Zeng, Lingfang and Feng, Dan},
+  booktitle={Cluster Computing (CLUSTER), 2010 IEEE International Conference on},
+  pages={188--196},
+  year={2010},
+  organization={IEEE}
+}
+
+
+@inproceedings{lu2009carp,
+  title={CARP: Handling silent data errors and site failures in an integrated program and storage replication mechanism},
+  author={Lu, Lanyue and Sarkar, Prasenjit and Subhraveti, Dinesh and Sarkar, Soumitra and Seaman, Mark and Jain, Reshu and Bashir, Ahmed},
+  booktitle={Distributed Computing Systems, 2009. ICDCS'09. 29th IEEE International Conference on},
+  pages={385--394},
+  year={2009},
+  organization={IEEE}
+}
+
+@inproceedings{dabek2001wide,
+  title={Wide-area cooperative storage with CFS},
+  author={Dabek, Frank and Kaashoek, M Frans and Karger, David and Morris, Robert and Stoica, Ion},
+  booktitle={ACM SIGOPS Operating Systems Review},
+  volume={35},
+  number={5},
+  pages={202--215},
+  year={2001},
+  organization={ACM}
+}
+
+
+@article{chen1994raid,
+  title={RAID: High-performance, reliable secondary storage},
+  author={Chen, Peter M and Lee, Edward K and Gibson, Garth A and Katz, Randy H and Patterson, David A},
+  journal={ACM Computing Surveys (CSUR)},
+  volume={26},
+  number={2},
+  pages={145--185},
+  year={1994},
+  publisher={ACM}
+}
+
+@Misc{nakivo,
+  key = {NAKIVO},
+  OPTtitle = "NAKIVO, Western Digital NAS",
+  OPTurl = "https://www.nakivo.com/backup-appliance/western-digital-nas/",
+  institution =      "{Western Digital Ltd.}",
+  title =       "{NAKIVO, Western Digital NAS}",
+  howpublished =        "https://www.nakivo.com/backup-appliance/western-digital-nas/",
+}
+
+@Misc{dothill,
+  OPTtitle = "DotHill Storage Arrays",
+  OPTurl = "https://www.dothill.com/storage-arrays/overview/",
+  key = {DITHILL},
+  institution =      "{Dot Hill System Corp.}",
+  title =       "{DotHill Storage Arrays}",
+  howpublished =        "https://www.dothill.com/storage-arrays/overview/",
+}
+
+@inproceedings{sharma2003duplex,
+  title={Duplex: A reusable fault tolerance extension framework for network access devices},
+  author={Sharma, Srikant and Chen, Jiawu and Li, Wei and Gopalan, Kartik and Chiueh, Tzi-cker},
+  booktitle={Dependable Systems and Networks, 2003. Proceedings. 2003 International Conference on},
+  pages={501--510},
+  year={2003},
+  organization={IEEE}
+}
+
+@techreport{shah2008xsft,
+  title={XSFT: Next Generation HA},
+  author={Shah, Dharmesh and Lokray, Sameer},
+  year={2008},
+  institution={Technical Report, Symantec Research Labs, 2008, http://engweb. ges. symantec. com/cuttingedge/2007/presentations/SHAH1003 rev0. ppt}
+}
+
+@article{minhas2013remusdb,
+  title={Remusdb: Transparent high availability for database systems},
+  author={Minhas, Umar Farooq and Rajagopalan, Shriram and Cully, Brendan and Aboulnaga, Ashraf and Salem, Kenneth and Warfield, Andrew},
+  journal={The VLDB Journal},
+  volume={22},
+  number={1},
+  pages={29--45},
+  year={2013},
+  publisher={Springer}
+}
+
+@inproceedings{icde06:ldiversity,
+  title={l-diversity: Privacy beyond k-anonymity},
+  author={Machanavajjhala, Ashwin and Gehrke, Johannes and Kifer, Daniel and Venkitasubramaniam, Muthuramakrishnan},
+  booktitle={Data Engineering, 2006. ICDE'06. Proceedings of the 22nd International Conference on},
+  pages={24--24},
+  year={2006},
+  organization={IEEE}
+}
+
+@article{kanonymity,
+  title={k-anonymity: A model for protecting privacy},
+  author={Sweeney, Latanya},
+  journal={International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems},
+  volume={10},
+  number={05},
+  pages={557--570},
+  year={2002},
+  publisher={World Scientific}
+}
+
+@inproceedings{sp08:deanonymization,
+  title={Robust de-anonymization of large sparse datasets},
+  author={Narayanan, Arvind and Shmatikov, Vitaly},
+  booktitle={Security and Privacy, 2008. SP 2008. IEEE Symposium on},
+  pages={111--125},
+  year={2008},
+  organization={IEEE}
+}
+
+@inproceedings{vc3:sp15,
+  title={VC3: Trustworthy data analytics in the cloud using SGX},
+  author={Schuster, Felix and Costa, Manuel and Fournet, C{\'e}dric and Gkantsidis, Christos and Peinado, Marcus and Mainar-Ruiz, Gloria and Russinovich, Mark},
+  booktitle={Security and Privacy (SP), 2015 IEEE Symposium on},
+  pages={38--54},
+  year={2015},
+  organization={IEEE}
+}
+
+@inproceedings{m2r:security15,
+  title={M2R: Enabling Stronger Privacy in MapReduce Computation.},
+  author={Dinh, Tien Tuan Anh and Saxena, Prateek and Chang, Ee-Chien and Ooi, Beng Chin and Zhang, Chunwang},
+  booktitle={USENIX Security Symposium},
+  pages={447--462},
+  year={2015}
+}
+
+@inproceedings{opaque:nsdi17,
+  title={Opaque: An Oblivious and Encrypted Distributed Analytics Platform.},
+  author={Zheng, Wenting and Dave, Ankur and Beekman, Jethro G and Popa, Raluca Ada and Gonzalez, Joseph E and Stoica, Ion},
+  booktitle={NSDI},
+  pages={283--298},
+  year={2017}
+}
+
+@inproceedings{paillier,
+  title={Public-key cryptosystems based on composite degree residuosity classes},
+  author={Paillier, Pascal and others},
+  booktitle={Eurocrypt},
+  volume={99},
+  pages={223--238},
+  year={1999},
+  organization={Springer}
+}
+
+@inproceedings{fullmomo:stoc09,
+  title={Fully homomorphic encryption using ideal lattices.},
+  author={Gentry, Craig and others},
+  booktitle={STOC},
+  volume={9},
+  number={2009},
+  pages={169--178},
+  year={2009}
+}
+
+@inproceedings{seabed:osdi16,
+  title={Big Data Analytics over Encrypted Datasets with Seabed.},
+  author={Papadimitriou, Antonis and Bhagwan, Ranjita and Chandran, Nishanth and Ramjee, Ramachandran and Haeberlen, Andreas and Singh, Harmeet and Modi, Abhishek and Badrinarayanan, Saikrishna},
+  booktitle={OSDI},
+  pages={587--602},
+  year={2016}
+}
+
+@article{intelsgx:isca13,
+  title={Innovative instructions and software model for isolated execution.},
+  author={McKeen, Frank and Alexandrovich, Ilya and Berenzon, Alex and Rozas, Carlos V and Shafi, Hisham and Shanbhogue, Vedvyas and Savagaonkar, Uday R},
+  journal={HASP @ ISCA},
+  volume={10},
+  year={2013}
+}
+
+@article{differentialresult:vldb15,
+  title={Differential privacy in telco big data platform},
+  author={Hu, Xueyang and Yuan, Mingxuan and Yao, Jianguo and Deng, Yu and Chen, Lei and Yang, Qiang and Guan, Haibing and Zeng, Jia},
+  journal={Proceedings of the VLDB Endowment},
+  volume={8},
+  number={12},
+  pages={1692--1703},
+  year={2015},
+  publisher={VLDB Endowment}
+}
+
+@inproceedings{cryptdb:sosp11,
+  title={CryptDB: protecting confidentiality with encrypted query processing},
+  author={Popa, Raluca Ada and Redfield, Catherine and Zeldovich, Nickolai and Balakrishnan, Hari},
+  booktitle={Proceedings of the Twenty-Third ACM Symposium on Operating Systems Principles},
+  pages={85--100},
+  year={2011},
+  organization={ACM}
+}
+@inproceedings{jvmift:acsac07,
+  title={Fine-grained information flow analysis and enforcement in a java virtual machine},
+  author={Chandra, Deepak and Franz, Michael},
+  booktitle={Computer Security Applications Conference, 2007. ACSAC 2007. Twenty-Third Annual},
+  pages={463--475},
+  year={2007},
+  organization={IEEE}
+}
+@article{timingattack:practical,
+  title={Remote timing attacks are practical},
+  author={Brumley, David and Boneh, Dan},
+  journal={Computer Networks},
+  volume={48},
+  number={5},
+  pages={701--716},
+  year={2005},
+  publisher={Elsevier}
+}
